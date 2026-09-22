@@ -32,7 +32,7 @@ typedef struct {
 void can_frame_init(can_frame_t *f, can_priority_t prio, can_source_t src,
                     uint8_t type, uint8_t dlc);
 
-/** @name Little-endian byte packing */
+/** @name Utility functions for little endian byte packing */
 /**@{*/
 void     can_put_u16(uint8_t *buf, uint16_t v);
 void     can_put_i16(uint8_t *buf, int16_t v);
@@ -41,8 +41,6 @@ uint16_t can_get_u16(const uint8_t *buf);
 int16_t  can_get_i16(const uint8_t *buf);
 uint32_t can_get_u32(const uint8_t *buf);
 /**@}*/
-
-/* ---- Heartbeat --------------------------------------------------------- */
 
 /** @brief Heartbeat contents. Payload: [state u8][uptime_s u32] = 5 bytes. */
 typedef struct {
@@ -60,8 +58,6 @@ void can_encode_heartbeat(can_frame_t *f, const can_heartbeat_t *hb);
  *         wrong type, command-only source, or too short). @p out is untouched.
  */
 bool can_decode_heartbeat(const can_frame_t *f, can_heartbeat_t *out);
-
-/* ---- System commands (unlock / sleep / reset) -------------------------- */
 
 /** @brief Commands every node must handle, whether broadcast or targeted. */
 typedef enum {

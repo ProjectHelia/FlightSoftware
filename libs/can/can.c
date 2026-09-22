@@ -9,8 +9,6 @@ void can_frame_init(can_frame_t *f, can_priority_t prio, can_source_t src,
     f->dlc = (dlc > CAN_MAX_DLC) ? (uint8_t)CAN_MAX_DLC : dlc;
 }
 
-/* ---- Byte packing ------------------------------------------------------ */
-
 void can_put_u16(uint8_t *buf, uint16_t v)
 {
     buf[0] = (uint8_t)(v & 0xFFu);
@@ -40,8 +38,6 @@ uint32_t can_get_u32(const uint8_t *buf)
            ((uint32_t)buf[2] << 16) | ((uint32_t)buf[3] << 24);
 }
 
-/* ---- Heartbeat --------------------------------------------------------- */
-
 #define HEARTBEAT_DLC 5u
 
 void can_encode_heartbeat(can_frame_t *f, const can_heartbeat_t *hb)
@@ -67,10 +63,6 @@ bool can_decode_heartbeat(const can_frame_t *f, can_heartbeat_t *out)
     return true;
 }
 
-/* ---- System commands --------------------------------------------------- */
-
-/* One row per command: its priority and type, for the broadcast (*_ALL)
- * and targeted (*_NODE) versions. Indexed by can_sys_cmd_t. */
 typedef struct {
     can_priority_t prio;
     uint8_t        all_type;
@@ -82,6 +74,7 @@ static const sys_cmd_def_t SYS_CMDS[] = {
     [CAN_SYS_SLEEP]  = { CAN_PRIO_IMPORTANT, CAN_CMD_SLEEP_ALL,  CAN_CMD_SLEEP_NODE  },
     [CAN_SYS_RESET]  = { CAN_PRIO_CRITICAL,  CAN_CMD_RESET_ALL,  CAN_CMD_RESET_NODE  },
 };
+
 #define SYS_CMD_COUNT (sizeof(SYS_CMDS) / sizeof(SYS_CMDS[0]))
 
 bool can_encode_sys_cmd(can_frame_t *f, can_sys_cmd_t cmd, can_source_t target)
