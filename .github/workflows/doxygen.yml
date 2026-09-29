@@ -21,6 +21,8 @@ env:
 jobs:
   docs:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write  # needed for peaceiris/actions-gh-pages to push the gh-pages branch
     steps:
       - uses: actions/checkout@v4
 
