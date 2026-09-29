@@ -1,0 +1,35 @@
+name: CMake Build (host)
+
+# Builds the host-buildable subset of the codebase (libs/ + whichever
+# nodes have a HAL/sim/ backend wired up in the root CMakeLists.txt -
+# currently EPS, Master, Instrumentation). This does NOT build the real
+# ESP32 firmware: that needs the full ESP-IDF toolchain/$IDF_PATH, which
+# isn't set up here. Use `pio run` locally (or an esp-idf-ci-action job,
+# if you want that in CI too) for that.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: >
+          cmake -S . -B build
+          -DHELIA_HOST=ON
+          -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build
+        run: cmake --build build --parallel
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cmake-build-output
+          path: build/CMakeFiles/CMakeError.log
+          if-no-files-found: ignore
