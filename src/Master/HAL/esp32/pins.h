@@ -1,6 +1,6 @@
-/** @file pins.h 
+/** @file pins.h
  * @brief Master board wiring
- * 
+ *
  */
 #ifndef HELIA_MASTER_PINS_H
 #define HELIA_MASTER_PINS_H

@@ -22,10 +22,10 @@ size_t ttc_pack_downlink(uint8_t *pkt, size_t pkt_len, uint8_t seq, const can_fr
     return TTC_DL_HDR_LEN + TTC_DL_FRAME_LEN;
 }
 
-/* Everything below owns a task and sockets, so it's ESP-IDF-only 
- * This is very close to what the old ttc_uplink_task() did, but now it's a separate file 
+/* Everything below owns a task and sockets, so it's ESP-IDF-only
+ * This is very close to what the old ttc_uplink_task() did, but now it's a separate file
  * I'm very close to putting this in the HAL layer (TODO?)
-*/
+ */
 #ifdef ESP_PLATFORM
 
 #include <errno.h>

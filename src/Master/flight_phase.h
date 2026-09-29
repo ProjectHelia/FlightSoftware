@@ -54,7 +54,7 @@ typedef enum {
 
 /** @brief Auto-transition DESCENDING -> LANDED after this long with no
  *         motion noted via master_flight_note_motion()
- * Currently this is set to 5 minutes... It might be a little bit longer lmao (5 mins for testing) 
+ * Currently this is set to 5 minutes... It might be a little bit longer lmao (5 mins for testing)
  * */
 #define MASTER_LANDING_NO_MOTION_MS (5u * 60u * 1000u)
 
@@ -71,7 +71,6 @@ master_phase_t master_flight_phase(const master_flight_t *f);
 
 /** @brief Human-readable phase name for logging */
 const char *master_phase_name(master_phase_t p);
-
 
 master_flight_result_t master_flight_set_phase(master_flight_t *f, master_phase_t next, uint32_t now_ms);
 void master_flight_tick(master_flight_t *f, uint32_t now_ms);
