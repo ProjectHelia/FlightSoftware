@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.1</span>
    </div>
-   <div id="projectbrief">REXUS/BEXUS CubeSat payload flight software</div>
+   <div id="projectbrief">REXUS/BEXUS Experiment On Board Flight Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a343e372ee58c8af3fad4342a59503ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control core task: periodically checks the DESCENDING -&gt; LANDED no-motion timeout.  <br /></td></tr>
 <tr class="separator:a343e372ee58c8af3fad4342a59503ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8a48ec12909f2c2c18c59e1696072b" id="r_a6f8a48ec12909f2c2c18c59e1696072b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="flight__phase_8h.html#ac4409c2bf50ca5d98b32e0f435becfcb">master_flight_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Master_2control_8h.html#a6f8a48ec12909f2c2c18c59e1696072b">master_control_set_phase</a> (<a class="el" href="flight__phase_8h.html#abf31647549f2b21aa11334783ed62413">master_phase_t</a> next)</td></tr>
-<tr class="memdesc:a6f8a48ec12909f2c2c18c59e1696072b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe: apply a ground-commanded phase change.  <br /></td></tr>
+<tr class="memdesc:a6f8a48ec12909f2c2c18c59e1696072b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe: apply a ground-commanded phase chang.  <br /></td></tr>
 <tr class="separator:a6f8a48ec12909f2c2c18c59e1696072b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39024a291068eac689aef41bd1632eb" id="r_ab39024a291068eac689aef41bd1632eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="flight__phase_8h.html#abf31647549f2b21aa11334783ed62413">master_phase_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Master_2control_8h.html#ab39024a291068eac689aef41bd1632eb">master_control_get_phase</a> (void)</td></tr>
 <tr class="memdesc:ab39024a291068eac689aef41bd1632eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread-safe read of the current flight phase.  <br /></td></tr>
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create the flight-phase state and its mutex. </p>
-<p>MUST be called once from <a class="el" href="EPS_2setup_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main()</a>, before any task that might call <a class="el" href="Master_2control_8h.html#a6f8a48ec12909f2c2c18c59e1696072b" title="Thread-safe: apply a ground-commanded phase change.">master_control_set_phase()</a>/master_control_get_phase() is created (i.e. before ttc_uplink_task) - this avoids a boot-time race where a ground command could arrive before the mutex exists. <a class="el" href="Master_2control_8h.html#a343e372ee58c8af3fad4342a59503ec1" title="Control core task: periodically checks the DESCENDING -&gt; LANDED no-motion timeout.">master_control_task()</a> itself only ticks; it doesn't create state, so its own creation order relative to this doesn't matter, only relative to ttc_uplink_task's. </p>
+<p>MUST be called once from <a class="el" href="EPS_2setup_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70">app_main()</a>, before any task that might call <a class="el" href="Master_2control_8h.html#a6f8a48ec12909f2c2c18c59e1696072b" title="Thread-safe: apply a ground-commanded phase chang.">master_control_set_phase()</a>/master_control_get_phase() is created (i.e. before ttc_uplink_task) other we will have a race condition </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -208,9 +208,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Thread-safe: apply a ground-commanded phase change. </p>
-<p>Called from <a class="el" href="ttc_8c.html">ttc.c</a>'s uplink handler (core 0) when a CAN_CMD_FLIGHT_PHASE uplink command arrives - this is the flight manager's gate between ground commands and the rest of the system for that command. Broadcasts CAN_CMD_FLIGHT_PHASE to the bus and logs the result internally; the caller just needs the result to ACK ground correctly.</p>
-<p>Safe to call even before master_control_task's first loop iteration, but NOT before it has been created (the mutex it uses is created at task start) - setup.c creates control before ttc's uplink task, so this is naturally satisfied. </p>
+<p>Thread-safe: apply a ground-commanded phase chang. </p>
 
 </div>
 </div>
@@ -231,7 +229,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Control core task: periodically checks the DESCENDING -&gt; LANDED no-motion timeout. </p>
-<p>Pinned to core 1 by setup.c. ESP32-only (see control.c); declared unconditionally here since only ESP32-only callers reference it. Requires <a class="el" href="Master_2control_8h.html#a1ea1bf12a8c34e0bc0128dcb30101263" title="Create the flight-phase state and its mutex.">master_control_init()</a> to have run first. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

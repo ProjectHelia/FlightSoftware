@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.1</span>
    </div>
-   <div id="projectbrief">REXUS/BEXUS CubeSat payload flight software</div>
+   <div id="projectbrief">REXUS/BEXUS Experiment On Board Flight Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -174,6 +174,7 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5a85b9c772bbeb480b209a3e6ea92b4c" id="r_a5a85b9c772bbeb480b209a3e6ea92b4c"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth__w5500_8c.html#a5a85b9c772bbeb480b209a3e6ea92b4c">TAG</a> = &quot;eth&quot;</td></tr>
+<tr class="memdesc:a5a85b9c772bbeb480b209a3e6ea92b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">W5500 Ethernet thingymabob! This is a thin driver shim, same kind of thing as <a class="el" href="can__bus__twai_8c.html">can_bus_twai.c</a>: it brings up a peripheral and reports link/IP state, owns no task and no queue of its own.  <br /></td></tr>
 <tr class="separator:a5a85b9c772bbeb480b209a3e6ea92b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f242f0150433ce5c27f89c78d75094" id="r_a65f242f0150433ce5c27f89c78d75094"><td class="memItemLeft" align="right" valign="top">static EventGroupHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth__w5500_8c.html#a65f242f0150433ce5c27f89c78d75094">s_eg</a></td></tr>
 <tr class="separator:a65f242f0150433ce5c27f89c78d75094"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,6 +483,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>W5500 Ethernet thingymabob! This is a thin driver shim, same kind of thing as <a class="el" href="can__bus__twai_8c.html">can_bus_twai.c</a>: it brings up a peripheral and reports link/IP state, owns no task and no queue of its own. </p>
+<p>Lives in Master's HAL because only Master has Ethernet so it isn't reusable </p>
 
 </div>
 </div>

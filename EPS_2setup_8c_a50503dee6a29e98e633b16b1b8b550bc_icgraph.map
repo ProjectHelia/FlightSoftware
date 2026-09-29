@@ -18,11 +18,11 @@
 <area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="763,363,728,354,598,338,480,331,480,325,598,332,728,349,764,358"/>
 <area shape="rect" id="Node000013" href="$flight__phase_8c.html#a951c8ad4ffd297302871d2629f49e2f4" title="Starts in MASTER_PHASE_TESTING." alt="" coords="564,566,700,591"/>
 <area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="810,404,801,439,785,480,762,521,730,557,701,572,699,567,726,552,757,518,780,478,796,437,805,403"/>
-<area shape="rect" id="Node000014" href="$flight__phase_8c.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Call whenever motion is detected, to feed the no&#45;motion timeout." alt="" coords="560,616,704,656"/>
+<area shape="rect" id="Node000014" href="$flight__phase_8c.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Feeds the motion time out for landing detection." alt="" coords="560,616,704,656"/>
 <area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="813,404,805,448,791,502,766,557,750,583,730,606,706,622,703,618,726,602,746,580,762,555,786,500,800,447,807,403"/>
-<area shape="rect" id="Node000015" href="$flight__phase_8c.html#aebbef72689e5687132cee1afceb2752d" title="Apply a ground&#45;commanded (or otherwise externally requested) phase change." alt="" coords="541,681,723,706"/>
+<area shape="rect" id="Node000015" href="$flight__phase_8c.html#aebbef72689e5687132cee1afceb2752d" title=" " alt="" coords="541,681,723,706"/>
 <area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="816,404,813,459,801,531,790,568,775,605,755,640,730,670,712,683,708,678,726,666,751,636,770,603,785,567,796,530,807,459,810,404"/>
-<area shape="rect" id="Node000016" href="$flight__phase_8c.html#a060e47461526d4bbb9a14c3269a37f62" title="Call periodically (e.g." alt="" coords="563,730,701,755"/>
+<area shape="rect" id="Node000016" href="$flight__phase_8c.html#a060e47461526d4bbb9a14c3269a37f62" title=" " alt="" coords="563,730,701,755"/>
 <area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="812,404,802,477,785,571,761,661,746,696,730,720,703,737,700,732,726,717,742,694,756,659,780,570,797,476,807,403"/>
 <area shape="rect" id="Node000017" href="$Photonics_2comms_8c.html#a906239187138328c6184aa3cdab7e5d4" title=" " alt="" coords="548,517,716,542"/>
 <area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="803,404,774,452,754,477,730,499,691,519,689,514,726,495,750,474,770,449,799,401"/>

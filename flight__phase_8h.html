@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.1</span>
    </div>
-   <div id="projectbrief">REXUS/BEXUS CubeSat payload flight software</div>
+   <div id="projectbrief">REXUS/BEXUS Experiment On Board Flight Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -142,7 +142,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a92da4b063e0ae944580ca29d1c113e71" id="r_a92da4b063e0ae944580ca29d1c113e71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__phase_8h.html#a92da4b063e0ae944580ca29d1c113e71">MASTER_LANDING_NO_MOTION_MS</a>&#160;&#160;&#160;(5u * 60u * 1000u)</td></tr>
-<tr class="memdesc:a92da4b063e0ae944580ca29d1c113e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-transition DESCENDING -&gt; LANDED after this long with no motion noted via <a class="el" href="flight__phase_8h.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Call whenever motion is detected, to feed the no-motion timeout.">master_flight_note_motion()</a>.  <br /></td></tr>
+<tr class="memdesc:a92da4b063e0ae944580ca29d1c113e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-transition DESCENDING -&gt; LANDED after this long with no motion noted via <a class="el" href="flight__phase_8h.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Feeds the motion time out for landing detection.">master_flight_note_motion()</a> Currently this is set to 5 minutes... It might be a little bit longer lmao (5 mins for testing)  <br /></td></tr>
 <tr class="separator:a92da4b063e0ae944580ca29d1c113e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -176,13 +176,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:afb35f8f54c874c6529f1dc90d3c316b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human-readable phase name for logging.  <br /></td></tr>
 <tr class="separator:afb35f8f54c874c6529f1dc90d3c316b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebbef72689e5687132cee1afceb2752d" id="r_aebbef72689e5687132cee1afceb2752d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="flight__phase_8h.html#ac4409c2bf50ca5d98b32e0f435becfcb">master_flight_result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__phase_8h.html#aebbef72689e5687132cee1afceb2752d">master_flight_set_phase</a> (<a class="el" href="structmaster__flight__t.html">master_flight_t</a> *f, <a class="el" href="flight__phase_8h.html#abf31647549f2b21aa11334783ed62413">master_phase_t</a> next, uint32_t <a class="el" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc">now_ms</a>)</td></tr>
-<tr class="memdesc:aebbef72689e5687132cee1afceb2752d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a ground-commanded (or otherwise externally requested) phase change.  <br /></td></tr>
 <tr class="separator:aebbef72689e5687132cee1afceb2752d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a060e47461526d4bbb9a14c3269a37f62" id="r_a060e47461526d4bbb9a14c3269a37f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__phase_8h.html#a060e47461526d4bbb9a14c3269a37f62">master_flight_tick</a> (<a class="el" href="structmaster__flight__t.html">master_flight_t</a> *f, uint32_t <a class="el" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc">now_ms</a>)</td></tr>
-<tr class="memdesc:a060e47461526d4bbb9a14c3269a37f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call periodically (e.g.  <br /></td></tr>
 <tr class="separator:a060e47461526d4bbb9a14c3269a37f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d2cadba48b4d9449b6c9ec210ba9cc4" id="r_a7d2cadba48b4d9449b6c9ec210ba9cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flight__phase_8h.html#a7d2cadba48b4d9449b6c9ec210ba9cc4">master_flight_note_motion</a> (<a class="el" href="structmaster__flight__t.html">master_flight_t</a> *f, uint32_t <a class="el" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc">now_ms</a>)</td></tr>
-<tr class="memdesc:a7d2cadba48b4d9449b6c9ec210ba9cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call whenever motion is detected, to feed the no-motion timeout.  <br /></td></tr>
+<tr class="memdesc:a7d2cadba48b4d9449b6c9ec210ba9cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feeds the motion time out for landing detection.  <br /></td></tr>
 <tr class="separator:a7d2cadba48b4d9449b6c9ec210ba9cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -190,7 +188,7 @@ Functions</h2></td></tr>
 <p>Pure logic - no FreeRTOS, no CAN, no sockets - so it's host-testable the same way master_comms is. Owning/synchronising an instance across cores is control.c's job, not this module's.</p>
 <p>Phases (per the SED's flight-phase table, names adapted): TESTING (SED's "Pre-launch") -&gt; STANDBY ("Launch") -&gt; ASCENDING ("Ascent") -&gt; FLOAT -&gt; DESCENDING ("Descent") -&gt; LANDED ("Landing").</p>
 <p>NOTE ON A KNOWN SED DISCREPANCY: the SED's table lists Ascent (100m altitude) and Float (apogee) as automatic transitions. Per team decision this implementation makes every transition except the last ground-commanded instead (simpler, no dependency on an altitude reading Master doesn't itself have) - only DESCENDING -&gt; LANDED is automatic here, matching the SED's "automatic based on altitude rate of change" intent via a no-motion timeout instead. The SED table should be updated to match, or this should be revisited, before flight.</p>
-<p>All ground-commanded transitions go through <a class="el" href="flight__phase_8h.html#aebbef72689e5687132cee1afceb2752d" title="Apply a ground-commanded (or otherwise externally requested) phase change.">master_flight_set_phase()</a>, which is deliberately permissive: the SED itself calls this command an "override", so an out-of-sequence request (skipping a phase, or going backward) is still applied, just reported back as MASTER_FLIGHT_OVERRIDE instead of MASTER_FLIGHT_OK so the caller can log it distinctly. Only a genuinely invalid phase value or a no-op (requesting the phase we're already in) is rejected. </p>
+<p>All ground-commanded transitions go through <a class="el" href="flight__phase_8h.html#aebbef72689e5687132cee1afceb2752d">master_flight_set_phase()</a>, which is deliberately permissive: the SED itself calls this command an "override", so an out-of-sequence request (skipping a phase, or going backward) is still applied, just reported back as MASTER_FLIGHT_OVERRIDE instead of MASTER_FLIGHT_OK so the caller can log it distinctly. Only a genuinely invalid phase value or a no-op (requesting the phase we're already in) is rejected. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a92da4b063e0ae944580ca29d1c113e71" name="a92da4b063e0ae944580ca29d1c113e71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92da4b063e0ae944580ca29d1c113e71">&#9670;&#160;</a></span>MASTER_LANDING_NO_MOTION_MS</h2>
@@ -204,8 +202,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Auto-transition DESCENDING -&gt; LANDED after this long with no motion noted via <a class="el" href="flight__phase_8h.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Call whenever motion is detected, to feed the no-motion timeout.">master_flight_note_motion()</a>. </p>
-<p>Placeholder value (5 minutes) - nothing feeds real motion data yet (see <a class="el" href="ttc_8h.html" title="Master&#39;s TT&amp;C link handling: bare minimum to prove Master and a ground script can talk.">ttc.h</a>/.c and control.c), so tune this once it does. </p>
+<p>Auto-transition DESCENDING -&gt; LANDED after this long with no motion noted via <a class="el" href="flight__phase_8h.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Feeds the motion time out for landing detection.">master_flight_note_motion()</a> Currently this is set to 5 minutes... It might be a little bit longer lmao (5 mins for testing) </p>
 
 </div>
 </div>
@@ -322,14 +319,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Call whenever motion is detected, to feed the no-motion timeout. </p>
-<p>TODO: nothing calls this yet - wire it to real Instrumentation CAN data (accel/altitude-rate) once that message exists. Until then DESCENDING always times out to LANDED MASTER_LANDING_NO_MOTION_MS after entry, regardless of actual motion. </p>
+<p>Feeds the motion time out for landing detection. </p>
+<p>TODO: Nothing calls this, need to use CAN frames from instrumentation to update this (blocked) </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flight__phase_8h_a7d2cadba48b4d9449b6c9ec210ba9cc4_cgraph.png" border="0" usemap="#aflight__phase_8h_a7d2cadba48b4d9449b6c9ec210ba9cc4_cgraph" alt=""/></div>
 <map name="aflight__phase_8h_a7d2cadba48b4d9449b6c9ec210ba9cc4_cgraph" id="aflight__phase_8h_a7d2cadba48b4d9449b6c9ec210ba9cc4_cgraph">
-<area shape="rect" title="Call whenever motion is detected, to feed the no&#45;motion timeout." alt="" coords="5,5,149,45"/>
+<area shape="rect" title="Feeds the motion time out for landing detection." alt="" coords="5,5,149,45"/>
 <area shape="rect" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="197,13,273,38"/>
 <area shape="poly" title=" " alt="" coords="150,23,184,23,184,28,150,28"/>
 </map>
@@ -386,15 +383,12 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Apply a ground-commanded (or otherwise externally requested) phase change. </p>
-<p>See the "override" note above for how out-of-order requests are handled. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flight__phase_8h_aebbef72689e5687132cee1afceb2752d_cgraph.png" border="0" usemap="#aflight__phase_8h_aebbef72689e5687132cee1afceb2752d_cgraph" alt=""/></div>
 <map name="aflight__phase_8h_aebbef72689e5687132cee1afceb2752d_cgraph" id="aflight__phase_8h_aebbef72689e5687132cee1afceb2752d_cgraph">
-<area shape="rect" title="Apply a ground&#45;commanded (or otherwise externally requested) phase change." alt="" coords="5,5,187,31"/>
+<area shape="rect" title=" " alt="" coords="5,5,187,31"/>
 <area shape="rect" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="235,5,311,31"/>
 <area shape="poly" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
 </map>
@@ -427,15 +421,12 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Call periodically (e.g. </p>
-<p>once per control-loop tick). Checks the DESCENDING -&gt; LANDED no-motion timeout and applies it internally if due. No-op in any other phase. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="flight__phase_8h_a060e47461526d4bbb9a14c3269a37f62_cgraph.png" border="0" usemap="#aflight__phase_8h_a060e47461526d4bbb9a14c3269a37f62_cgraph" alt=""/></div>
 <map name="aflight__phase_8h_a060e47461526d4bbb9a14c3269a37f62_cgraph" id="aflight__phase_8h_a060e47461526d4bbb9a14c3269a37f62_cgraph">
-<area shape="rect" title="Call periodically (e.g." alt="" coords="5,5,144,31"/>
+<area shape="rect" title=" " alt="" coords="5,5,144,31"/>
 <area shape="rect" href="EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="192,5,268,31"/>
 <area shape="poly" title=" " alt="" coords="144,15,178,15,178,21,144,21"/>
 </map>
@@ -460,7 +451,6 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Human-readable phase name for logging. </p>
-<p>Never NULL. </p>
 
 </div>
 </div>

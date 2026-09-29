@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.1</span>
    </div>
-   <div id="projectbrief">REXUS/BEXUS CubeSat payload flight software</div>
+   <div id="projectbrief">REXUS/BEXUS Experiment On Board Flight Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -155,11 +155,11 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Master's TT&amp;C link handling: bare minimum to prove Master and a ground script can talk. </p>
-<p>Deliberately simple - no queues, no CAN forwarding, no flight-manager gating yet:</p><ul>
-<li><a class="el" href="ttc_8h.html#a429651ffe2604378137c2a4bcd27dc59" title="Pack one CAN frame into the SED UDP downlink wire format (header + 11-byte frame).">ttc_pack_downlink()</a> is a pure helper comms_task uses to mirror the CAN heartbeat it already sends, over UDP.</li>
-<li><a class="el" href="ttc_8h.html#a4d895ebdc2ba46343d77e92e11c8db77" title="TCP uplink listener.">ttc_uplink_task()</a> is a TCP listener that logs and ACKs whatever ground sends. It doesn't forward anything to CAN.</li>
+<p>Deliberately simple: no queues, no CAN forwarding, no flight-manager gating yet:</p><ul>
+<li><a class="el" href="ttc_8h.html#a429651ffe2604378137c2a4bcd27dc59" title="Pack one CAN frame into the SED UDP downlink wire format (header + 11-byte frame).">ttc_pack_downlink()</a> is a pure helper comms_task uses to mirror the CAN heartbeat it already sends, over UDP</li>
+<li><a class="el" href="ttc_8h.html#a4d895ebdc2ba46343d77e92e11c8db77" title="TCP uplink listener.">ttc_uplink_task()</a> is a TCP listener that logs and ACKs whatever ground sends. It doesn't forward anything to CAN... :3</li>
 </ul>
-<p>Lives here (not libs/) because it owns a task and sockets - that's active behaviour specific to Master, not a reusable pure utility. </p>
+<p>Lives here (not libs/) because it owns a task and sockets, and isn't just a helper function </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2fc5c661675f35c360ca00cb77cb7d25" name="a2fc5c661675f35c360ca00cb77cb7d25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fc5c661675f35c360ca00cb77cb7d25">&#9670;&#160;</a></span>TTC_DL_PACKET_LEN</h2>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exact size of a packed downlink packet (4-byte header + 11-byte frame). </p>
-<p>Size the buffer passed to <a class="el" href="ttc_8h.html#a429651ffe2604378137c2a4bcd27dc59" title="Pack one CAN frame into the SED UDP downlink wire format (header + 11-byte frame).">ttc_pack_downlink()</a> with this. </p>
+<p>Size the buffer passed to <a class="el" href="ttc_8h.html#a429651ffe2604378137c2a4bcd27dc59" title="Pack one CAN frame into the SED UDP downlink wire format (header + 11-byte frame).">ttc_pack_downlink()</a> with this </p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack one CAN frame into the SED UDP downlink wire format (header + 11-byte frame). </p>
-<p>Pure byte-packing, no I/O. </p><dl class="section return"><dt>Returns</dt><dd>Bytes written to <code>pkt</code> (TTC_DL_PACKET_LEN), or 0 if <code>pkt_len</code> is too small. </dd></dl>
+<p>Pure byte-packing, no I/O </p><dl class="section return"><dt>Returns</dt><dd>Bytes written to <code>pkt</code> (TTC_DL_PACKET_LEN), or 0 if <code>pkt_len</code> is too small. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -261,7 +261,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>TCP uplink listener. </p>
-<p>Accepts one ground connection at a time, logs and ACKs each command it parses. Pinned to core 0 by setup.c, alongside comms_task. </p>
+<p>Accepts one ground connection at a time, logs and ACKs each command it parses. Pinned to core 0 by setup.c, alongside comms_task </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

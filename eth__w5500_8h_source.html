@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.0</span>
+   <div id="projectname">HELIA<span id="projectnumber">&#160;v0.1.1</span>
    </div>
-   <div id="projectbrief">REXUS/BEXUS CubeSat payload flight software</div>
+   <div id="projectbrief">REXUS/BEXUS Experiment On Board Flight Software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -105,20 +105,19 @@ $(document).ready(function(){initNavTree('eth__w5500_8h_source.html',''); initRe
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;esp_err.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;freertos/FreeRTOS.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* Bring up SPI + W5500 + esp_netif and start the driver. Non-blocking:</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * link/IP arrive later via events. */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>esp_err_t <a class="code hl_function" href="eth__w5500_8h.html#a2d716e9418025b8a72a75a286fa32c12">ttc_eth_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/* True once the cable is up AND the interface has an IP. */</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> <a class="code hl_function" href="eth__w5500_8h.html#ab0ee31299a190daa11c7d8d097a2ee18">ttc_eth_ready</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Block until ready or timeout. Returns ttc_eth_ready(). */</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">bool</span> <a class="code hl_function" href="eth__w5500_8h.html#ae1df888e34f056924077f47ec35b565b">ttc_eth_wait_ready</a>(TickType_t timeout);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aeth__w5500_8h_html_a2d716e9418025b8a72a75a286fa32c12"><div class="ttname"><a href="eth__w5500_8h.html#a2d716e9418025b8a72a75a286fa32c12">ttc_eth_init</a></div><div class="ttdeci">esp_err_t ttc_eth_init(void)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:86</div></div>
-<div class="ttc" id="aeth__w5500_8h_html_ab0ee31299a190daa11c7d8d097a2ee18"><div class="ttname"><a href="eth__w5500_8h.html#ab0ee31299a190daa11c7d8d097a2ee18">ttc_eth_ready</a></div><div class="ttdeci">bool ttc_eth_ready(void)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:160</div></div>
-<div class="ttc" id="aeth__w5500_8h_html_ae1df888e34f056924077f47ec35b565b"><div class="ttname"><a href="eth__w5500_8h.html#ae1df888e34f056924077f47ec35b565b">ttc_eth_wait_ready</a></div><div class="ttdeci">bool ttc_eth_wait_ready(TickType_t timeout)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:165</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* Bring up SPI + W5500 + esp_netif and start the driver */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>esp_err_t <a class="code hl_function" href="eth__w5500_8h.html#a2d716e9418025b8a72a75a286fa32c12">ttc_eth_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/* True once the cable is up AND the interface has an IP */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">bool</span> <a class="code hl_function" href="eth__w5500_8h.html#ab0ee31299a190daa11c7d8d097a2ee18">ttc_eth_ready</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/* Block until ready or timeout. Returns ttc_eth_ready() */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">bool</span> <a class="code hl_function" href="eth__w5500_8h.html#ae1df888e34f056924077f47ec35b565b">ttc_eth_wait_ready</a>(TickType_t timeout);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aeth__w5500_8h_html_a2d716e9418025b8a72a75a286fa32c12"><div class="ttname"><a href="eth__w5500_8h.html#a2d716e9418025b8a72a75a286fa32c12">ttc_eth_init</a></div><div class="ttdeci">esp_err_t ttc_eth_init(void)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:87</div></div>
+<div class="ttc" id="aeth__w5500_8h_html_ab0ee31299a190daa11c7d8d097a2ee18"><div class="ttname"><a href="eth__w5500_8h.html#ab0ee31299a190daa11c7d8d097a2ee18">ttc_eth_ready</a></div><div class="ttdeci">bool ttc_eth_ready(void)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:161</div></div>
+<div class="ttc" id="aeth__w5500_8h_html_ae1df888e34f056924077f47ec35b565b"><div class="ttname"><a href="eth__w5500_8h.html#ae1df888e34f056924077f47ec35b565b">ttc_eth_wait_ready</a></div><div class="ttdeci">bool ttc_eth_wait_ready(TickType_t timeout)</div><div class="ttdef"><b>Definition</b> eth_w5500.c:166</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

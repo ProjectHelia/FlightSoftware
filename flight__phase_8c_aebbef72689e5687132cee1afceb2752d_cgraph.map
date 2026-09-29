@@ -1,5 +1,5 @@
 <map id="master_flight_set_phase" name="master_flight_set_phase">
-<area shape="rect" id="Node000001" title="Apply a ground&#45;commanded (or otherwise externally requested) phase change." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,187,31"/>
 <area shape="rect" id="Node000002" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="235,5,311,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
 </map>

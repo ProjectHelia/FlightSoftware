@@ -1,5 +1,5 @@
 <map id="master_flight_note_motion" name="master_flight_note_motion">
-<area shape="rect" id="Node000001" title="Call whenever motion is detected, to feed the no&#45;motion timeout." alt="" coords="5,5,149,45"/>
+<area shape="rect" id="Node000001" title="Feeds the motion time out for landing detection." alt="" coords="5,5,149,45"/>
 <area shape="rect" id="Node000002" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="197,13,273,38"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,23,184,23,184,28,150,28"/>
 </map>
