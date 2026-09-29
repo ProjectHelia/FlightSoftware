@@ -36,13 +36,11 @@ static const char *TAG = "master";
 #define RX_TIMEOUT_MS 20u
 #define TX_TIMEOUT_MS 10u
 
-static uint32_t now_ms(void)
-{
+static uint32_t now_ms(void) {
     return (uint32_t)pdTICKS_TO_MS(xTaskGetTickCount());
 }
 
-static void send_all(const can_frame_t *tx, size_t n)
-{
+static void send_all(const can_frame_t *tx, size_t n) {
     char text[96];
     for (size_t i = 0; i < n; i++) {
         if (!can_bus_send(&tx[i], TX_TIMEOUT_MS)) {
@@ -54,13 +52,14 @@ static void send_all(const can_frame_t *tx, size_t n)
 }
 
 /* "EPS online" / "EPS LOST" whenever a node appears or goes silent */
-static void log_presence_changes(uint8_t before, uint8_t after)
-{
+static void log_presence_changes(uint8_t before, uint8_t after) {
     for (unsigned i = 0; i < MASTER_NODE_SLOTS; i++) {
         uint8_t bit = (uint8_t)(1u << i);
-        if ((after & bit) && !(before & bit)) ESP_LOGI(TAG, "%s online", master_node_name((can_source_t)i));
-        if ((before & bit) && !(after & bit)) ESP_LOGW(TAG, "%s LOST (no heartbeat for %u ms)",
-                                                       master_node_name((can_source_t)i), (unsigned)CAN_HEARTBEAT_TIMEOUT_MS);
+        if ((after & bit) && !(before & bit))
+            ESP_LOGI(TAG, "%s online", master_node_name((can_source_t)i));
+        if ((before & bit) && !(after & bit))
+            ESP_LOGW(TAG, "%s LOST (no heartbeat for %u ms)",
+                master_node_name((can_source_t)i), (unsigned)CAN_HEARTBEAT_TIMEOUT_MS);
     }
 }
 
@@ -69,16 +68,16 @@ static void log_presence_changes(uint8_t before, uint8_t after)
  * same as ground not being switched on" philosophy as before. Pulled out
  * to a helper because it's now called for every frame Master sees on the
  * bus, not just its own outgoing ones - see comms_task. */
-static void downlink_frame(int sock, const struct sockaddr_in *ground, uint8_t *seq, const can_frame_t *f)
-{
-    if (sock < 0 || !ttc_eth_ready()) return;
+static void downlink_frame(int sock, const struct sockaddr_in *ground, uint8_t *seq, const can_frame_t *f) {
+    if (sock < 0 || !ttc_eth_ready())
+        return;
     uint8_t pkt[TTC_DL_PACKET_LEN];
     size_t plen = ttc_pack_downlink(pkt, sizeof pkt, (*seq)++, f);
-    if (plen) sendto(sock, pkt, plen, 0, (const struct sockaddr *)ground, sizeof *ground);
+    if (plen)
+        sendto(sock, pkt, plen, 0, (const struct sockaddr *)ground, sizeof *ground);
 }
 
-static void comms_task(void *arg)
-{
+static void comms_task(void *arg) {
     (void)arg;
     master_comms_t comms;
     uint32_t last_status_log_ms = 0;
@@ -94,12 +93,12 @@ static void comms_task(void *arg)
      * switched on. */
     int dl_sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
     struct sockaddr_in ground = {
-        .sin_family      = AF_INET,
-        .sin_port        = htons(CONFIG_TTC_UDP_DOWNLINK_PORT),
+        .sin_family = AF_INET,
+        .sin_port = htons(CONFIG_TTC_UDP_DOWNLINK_PORT),
         .sin_addr.s_addr = inet_addr(CONFIG_TTC_GROUND_IP),
     };
     uint8_t dl_seq = 0; /* one running counter across everything mirrored down,
-                          * so ground can spot drops in the combined stream */
+                         * so ground can spot drops in the combined stream */
 
     for (;;) {
         can_frame_t rx, tx[MASTER_COMMS_MAX_TX];
@@ -133,10 +132,10 @@ static void comms_task(void *arg)
     }
 }
 
-void app_main(void)
-{
+void app_main(void) {
     ESP_LOGI(TAG, "boot");
-    if (!hal_init()) ESP_LOGE(TAG, "CAN init failed");
+    if (!hal_init())
+        ESP_LOGE(TAG, "CAN init failed");
 
     /* Must run before ttc_uplink_task is created: that task can call
      * master_control_set_phase() as soon as a ground command arrives, and

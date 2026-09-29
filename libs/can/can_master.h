@@ -16,10 +16,10 @@ extern "C" {
 
 /** @brief MASTER_STATUS contents. */
 typedef struct {
-    uint32_t uptime_s;     /**< Seconds since boot */
-    uint16_t uplink_cmds;  /**< TT&C uplink commands processed since boot */
-    int8_t   chip_temp_c;  /**< Whole degrees C not floating */
-    uint8_t  dl_drops;     /**< Downlink queue-overflow + no-link drops... Note this can saturate if errors enough */
+    uint32_t uptime_s;    /**< Seconds since boot */
+    uint16_t uplink_cmds; /**< TT&C uplink commands processed since boot */
+    int8_t chip_temp_c;   /**< Whole degrees C not floating */
+    uint8_t dl_drops;     /**< Downlink queue-overflow + no-link drops... Note this can saturate if errors enough */
 } can_master_status_t;
 
 /** @brief Encode MASTER_STATUS (INFO priority, source Master) */

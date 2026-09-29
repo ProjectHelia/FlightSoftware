@@ -20,9 +20,9 @@ extern "C" {
 
 /** @brief Abstract CAN frame without any driver shit (Standard CAN; not FD)*/
 typedef struct {
-    uint32_t id;               /**< 11-bit ID, see can_make_id() */
-    uint8_t  dlc;              /**< Payload length, 0-8 */
-    uint8_t  data[CAN_MAX_DLC];
+    uint32_t id; /**< 11-bit ID, see can_make_id() */
+    uint8_t dlc; /**< Payload length, 0-8 */
+    uint8_t data[CAN_MAX_DLC];
 } can_frame_t;
 
 /**
@@ -30,23 +30,23 @@ typedef struct {
  * @param dlc Payload length; values above 8 are clamped to 8
  */
 void can_frame_init(can_frame_t *f, can_priority_t prio, can_source_t src,
-                    uint8_t type, uint8_t dlc);
+    uint8_t type, uint8_t dlc);
 
 /** @name Utility functions for little endian byte packing */
 /**@{*/
-void     can_put_u16(uint8_t *buf, uint16_t v);
-void     can_put_i16(uint8_t *buf, int16_t v);
-void     can_put_u32(uint8_t *buf, uint32_t v);
+void can_put_u16(uint8_t *buf, uint16_t v);
+void can_put_i16(uint8_t *buf, int16_t v);
+void can_put_u32(uint8_t *buf, uint32_t v);
 uint16_t can_get_u16(const uint8_t *buf);
-int16_t  can_get_i16(const uint8_t *buf);
+int16_t can_get_i16(const uint8_t *buf);
 uint32_t can_get_u32(const uint8_t *buf);
 /**@}*/
 
 /** @brief Heartbeat contents, Payload: [state u8][uptime_s u32] = 5 bytes. */
 typedef struct {
-    can_source_t source;   /**< Which node sent it (from the ID) */
-    uint8_t      state;    /**< Sender's fsm_state_t, as a byte */
-    uint32_t     uptime_s; /**< Seconds since boot, if this is lower than the prior log it means the node rebooted! */
+    can_source_t source; /**< Which node sent it (from the ID) */
+    uint8_t state;       /**< Sender's fsm_state_t, as a byte */
+    uint32_t uptime_s;   /**< Seconds since boot, if this is lower than the prior log it means the node rebooted! */
 } can_heartbeat_t;
 
 /** @brief Build a heartbeat frame (INFO priority, type 0x00) */
@@ -55,7 +55,7 @@ void can_encode_heartbeat(can_frame_t *f, const can_heartbeat_t *hb);
 /**
  * @brief Decode a heartbeat
  * @return false if the frame is not a well-formed heartbeat (wrong priority,
- *         wrong type, command-only source, or too short, etc 
+ *         wrong type, command-only source, or too short, etc
  * @p out is usuallyuntouched
  */
 bool can_decode_heartbeat(const can_frame_t *f, can_heartbeat_t *out);

@@ -15,16 +15,16 @@
 extern "C" {
 #endif
 
-/** @brief Describes one thermistor circuit. 
+/** @brief Describes one thermistor circuit.
  * Values are random bullshit AI made up because there's alike 5 different thermistors on the procurement sheet and none of them are right
  * */
 typedef struct {
-    float supply_mv;   
-    float r_fixed_ohm; 
-    float r0_ohm;     
-    float t0_c;       
-    float beta;        
-    bool  ntc_on_top;  
+    float supply_mv;
+    float r_fixed_ohm;
+    float r0_ohm;
+    float t0_c;
+    float beta;
+    bool ntc_on_top;
 } util_ntc_cfg_t;
 
 /**

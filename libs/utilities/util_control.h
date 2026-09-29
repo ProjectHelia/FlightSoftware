@@ -19,7 +19,7 @@ extern "C" {
 typedef struct {
     float setpoint;   /**< Target value, e.g. 35.0 degC */
     float hysteresis; /**< Half-width of the dead band, e.g. 0.5 degC */
-    bool  on;         /**< Current output. */
+    bool on;          /**< Current output. */
 } util_bangbang_t;
 
 /** @brief Set up a controller

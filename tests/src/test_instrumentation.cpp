@@ -1,8 +1,7 @@
 #include <gtest/gtest.h>
 #include "comms.h"
 
-TEST(InstrComms, HeartbeatAsInstrumentation)
-{
+TEST(InstrComms, HeartbeatAsInstrumentation) {
     instr_comms_t c;
     can_frame_t tx[INSTR_COMMS_MAX_TX];
     instr_comms_init(&c, 0);
@@ -15,8 +14,7 @@ TEST(InstrComms, HeartbeatAsInstrumentation)
     EXPECT_EQ(hb.state, FSM_SAFE);
 }
 
-TEST(InstrComms, UnlockedByMaster)
-{
+TEST(InstrComms, UnlockedByMaster) {
     instr_comms_t c;
     can_frame_t f;
     instr_comms_init(&c, 0);

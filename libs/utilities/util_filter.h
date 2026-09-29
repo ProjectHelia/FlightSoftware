@@ -13,20 +13,20 @@ extern "C" {
 
 /** @brief EMA state. */
 typedef struct {
-    float alpha;  /**< Smoothing factor, (0, 1) */
-    float value;  /**< Current filtered output */
-    bool  seeded; /**< False until the first sample arrives */
+    float alpha; /**< Smoothing factor, (0, 1) */
+    float value; /**< Current filtered output */
+    bool seeded; /**< False until the first sample arrives */
 } util_ema_t;
 
 /**
- * @brief Set up a filter. 
+ * @brief Set up a filter.
  * An alpha outside (0, 1] (or NaN) becomes 1.0,
  *        i.e. no filtering, rather than a filter that never moves
  */
 void util_ema_init(util_ema_t *f, float alpha);
 
 /**
- * @brief Add a sample and return the new filtered value. 
+ * @brief Add a sample and return the new filtered value.
  * The first sample is taken as-is, so the output doesn't ramp up from zero
  * Range-check samples with util_in_range() before calling this just ot be sure
  */

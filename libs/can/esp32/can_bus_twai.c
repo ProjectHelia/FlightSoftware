@@ -17,19 +17,18 @@ static const char *TAG = "can_bus";
 #define CAN_RX_QUEUE_LEN 64u
 #define CAN_TX_QUEUE_LEN 16u
 
-#define CAN_ALERTS (TWAI_ALERT_RX_QUEUE_FULL | TWAI_ALERT_BUS_OFF | \
-                    TWAI_ALERT_BUS_RECOVERED | TWAI_ALERT_ERR_PASS)
+#define CAN_ALERTS (TWAI_ALERT_RX_QUEUE_FULL | TWAI_ALERT_BUS_OFF | TWAI_ALERT_BUS_RECOVERED | TWAI_ALERT_ERR_PASS)
 
 static uint32_t s_rx_dropped; /* frames lost to RX_QUEUE_FULL since boot */
 
-static void check_rx_line(int rx_gpio)
-{
+static void check_rx_line(int rx_gpio) {
     gpio_config_t cfg = {
         .pin_bit_mask = 1ULL << rx_gpio,
         .mode = GPIO_MODE_INPUT,
         .pull_up_en = GPIO_PULLUP_ENABLE,
     };
-    if (gpio_config(&cfg) != ESP_OK) return;
+    if (gpio_config(&cfg) != ESP_OK)
+        return;
 
     int high = 0;
     const int samples = 200; /* 200 x 50 us = 10 ms, ~5 frame times at 500 kbit/s */
@@ -40,7 +39,8 @@ static void check_rx_line(int rx_gpio)
 
     if (high == 0) {
         ESP_LOGE(TAG, "RX (GPIO%d) stuck LOW: bus held dominant. Check the transceiver "
-                      "(powered? TX/RX swapped?) and CANH/CANL for a short.", rx_gpio);
+                      "(powered? TX/RX swapped?) and CANH/CANL for a short.",
+            rx_gpio);
     } else if (high == samples) {
         ESP_LOGI(TAG, "bus idle before start (no traffic in 10 ms)");
     } else {
@@ -48,8 +48,7 @@ static void check_rx_line(int rx_gpio)
     }
 }
 
-bool can_bus_init(int tx_gpio, int rx_gpio)
-{
+bool can_bus_init(int tx_gpio, int rx_gpio) {
     check_rx_line(rx_gpio);
 
     twai_general_config_t g = TWAI_GENERAL_CONFIG_DEFAULT(
@@ -67,14 +66,13 @@ bool can_bus_init(int tx_gpio, int rx_gpio)
     }
     s_rx_dropped = 0;
     ESP_LOGI(TAG, "CAN up, TX=%d RX=%d, rx_queue=%u%s", tx_gpio, rx_gpio, CAN_RX_QUEUE_LEN,
-             TWAI_MODE == TWAI_MODE_NO_ACK ? " (SELF-TEST, no ACK needed)" : "");
+        TWAI_MODE == TWAI_MODE_NO_ACK ? " (SELF-TEST, no ACK needed)" : "");
     return true;
 }
 
-bool can_bus_send(const can_frame_t *f, uint32_t timeout_ms)
-{
-    twai_message_t m = {0};
-    m.identifier       = f->id;
+bool can_bus_send(const can_frame_t *f, uint32_t timeout_ms) {
+    twai_message_t m = { 0 };
+    m.identifier = f->id;
     m.data_length_code = f->dlc;
     memcpy(m.data, f->data, f->dlc);
 #ifdef HELIA_CAN_SELF_TEST
@@ -83,20 +81,20 @@ bool can_bus_send(const can_frame_t *f, uint32_t timeout_ms)
     return twai_transmit(&m, pdMS_TO_TICKS(timeout_ms)) == ESP_OK;
 }
 
-bool can_bus_recv(can_frame_t *f, uint32_t timeout_ms)
-{
+bool can_bus_recv(can_frame_t *f, uint32_t timeout_ms) {
     twai_message_t m;
-    if (twai_receive(&m, pdMS_TO_TICKS(timeout_ms)) != ESP_OK) return false;
-    if (m.extd || m.rtr) return false; /* HELIA only uses standard data frames */
+    if (twai_receive(&m, pdMS_TO_TICKS(timeout_ms)) != ESP_OK)
+        return false;
+    if (m.extd || m.rtr)
+        return false; /* HELIA only uses standard data frames */
 
-    f->id  = m.identifier;
+    f->id = m.identifier;
     f->dlc = (m.data_length_code > CAN_MAX_DLC) ? (uint8_t)CAN_MAX_DLC : m.data_length_code;
     memcpy(f->data, m.data, f->dlc);
     return true;
 }
 
-void can_bus_poll_recovery(void)
-{
+void can_bus_poll_recovery(void) {
     uint32_t alerts;
     if (twai_read_alerts(&alerts, 0) == ESP_OK) {
         if (alerts & TWAI_ALERT_RX_QUEUE_FULL) {
@@ -112,7 +110,8 @@ void can_bus_poll_recovery(void)
     }
 
     twai_status_info_t s;
-    if (twai_get_status_info(&s) != ESP_OK) return;
+    if (twai_get_status_info(&s) != ESP_OK)
+        return;
 
     if (s.state == TWAI_STATE_BUS_OFF) {
         ESP_LOGW(TAG, "bus-off, recovering");
@@ -124,13 +123,11 @@ void can_bus_poll_recovery(void)
 }
 
 /** @brief Frames lost to RX_QUEUE_FULL since can_bus_init(). */
-uint32_t can_bus_dropped_frames(void)
-{
+uint32_t can_bus_dropped_frames(void) {
     return s_rx_dropped;
 }
 
-void can_bus_log_status(void)
-{
+void can_bus_log_status(void) {
     static const char *const NAMES[] = { "STOPPED", "RUNNING", "BUS_OFF", "RECOVERING" };
     twai_status_info_t s;
     if (twai_get_status_info(&s) != ESP_OK) {
@@ -138,9 +135,9 @@ void can_bus_log_status(void)
         return;
     }
     ESP_LOGW(TAG, "state=%s tx_err=%lu rx_err=%lu waiting_to_send=%lu bus_errors=%lu arb_lost=%lu received=%lu rx_dropped=%lu",
-             (unsigned)s.state < 4 ? NAMES[s.state] : "?",
-             (unsigned long)s.tx_error_counter, (unsigned long)s.rx_error_counter,
-             (unsigned long)s.msgs_to_tx, (unsigned long)s.bus_error_count,
-             (unsigned long)s.arb_lost_count, (unsigned long)s.msgs_to_rx,
-             (unsigned long)s_rx_dropped);
+        (unsigned)s.state < 4 ? NAMES[s.state] : "?",
+        (unsigned long)s.tx_error_counter, (unsigned long)s.rx_error_counter,
+        (unsigned long)s.msgs_to_tx, (unsigned long)s.bus_error_count,
+        (unsigned long)s.arb_lost_count, (unsigned long)s.msgs_to_rx,
+        (unsigned long)s_rx_dropped);
 }

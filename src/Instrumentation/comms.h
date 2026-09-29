@@ -15,14 +15,13 @@
 extern "C" {
 #endif
 
-#define INSTR_COMMS_MAX_TX 1 
+#define INSTR_COMMS_MAX_TX 1
 
 typedef struct {
     fsm_state_t state;
-    uint32_t    next_heartbeat_ms;
-    bool        reset_requested;
+    uint32_t next_heartbeat_ms;
+    bool reset_requested;
 } instr_comms_t;
-
 
 void instr_comms_init(instr_comms_t *c, uint32_t now_ms);
 void instr_comms_boot_done(instr_comms_t *c);

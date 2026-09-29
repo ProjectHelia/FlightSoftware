@@ -22,7 +22,7 @@ extern "C" {
 #endif
 
 #define MASTER_COMMS_MAX_TX 1 /**< Most frames one call can ask to send. */
-#define MASTER_NODE_SLOTS   8 /**< One per CAN source ID (3 bits). */
+#define MASTER_NODE_SLOTS 8   /**< One per CAN source ID (3 bits). */
 
 /**
  * @brief Unlock nodes automatically when they report SAFE.
@@ -34,9 +34,9 @@ extern "C" {
 /** @brief Comms state. Owned by the comms task. */
 typedef struct {
     fsm_state_t state;
-    uint32_t    next_heartbeat_ms;
-    uint32_t    last_seen_ms[MASTER_NODE_SLOTS]; /**< Last heartbeat time per source. */
-    uint8_t     alive_mask;                      /**< Bit n set = source n heard within the timeout. */
+    uint32_t next_heartbeat_ms;
+    uint32_t last_seen_ms[MASTER_NODE_SLOTS]; /**< Last heartbeat time per source. */
+    uint8_t alive_mask;                       /**< Bit n set = source n heard within the timeout. */
 } master_comms_t;
 
 /** @brief Start up. Master has no one to unlock it, so it goes straight to ACTIVE. */
@@ -47,7 +47,7 @@ void master_comms_init(master_comms_t *c, uint32_t now_ms);
  * @return Frames to send in reply.
  */
 size_t master_comms_on_frame(master_comms_t *c, uint32_t now_ms, const can_frame_t *rx,
-                             can_frame_t tx[MASTER_COMMS_MAX_TX]);
+    can_frame_t tx[MASTER_COMMS_MAX_TX]);
 
 /**
  * @brief Periodic work: Master's heartbeat, and dropping nodes silent for
@@ -55,7 +55,7 @@ size_t master_comms_on_frame(master_comms_t *c, uint32_t now_ms, const can_frame
  * @return Frames written to @p tx.
  */
 size_t master_comms_on_tick(master_comms_t *c, uint32_t now_ms,
-                            can_frame_t tx[MASTER_COMMS_MAX_TX]);
+    can_frame_t tx[MASTER_COMMS_MAX_TX]);
 
 /** @brief Node name for logs, e.g. "EPS". */
 const char *master_node_name(can_source_t s);

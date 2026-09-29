@@ -13,18 +13,16 @@
 static const char *TAG = "eps";
 
 #define CONTROL_PERIOD_MS 100u /* 10 Hz sampling */
-#define RX_TIMEOUT_MS     20u  /* how long comms waits for a frame each loop */
-#define TX_TIMEOUT_MS     10u
+#define RX_TIMEOUT_MS 20u      /* how long comms waits for a frame each loop */
+#define TX_TIMEOUT_MS 10u
 
 /* Length-1 queue used as a mailbox: control overwrites, comms peeks the latest. */
 static QueueHandle_t s_latest;
 
-static uint32_t now_ms(void)
-{
+static uint32_t now_ms(void) {
     return (uint32_t)pdTICKS_TO_MS(xTaskGetTickCount());
 }
-static void control_task(void *arg)
-{
+static void control_task(void *arg) {
     (void)arg;
     eps_control_t ctl;
     eps_control_init(&ctl);
@@ -43,8 +41,7 @@ static void control_task(void *arg)
     }
 }
 
-static void comms_task(void *arg)
-{
+static void comms_task(void *arg) {
     (void)arg;
     eps_comms_t comms;
     uint32_t last_status_log_ms = 0;
@@ -62,7 +59,8 @@ static void comms_task(void *arg)
             eps_comms_on_frame(&comms, &rx);
         }
 
-        if (xQueuePeek(s_latest, &latest, 0) != pdTRUE) eps_data_init(&latest);
+        if (xQueuePeek(s_latest, &latest, 0) != pdTRUE)
+            eps_data_init(&latest);
         size_t n = eps_comms_on_tick(&comms, now_ms(), &latest, tx);
         for (size_t i = 0; i < n; i++) {
             if (!can_bus_send(&tx[i], TX_TIMEOUT_MS)) {
@@ -74,20 +72,21 @@ static void comms_task(void *arg)
             }
         }
 
-        if (comms.state != before) ESP_LOGI(TAG, "state %s -> %s", fsm_state_name(before), fsm_state_name(comms.state));
-        if (comms.reset_requested) hal_restart();
+        if (comms.state != before)
+            ESP_LOGI(TAG, "state %s -> %s", fsm_state_name(before), fsm_state_name(comms.state));
+        if (comms.reset_requested)
+            hal_restart();
         can_bus_poll_recovery();
     }
 }
 
-
-void app_main(void)
-{
+void app_main(void) {
     ESP_LOGI(TAG, "boot");
-    if (!hal_init()) ESP_LOGE(TAG, "hardware init incomplete; affected readings will be sent as invalid");
+    if (!hal_init())
+        ESP_LOGE(TAG, "hardware init incomplete; affected readings will be sent as invalid");
 
     s_latest = xQueueCreate(1, sizeof(eps_data_t));
 
-    xTaskCreatePinnedToCore(comms_task,   "eps_comms",   4096, NULL, 10, NULL, 0);
-    xTaskCreatePinnedToCore(control_task, "eps_control", 4096, NULL,  5, NULL, 1);
+    xTaskCreatePinnedToCore(comms_task, "eps_comms", 4096, NULL, 10, NULL, 0);
+    xTaskCreatePinnedToCore(control_task, "eps_control", 4096, NULL, 5, NULL, 1);
 }

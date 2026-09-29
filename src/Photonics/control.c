@@ -33,7 +33,7 @@ void photonics_control_task(void *arg) {
     (void)arg; // Just to avoid warnings again
 
     uint32_t next_summary_ms = now_ms();
-    uint32_t uv_frames[PHOTONICS_NUM_UV] = {0};
+    uint32_t uv_frames[PHOTONICS_NUM_UV] = { 0 };
     uint32_t adc_frames = 0;
 
     ESP_LOGI(TAG, "control core up");
@@ -73,11 +73,11 @@ void photonics_control_task(void *arg) {
         if (util_every(now_ms(), &next_summary_ms, 5000u)) {
 
             ESP_LOGI(TAG, "frames: uv0=%lu uv1=%lu adc=%lu",
-                     (unsigned long)uv_frames[0], (unsigned long)uv_frames[1],
-                     (unsigned long)adc_frames);
+                (unsigned long)uv_frames[0], (unsigned long)uv_frames[1],
+                (unsigned long)adc_frames);
         }
 
-        vTaskDelay(pdMS_TO_TICKS(100)); 
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 #endif /* ESP_PLATFORM */
