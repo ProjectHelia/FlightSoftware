@@ -1,0 +1,44 @@
+name: Lint (clang-format)
+
+# Checks that every C/C++ file matches .clang-format. Doesn't touch the
+# repo - run `clang-format -i <files>` locally (or see the "Show fixes"
+# step's diff below) to actually reformat.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  clang-format:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # ubuntu-24.04's default clang-format drifts between runner images;
+      # pin an exact version so CI results don't change under you.
+      - name: Install clang-format 18
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format-18
+          sudo update-alternatives --install /usr/bin/clang-format clang-format /usr/bin/clang-format-18 100
+
+      - name: Check formatting
+        run: |
+          FILES=$(find src libs tests -type f \( -name '*.c' -o -name '*.h' -o -name '*.cpp' -o -name '*.hpp' \))
+          echo "Checking $(echo "$FILES" | wc -l) files"
+          FAILED=0
+          for f in $FILES; do
+            if ! diff -q "$f" <(clang-format -style=file "$f") > /dev/null; then
+              echo "::error file=$f::not formatted (clang-format -i \"$f\")"
+              FAILED=1
+            fi
+          done
+          exit $FAILED
+
+      - name: Show fixes needed (on failure)
+        if: failure()
+        run: |
+          FILES=$(find src libs tests -type f \( -name '*.c' -o -name '*.h' -o -name '*.cpp' -o -name '*.hpp' \))
+          for f in $FILES; do
+            diff -u "$f" <(clang-format -style=file "$f") || true
+          done
