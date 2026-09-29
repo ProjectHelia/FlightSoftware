@@ -1,16 +1,13 @@
-/* Master control core: owns the flight-phase state machine (flight_phase.h
+/** @brief Master control core: owns the flight-phase state machine (flight_phase.h
  * does the actual FSM logic; this file just synchronises access to one
  * instance across cores and hooks it up to CAN + logging).
  *
  * Two callers touch the flight state from two different cores:
- *   - master_control_task (this file, core 1): periodic no-motion tick.
+ *   - master_control_task (this file, core 1): periodic no-motion tick
  *   - master_control_set_phase (called from ttc.c's uplink handler, core
- *     0): ground-commanded phase changes.
+ *     0): ground-commanded phase changes
  * Hence the mutex - see master_control_init()'s doc comment in control.h
  * for why it's created eagerly from app_main() rather than lazily here.
- *
- * Guarded by ESP_PLATFORM so this compiles to nothing on the host (same
- * as before) - flight_phase.c underneath it is what's host-testable.
  */
 #include "control.h"
 
@@ -34,10 +31,7 @@ static uint32_t now_ms(void) {
     return (uint32_t)pdTICKS_TO_MS(xTaskGetTickCount());
 }
 
-/* Tells every other node the phase changed - CAN_CMD_FLIGHT_PHASE, per the
- * SED's Broadcast CAN Message Dictionary (source BROADCAST, type 0x03).
- * Payload: 1 byte, the new master_phase_t value. Called with s_flight_mutex
- * already held so the logged phase name matches what was just applied. */
+/** @brief Tells every other node the phase changed */
 static void broadcast_phase(master_phase_t phase, master_flight_result_t result) {
     can_frame_t f = {
         .id = can_make_id(CAN_PRIO_IMPORTANT, CAN_SRC_BROADCAST, CAN_CMD_FLIGHT_PHASE),

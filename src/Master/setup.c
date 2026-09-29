@@ -1,19 +1,10 @@
 /* Master boot and task loop.
  *
  * Two cores, matching EPS/Instrumentation's comms/control split:
- *   core 0 (comms_task + ttc_uplink_task): CAN bus and the TT&C link.
- *   core 1 (master_control_task): flight manager. Placeholder for now.
+ *   core 0 (comms_task + ttc_uplink_task): CAN bus and the TT&C link
+ *   core 1 (master_control_task): flight manager (will be extended in the future)
  *
- * TT&C is deliberately minimal right now - the goal is proving Master and
- * a ground script can talk at all, not the full flight design:
- *   - comms_task mirrors every CAN frame it sees down to ground over UDP -
- *     both what Master itself sends (its heartbeat, ACKs, etc, from
- *     master_comms_on_tick()/on_frame()) and every frame it receives from
- *     other nodes on the bus (rx, via can_bus_recv()). No separate task,
- *     no queue, no filtering - just a socket call next to the existing CAN
- *     send/recv, so ground sees the whole bus, not just Master's traffic.
- *   - ttc_uplink_task (in ttc.c) logs and ACKs whatever ground sends over
- *     TCP. Nothing is forwarded to CAN yet.
+ * TT&C is deliberately minimal right now, just enough to mirror CAN traffic down to ground for bench testing
  */
 #include <stdint.h>
 #include "freertos/FreeRTOS.h"
@@ -46,12 +37,12 @@ static void send_all(const can_frame_t *tx, size_t n) {
         if (!can_bus_send(&tx[i], TX_TIMEOUT_MS)) {
             ESP_LOGW(TAG, "send failed, id=0x%03lX", (unsigned long)tx[i].id);
         } else if (can_id_type(tx[i].id) != CAN_MSG_HEARTBEAT || can_id_source(tx[i].id) != CAN_SRC_MASTER) {
-            ESP_LOGI(TAG, "sent: %s", master_describe_frame(&tx[i], text, sizeof text)); /* don't log our own heartbeat */
+            ESP_LOGI(TAG, "sent: %s", master_describe_frame(&tx[i], text, sizeof text)); /* don't log our own heartbeat ;-; */
         }
     }
 }
 
-/* "EPS online" / "EPS LOST" whenever a node appears or goes silent */
+/* "EPS online" / "EPS LOST" whenever a node appears or goes silent (good for debugging restarting) */
 static void log_presence_changes(uint8_t before, uint8_t after) {
     for (unsigned i = 0; i < MASTER_NODE_SLOTS; i++) {
         uint8_t bit = (uint8_t)(1u << i);
@@ -63,11 +54,7 @@ static void log_presence_changes(uint8_t before, uint8_t after) {
     }
 }
 
-/* Packs and mirrors one CAN frame down to ground over UDP. No-ops quietly
- * if the socket isn't up or the link isn't ready yet - same "just drop it,
- * same as ground not being switched on" philosophy as before. Pulled out
- * to a helper because it's now called for every frame Master sees on the
- * bus, not just its own outgoing ones - see comms_task. */
+/* Packs and mirrors one CAN frame down to ground over UDP. This will fail silently for now (TODO) */
 static void downlink_frame(int sock, const struct sockaddr_in *ground, uint8_t *seq, const can_frame_t *f) {
     if (sock < 0 || !ttc_eth_ready())
         return;
@@ -85,33 +72,23 @@ static void comms_task(void *arg) {
     ESP_LOGI(TAG, "state %s, auto-unlock %s", fsm_state_name(comms.state), MASTER_AUTO_UNLOCK ? "ON" : "OFF");
 
     /* One UDP socket, opened once, used to mirror CAN traffic down to
-     * ground - both frames Master itself sends AND every frame it
-     * receives from other nodes, which is what gives ground full-bus
-     * visibility rather than just Master's own heartbeat. No retries
-     * beyond what sendto() does on its own - if the link is down the
-     * packet is just dropped, same as the ground station not being
-     * switched on. */
+     * ground */
     int dl_sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_IP);
     struct sockaddr_in ground = {
         .sin_family = AF_INET,
         .sin_port = htons(CONFIG_TTC_UDP_DOWNLINK_PORT),
         .sin_addr.s_addr = inet_addr(CONFIG_TTC_GROUND_IP),
     };
-    uint8_t dl_seq = 0; /* one running counter across everything mirrored down,
-                         * so ground can spot drops in the combined stream */
+    uint8_t dl_seq = 0; 
 
-    for (;;) {
+    while (1) {
         can_frame_t rx, tx[MASTER_COMMS_MAX_TX];
         char text[96];
         uint8_t alive_before = comms.alive_mask;
 
         if (can_bus_recv(&rx, RX_TIMEOUT_MS)) {
             ESP_LOGI(TAG, "rx: %s", master_describe_frame(&rx, text, sizeof text));
-            /* CAN controllers don't loop a node's own transmitted frames
-             * back to its own RX, so this is the ONLY path that captures
-             * traffic from every other node - EPS/Instrumentation/
-             * Photonics/etc - Master's own tx frames are mirrored
-             * separately below. */
+
             downlink_frame(dl_sock, &ground, &dl_seq, &rx);
             send_all(tx, master_comms_on_frame(&comms, now_ms(), &rx, tx));
         }
@@ -137,9 +114,7 @@ void app_main(void) {
     if (!hal_init())
         ESP_LOGE(TAG, "CAN init failed");
 
-    /* Must run before ttc_uplink_task is created: that task can call
-     * master_control_set_phase() as soon as a ground command arrives, and
-     * this is what creates the mutex it needs. See control.h. */
+    /* Must run before ttc_uplink_task is created */
     master_control_init();
 
     xTaskCreatePinnedToCore(comms_task, "master_comms", 4096, NULL, 10, NULL, 0);
