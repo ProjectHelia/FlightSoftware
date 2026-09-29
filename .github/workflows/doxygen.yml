@@ -1,8 +1,9 @@
 name: Doxygen
 
-# Builds the Doxygen docs and (on pushes to main only) publishes them to
-# GitHub Pages. Assumes a Doxyfile at the repo root - if yours lives
-# somewhere else (e.g. docs/Doxyfile), change DOXYFILE_PATH below.
+# Builds the Doxygen docs (with the doxygen-awesome-css theme) and, on
+# pushes to main only, publishes them to GitHub Pages. Assumes a Doxyfile
+# at the repo root - if yours lives somewhere else (e.g. docs/Doxyfile),
+# change DOXYFILE_PATH below.
 #
 # One-time setup to make the Pages deploy work:
 #   Settings -> Pages -> Build and deployment -> Source: "Deploy from a
@@ -17,6 +18,7 @@ on:
 
 env:
   DOXYFILE_PATH: Doxyfile
+  DOXYGEN_AWESOME_VERSION: v2.5.0
 
 jobs:
   docs:
@@ -30,6 +32,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y doxygen graphviz
+
+      # Theme isn't vendored into the repo - pulled fresh (pinned to a
+      # release tag) so it's one less thing to keep in sync by hand.
+      # Doxyfile references it as doxygen-awesome-css/<file>, which is
+      # exactly the directory name `git clone` creates here.
+      - name: Fetch doxygen-awesome-css theme
+        run: |
+          git clone --depth 1 --branch "$DOXYGEN_AWESOME_VERSION" \
+            https://github.com/jothepro/doxygen-awesome-css.git
 
       # doxygen won't create a nested new OUTPUT_DIRECTORY on its own -
       # only a single new top-level one - so make sure it exists first.
