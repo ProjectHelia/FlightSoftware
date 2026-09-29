@@ -1,0 +1,38 @@
+name: CMake Test (gtest)
+
+# Configures + builds the host build (same as cmake-build.yml, kept as a
+# separate workflow so build failures and test failures show up as
+# distinct checks on a PR) then runs the GoogleTest suite via ctest.
+# HELIA_SANITIZE is ON by default in the root CMakeLists.txt, so this
+# also runs every test under ASan/UBSan.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: >
+          cmake -S . -B build
+          -DHELIA_HOST=ON
+          -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build
+        run: cmake --build build --parallel
+
+      - name: Run tests
+        working-directory: build
+        run: ctest --output-on-failure --parallel
+
+      - name: Upload test logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ctest-output
+          path: build/Testing/Temporary/
+          if-no-files-found: ignore
