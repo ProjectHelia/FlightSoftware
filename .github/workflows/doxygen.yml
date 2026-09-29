@@ -29,8 +29,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y doxygen graphviz
 
+      # doxygen won't create a nested new OUTPUT_DIRECTORY on its own -
+      # only a single new top-level one - so make sure it exists first.
+      # The Doxyfile below sets OUTPUT_DIRECTORY = docs.
       - name: Build docs
-        run: doxygen "$DOXYFILE_PATH"
+        run: |
+          mkdir -p docs
+          doxygen "$DOXYFILE_PATH"
 
       # Adjust OUTPUT_DIRECTORY/HTML_OUTPUT here to match your Doxyfile if
       # the generated HTML doesn't land in doxygen-output/html/.
