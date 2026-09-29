@@ -1,0 +1,16 @@
+---
+Language: Cpp
+BasedOnStyle: WebKit
+
+IndentWidth: 4
+
+PointerAlignment: Right # This is my preferred setting. Most code examples from books, etc use this too.
+DerivePointerAlignment: false
+
+SortIncludes: false
+IndentCaseLabels: true  # Because I'm sane
+
+AlignTrailingComments: true
+BreakBeforeBinaryOperators: NonAssignment  # also because I'm sane
+
+BreakBeforeBraces: Attach

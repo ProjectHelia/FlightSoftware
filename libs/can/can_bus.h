@@ -17,24 +17,23 @@
 extern "C" {
 #endif
 
-/** @brief Start the bus at CAN_BITRATE. Pins are ignored by the sim. */
+/** @brief Start the bus at CAN_BITRATE */
 bool can_bus_init(int tx_gpio, int rx_gpio);
 
-/** @brief Queue a frame for sending. False on timeout or bus error. */
+/** @brief Queue a frame for sending */
 bool can_bus_send(const can_frame_t *f, uint32_t timeout_ms);
 
-/** @brief Wait up to @p timeout_ms for a frame. False if none arrived. */
+/** @brief Wait up to @p timeout_ms for a frame, false if none arrived */
 bool can_bus_recv(can_frame_t *f, uint32_t timeout_ms);
 
-/** @brief Call regularly: recovers from bus-off without a dedicated task,
- *         and drains driver alerts (RX_QUEUE_FULL, bus-off, error-passive). */
+/** @brief Call regularly: recovers from bus-off without a dedicated RTOS task
+ *         and drains driver alerts (RX_QUEUE_FULL, bus-off, error-passive) */
 void can_bus_poll_recovery(void);
 
-/** @brief Log the controller's state and error counters (for debugging the bus). */
+/** @brief Log the controller's state and error counters (added for debugging */
 void can_bus_log_status(void);
 
-/** @brief Frames lost to RX_QUEUE_FULL since can_bus_init(). For telemetry
- *         (Master status frame) rather than just log lines. */
+/** @brief Frames lost to RX_QUEUE_FULL since can_bus_init() */
 uint32_t can_bus_dropped_frames(void);
 
 #ifdef __cplusplus

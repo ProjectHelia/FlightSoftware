@@ -1,0 +1,94 @@
+menu "HELIA TT&C (Ethernet)"
+
+    config TTC_ETH_MISO_GPIO
+        int "W5500 SPI MISO GPIO"
+        default 13
+        help
+            TODO: fill in from the working PoC's sdkconfig / menuconfig 
+
+    config TTC_ETH_MOSI_GPIO
+        int "W5500 SPI MOSI GPIO"
+        default 11
+        help
+            TODO: fill in from the working PoC.
+
+    config TTC_ETH_SCLK_GPIO
+        int "W5500 SPI SCLK GPIO"
+        default 12
+        help
+            TODO: fill in from the working PoC.
+
+    config TTC_ETH_CS_GPIO
+        int "W5500 SPI CS GPIO"
+        default 14
+        help
+            TODO: fill in from the working PoC.
+
+    config TTC_ETH_INT_GPIO
+        int "W5500 INT GPIO (-1 to poll instead)"
+        default -1
+        help
+            -1 disables the interrupt line and falls back to polling at
+            TTC_ETH_POLL_PERIOD_MS. Set to the real INT pin if it's wired.
+
+    config TTC_ETH_POLL_PERIOD_MS
+        int "W5500 poll period (ms), used only if INT_GPIO is -1"
+        default 10
+        depends on TTC_ETH_INT_GPIO < 0
+
+    config TTC_ETH_RST_GPIO
+        int "W5500 RESET GPIO (-1 if tied to board reset)"
+        default -1
+
+    config TTC_ETH_SPI_CLOCK_MHZ
+        int "W5500 SPI clock (MHz)"
+        default 20
+        help
+            W5500 supports up to ~33 MHz SPI. Start conservative (20 MHz)
+            on first bring-up with real wiring, raise once link is stable.
+
+    config TTC_USE_STATIC_IP
+        bool "Use a static IP instead of DHCP"
+        default y
+        help
+            No DHCP server on a point-to-point bench/flight Ethernet link,
+            so static is the sane default here.
+
+    config TTC_STATIC_IP
+        string "Static IP address"
+        default "192.168.50.10"
+        depends on TTC_USE_STATIC_IP
+
+    config TTC_STATIC_NETMASK
+        string "Static netmask"
+        default "255.255.255.0"
+        depends on TTC_USE_STATIC_IP
+
+    config TTC_STATIC_GW
+        string "Static gateway"
+        default "192.168.50.1"
+        depends on TTC_USE_STATIC_IP
+
+    config TTC_GROUND_IP
+        string "Default ground station IP (downlink destination)"
+        default "192.168.50.1"
+        help
+            Used until/unless TTC_LEARN_GROUND_IP overrides it with the
+            IP of whoever connects on the uplink TCP port.
+
+    config TTC_UDP_DOWNLINK_PORT
+        int "UDP downlink port"
+        default 5000
+
+    config TTC_TCP_UPLINK_PORT
+        int "TCP uplink port"
+        default 5001
+
+    config TTC_LEARN_GROUND_IP
+        bool "Learn ground IP from the uplink TCP client"
+        default y
+        help
+            When ground connects on the uplink port, downlink switches to
+            their source IP instead of the static TTC_GROUND_IP above.
+
+endmenu

@@ -24,19 +24,16 @@
 extern "C" {
 #endif
 
-#define CAN_MSG_UV0 0x07u /**< NOT YET IN SED - LTR390 #0 (mux ch 0): lux + UV index */
-#define CAN_MSG_UV1 0x08u /**< NOT YET IN SED - LTR390 #1 (mux ch 1): lux + UV index */
-#define CAN_MSG_ADC 0x09u /**< NOT YET IN SED - onboard ADS1115, 4 raw channels (mV) */
+#define CAN_MSG_UV0 0x07u 
+#define CAN_MSG_UV1 0x08u 
+#define CAN_MSG_ADC 0x09u 
 
-/** @brief One LTR390's latest reading. Sent whenever either field is
- *         freshly updated - the other field just carries its last known
- *         value (see hal_read_uv()'s ping-pong doc comment). */
 typedef struct {
-    int32_t lux_x10;   /**< Ambient light, units of 0.1 lux. */
-    int32_t uvi_x1000; /**< UV index, units of 0.001. */
+    int32_t lux_x10;   
+    int32_t uvi_x1000; /**< units of 0.001. */
 } can_photonics_uv_t;
 
-/** @brief Raw ADS1115 4-channel read, millivolts. */
+/** @brief Raw ADS1115 4-channel read */
 typedef struct {
     int16_t mv[4];
 } can_photonics_adc_t;
