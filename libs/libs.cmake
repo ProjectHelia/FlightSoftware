@@ -10,4 +10,4 @@ file(GLOB HELIA_LIB_SIM_SRCS   CONFIGURE_DEPENDS ${HELIA_LIB_DIR}/*/sim/*.c)
 set(HELIA_LIB_INCS
     ${HELIA_LIB_DIR}/fsm
     ${HELIA_LIB_DIR}/can
-    ${HELIA_LIB_DIR}/utilities) // Add more here as they're implemented :> 
+    ${HELIA_LIB_DIR}/utilities) # Add more here as they're implemented :> 

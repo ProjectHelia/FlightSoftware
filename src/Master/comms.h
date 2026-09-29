@@ -6,7 +6,6 @@
  *   - unlocks any node whose heartbeat says it is in SAFE
  *   - turns every received frame into a readable log line
  *
- * Pure: the task loop in setup.c does the actual sending and receiving.
  */
 #ifndef HELIA_MASTER_COMMS_H
 #define HELIA_MASTER_COMMS_H
