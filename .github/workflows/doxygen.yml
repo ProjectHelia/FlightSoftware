@@ -1,0 +1,58 @@
+name: Doxygen
+
+# Builds the Doxygen docs and (on pushes to main only) publishes them to
+# GitHub Pages. Assumes a Doxyfile at the repo root - if yours lives
+# somewhere else (e.g. docs/Doxyfile), change DOXYFILE_PATH below.
+#
+# One-time setup to make the Pages deploy work:
+#   Settings -> Pages -> Build and deployment -> Source: "Deploy from a
+#   branch", Branch: gh-pages. The first successful run on main creates
+#   that branch; if you don't want docs published publicly, delete the
+#   "Deploy to GitHub Pages" step below and keep just the build+artifact
+#   upload as a docs-build-doesn't-break check.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  DOXYFILE_PATH: Doxyfile
+
+jobs:
+  docs:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Doxygen + Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      - name: Build docs
+        run: doxygen "$DOXYFILE_PATH"
+
+      # Adjust OUTPUT_DIRECTORY/HTML_OUTPUT here to match your Doxyfile if
+      # the generated HTML doesn't land in doxygen-output/html/.
+      - name: Locate generated HTML
+        id: find
+        run: |
+          DIR=$(find . -maxdepth 3 -type d -name html | head -n1)
+          if [ -z "$DIR" ]; then
+            echo "::error::couldn't find a generated html/ output directory - check DOXYFILE_PATH and your Doxyfile's OUTPUT_DIRECTORY"
+            exit 1
+          fi
+          echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+
+      - name: Upload docs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: doxygen-html
+          path: ${{ steps.find.outputs.dir }}
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ steps.find.outputs.dir }}
