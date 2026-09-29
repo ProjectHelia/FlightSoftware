@@ -22,7 +22,7 @@ extern "C" {
 #endif
 
 /** @brief Exact size of a packed downlink packet (4-byte header + 11-byte
- *         frame). 
+ *         frame).
  * Size the buffer passed to ttc_pack_downlink() with this */
 #define TTC_DL_PACKET_LEN 15u
 

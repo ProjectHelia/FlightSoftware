@@ -79,7 +79,7 @@ static void comms_task(void *arg) {
         .sin_port = htons(CONFIG_TTC_UDP_DOWNLINK_PORT),
         .sin_addr.s_addr = inet_addr(CONFIG_TTC_GROUND_IP),
     };
-    uint8_t dl_seq = 0; 
+    uint8_t dl_seq = 0;
 
     while (1) {
         can_frame_t rx, tx[MASTER_COMMS_MAX_TX];
