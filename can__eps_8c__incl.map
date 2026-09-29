@@ -1,0 +1,18 @@
+<map id="libs/can/can_eps.c" name="libs/can/can_eps.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,31"/>
+<area shape="rect" id="Node000002" href="$can__eps_8h.html" title="EPS message payloads." alt="" coords="32,79,119,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,31,78,65,73,65,73,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="34,225,117,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,104,78,212,73,212,73,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,299,220,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="67,106,46,134,24,171,17,191,14,212,16,231,24,249,47,272,75,288,106,298,136,304,135,309,105,303,73,293,44,276,20,252,11,232,9,211,12,190,19,169,41,131,63,103"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="156,152,213,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="94,102,157,142,154,147,91,106"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="169,180,106,220,103,215,166,175"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="202,176,224,196,242,224,244,243,238,262,213,292,209,288,233,259,239,243,237,226,220,200,199,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="303,225,378,251"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="211,175,304,217,302,222,209,180"/>
+<area shape="rect" id="Node000007" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="141,225,228,251"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="187,178,187,212,182,212,182,178"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="187,251,187,285,182,285,182,251"/>
+</map>

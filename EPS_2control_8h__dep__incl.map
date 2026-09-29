@@ -1,0 +1,12 @@
+<map id="src/EPS/control.h" name="src/EPS/control.h">
+<area shape="rect" id="Node000001" title="turn raw EPS readings into scaled data for CAN" alt="" coords="157,5,287,31"/>
+<area shape="rect" id="Node000002" href="$EPS_2comms_8h.html" title="Set&#39;s up heartbeat and state transitions for the EPS node." alt="" coords="51,79,185,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,41,137,81,134,76,192,36"/>
+<area shape="rect" id="Node000004" href="$EPS_2setup_8c.html" title=" " alt="" coords="162,152,282,177"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="225,45,225,152,219,152,219,45"/>
+<area shape="rect" id="Node000005" href="$EPS_2control_8c.html" title=" " alt="" coords="260,79,389,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,36,309,76,306,81,248,41"/>
+<area shape="rect" id="Node000003" href="$EPS_2comms_8c.html" title=" " alt="" coords="5,152,137,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,117,81,153,77,150,101,114"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="148,110,206,150,203,154,145,114"/>
+</map>

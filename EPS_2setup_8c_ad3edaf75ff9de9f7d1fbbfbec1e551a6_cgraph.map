@@ -1,0 +1,27 @@
+<map id="control_task" name="control_task">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,179,108,204"/>
+<area shape="rect" id="Node000002" href="$EPS_2control_8c.html#a84adb4dc09cb6e82e9eda21aaeceaa7f" title=" " alt="" coords="180,55,305,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,176,209,86,212,90,78,181"/>
+<area shape="rect" id="Node000004" href="$EPS_2control_8c.html#aeaf603f808971c94a5d2cdd5b68662fd" title=" " alt="" coords="177,153,309,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,182,163,174,163,179,108,187"/>
+<area shape="rect" id="Node000011" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a239d0163c178a1e18b16f06ac8237d5d" title="Voltage across the input&#45;bus shunt resistor, in mV (signed)." alt="" coords="172,203,313,228"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="108,195,158,202,158,207,108,201"/>
+<area shape="rect" id="Node000013" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a3cd83a35e3da14e5a3e24ad9685e1ad9" title="Voltage at the PCB thermistor&#39;s ADC pin, in mV." alt="" coords="156,252,329,277"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="82,202,157,237,181,245,180,250,155,242,80,207"/>
+<area shape="rect" id="Node000003" href="$util__filter_8c.html#a63a1482979c6cbfe22d0d3ba0df731cf" title="Set up a filter." alt="" coords="389,5,496,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="294,52,377,31,378,37,295,57"/>
+<area shape="rect" id="Node000005" href="$EPS_2control_8c.html#aa77bc535264d79063499426c9ab0baff" title=" " alt="" coords="388,55,497,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="263,151,314,121,376,89,391,83,393,88,378,94,317,126,266,155"/>
+<area shape="rect" id="Node000006" href="$util__filter_8c.html#ab346417c5f72d4211b2b5fff874e5130" title="Add a sample and return the new filtered value." alt="" coords="377,104,508,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="294,151,377,130,378,135,295,156"/>
+<area shape="rect" id="Node000007" href="$util__math_8c.html#a3c8d4adc8700e7d94ab8b902d9e11bd8" title="True if lo &lt;= v &lt;= hi." alt="" coords="389,153,496,179"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="309,163,375,163,375,169,309,169"/>
+<area shape="rect" id="Node000008" href="$util__thermistor_8c.html#a77a20122c4ea0df2931140202b34c0bc" title="Temperature in degC from the voltage at the ADC pin." alt="" coords="380,203,505,228"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="295,176,378,197,377,202,294,181"/>
+<area shape="rect" id="Node000009" href="$util__math_8c.html#ad2400031fcfecbd3a6fda4d67df3ffc6" title="Convert a physical value to a scaled int16 for CAN (SED: 37.2 degC x10 &#45;&gt; 372) Rounds to nearest and ..." alt="" coords="397,252,488,277"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="306,176,331,188,346,200,356,213,365,225,379,237,390,244,388,248,376,242,361,228,352,216,342,204,328,192,303,181"/>
+<area shape="rect" id="Node000010" href="$util__math_8c.html#a77729f0c3f67095ebac7cfd3ccad3067" title="Limit v to [lo, hi]." alt="" coords="556,252,651,277"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="488,262,542,262,542,267,488,267"/>
+<area shape="rect" id="Node000012" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="403,301,482,327"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="306,226,331,237,346,250,356,263,365,275,379,288,392,295,389,300,376,292,361,279,351,266,342,253,328,242,304,230"/>
+</map>

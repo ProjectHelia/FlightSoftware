@@ -1,0 +1,16 @@
+<map id="photonics_comms_on_tick" name="photonics_comms_on_tick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,200,105"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#ab8ba62bb8814a14960976d932bae2f2b" title="Build a heartbeat frame (INFO priority, type 0x00)" alt="" coords="248,29,417,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,77,260,55,262,60,162,82"/>
+<area shape="rect" id="Node000006" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="487,105,563,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="200,96,473,112,473,118,200,101"/>
+<area shape="rect" id="Node000007" href="$util__timer_8c.html#ae274e5e8c946c1a92275e81617010e67" title="True once per period_ms, advancing next_ms to the next deadline." alt="" coords="289,131,376,156"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="162,103,276,128,275,134,161,108"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="465,5,584,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,29,451,24,452,30,418,34"/>
+<area shape="rect" id="Node000005" href="$can_8c.html#aabba07119bf5de77d3716822546f5fc6" title=" " alt="" coords="473,55,577,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="418,51,459,56,458,61,417,56"/>
+<area shape="rect" id="Node000004" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="632,5,739,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="584,15,618,15,618,21,584,21"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="376,135,473,122,474,127,376,140"/>
+</map>

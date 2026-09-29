@@ -1,0 +1,9 @@
+<map id="can_decode_master_status" name="can_decode_master_status">
+<area shape="rect" id="Node000001" title="Decode MASTER_STATUS." alt="" coords="5,55,204,80"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a01fb638a5425fc4f4aa3e8afebf3fc9f" title=" " alt="" coords="253,5,357,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,52,239,31,241,37,158,57"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#a781b02a1af2262004f336a9afa2be416" title=" " alt="" coords="253,55,357,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,65,240,65,240,70,204,70"/>
+<area shape="rect" id="Node000004" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="252,104,359,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,77,240,98,239,103,156,83"/>
+</map>

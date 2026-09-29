@@ -1,0 +1,33 @@
+<map id="can_frame_init" name="can_frame_init">
+<area shape="rect" id="Node000001" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="783,105,901,131"/>
+<area shape="rect" id="Node000002" href="$can__eps_8c.html#aee90a5a6308aee614a2b8ade2ed06c49" title="Encode EPS_STATUS." alt="" coords="547,19,723,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="801,102,734,71,671,47,673,42,736,66,804,97"/>
+<area shape="rect" id="Node000006" href="$can_8c.html#ab8ba62bb8814a14960976d932bae2f2b" title="Build a heartbeat frame (INFO priority, type 0x00)" alt="" coords="551,80,720,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="768,112,720,106,721,100,769,106"/>
+<area shape="rect" id="Node000013" href="$can__master_8c.html#afb99a9eeee16b0ffff282c311ca55336" title="Encode MASTER_STATUS (INFO priority, source Master)" alt="" coords="536,179,735,204"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="806,139,736,170,698,181,696,176,734,165,803,135"/>
+<area shape="rect" id="Node000014" href="$can_8c.html#a2c379ca830d255c226415fa07a58e17f" title="Build a system command frame (Master uses this)" alt="" coords="554,129,717,155"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="769,129,717,135,716,130,768,124"/>
+<area shape="rect" id="Node000003" href="$EPS_2comms_8c.html#a0275bbc87746a8bdc35d02af42ee878f" title=" " alt="" coords="313,5,468,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,28,468,25,468,20,534,23"/>
+<area shape="rect" id="Node000004" href="$EPS_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,5,245,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="300,21,245,21,245,15,300,15"/>
+<area shape="rect" id="Node000005" href="$EPS_2setup_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title=" " alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="585,78,487,46,442,33,444,28,489,41,586,73"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2comms_8c.html#af4a79841c3e7edc8b1c385cb9f6ea01b" title=" " alt="" coords="311,104,471,129"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="537,105,471,112,470,106,537,100"/>
+<area shape="rect" id="Node000009" href="$Master_2comms_8c.html#aa0d0facf89a3ad2a4d490e0e019dfa5b" title="Periodic work: Master&#39;s heartbeat, and dropping nodes silent for longer than CAN_HEARTBEAT_TIMEOUT_MS..." alt="" coords="302,153,479,179"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="564,112,537,120,489,144,452,156,451,151,487,140,535,116,562,107"/>
+<area shape="rect" id="Node000011" href="$Photonics_2comms_8c.html#a2ccdea90345d2fbfdab05de81749268e" title=" " alt="" coords="293,55,488,80"/>
+<area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="537,85,488,80,488,75,537,80"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,104,245,129"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="297,119,246,119,246,114,297,114"/>
+<area shape="rect" id="Node000010" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,179,245,204"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="289,182,246,187,245,182,288,176"/>
+<area shape="rect" id="Node000012" href="$Photonics_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,55,245,80"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="279,70,245,70,245,65,279,65"/>
+<area shape="rect" id="Node000015" href="$Master_2comms_8c.html#a4939dcc252d8f8a55f19c33ee11ef73c" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="295,203,487,228"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="564,161,537,170,489,194,452,205,451,200,487,189,535,165,562,156"/>
+<area shape="poly" id="edge16_Node000015_Node000010" title=" " alt="" coords="281,205,245,200,246,195,281,199"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="src/Master/HAL/esp32/eth_w5500.h" name="src/Master/HAL/esp32/eth_w5500.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="72,5,235,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,88,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,48,75,87,72,83,126,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,93,194,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,46,156,79,151,79,151,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="218,93,369,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,43,262,84,259,89,186,48"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="src/Master/ttc.h" name="src/Master/ttc.h">
+<area shape="rect" id="Node000001" title="Master&#39;s TT&amp;C link handling: bare minimum to prove Master and a ground script can talk." alt="" coords="92,5,215,31"/>
+<area shape="rect" id="Node000002" href="$Master_2setup_8c.html" title=" " alt="" coords="5,79,147,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,42,90,80,87,76,129,38"/>
+<area shape="rect" id="Node000003" href="$ttc_8c.html" title=" " alt="" coords="171,79,293,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,38,221,76,217,80,174,42"/>
+</map>

@@ -1,0 +1,26 @@
+var EPS_2HAL_2esp32_2hal__esp32_8c =
+[
+    [ "I2C_SPEED_HZ", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a24d17767bd7e330bbae786bf26439359", null ],
+    [ "I2C_TIMEOUT_MS", "EPS_2HAL_2esp32_2hal__esp32_8c.html#ac8c61bd2fdc391886d8da5c2de78292a", null ],
+    [ "INA_CONFIG_AVG16", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a60a06d6c8060fd03f94aa2bfcdaf45d1", null ],
+    [ "INA_MFR_ID_TI", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a0d718fd6a39fdcc27efa5d7af64feec8", null ],
+    [ "INA_REG_CONFIG", "EPS_2HAL_2esp32_2hal__esp32_8c.html#afce0469f19ed37465323553a6e1bbb78", null ],
+    [ "INA_REG_MFR_ID", "EPS_2HAL_2esp32_2hal__esp32_8c.html#aeeae6c937fb886c0da96319c63ebe3b5", null ],
+    [ "INA_REG_SHUNT", "EPS_2HAL_2esp32_2hal__esp32_8c.html#ad22b956e330afe223b692a1d8744489c", null ],
+    [ "adc_init", "EPS_2HAL_2esp32_2hal__esp32_8c.html#ad4595ad05f609e711d06cf3ceb47ccb0", null ],
+    [ "hal_get_shunt_mv", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a239d0163c178a1e18b16f06ac8237d5d", null ],
+    [ "hal_get_thermistor_mv", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a3cd83a35e3da14e5a3e24ad9685e1ad9", null ],
+    [ "hal_init", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451", null ],
+    [ "hal_restart", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a75663a29640bd67145942ac92198e7a4", null ],
+    [ "i2c_scan", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a8355e5b94b25f393e93f6926eaee61b2", null ],
+    [ "ina_init", "EPS_2HAL_2esp32_2hal__esp32_8c.html#ac3b80a5372baf013f3642facad85a986", null ],
+    [ "ina_read", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de", null ],
+    [ "ina_write", "EPS_2HAL_2esp32_2hal__esp32_8c.html#ab9d9f368ef489c3fa542c408e718dbdc", null ],
+    [ "s_adc", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a60ac5e86633367adafa2e5e7722a5f1d", null ],
+    [ "s_bus", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a2bd8fdbbb84b5874235b38540fb39e4b", null ],
+    [ "s_cali", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a86160ae09288af78b2152669b7aee0bd", null ],
+    [ "s_chan", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a1f191306db1b574e3a62ca6feecc3b8b", null ],
+    [ "s_ina", "EPS_2HAL_2esp32_2hal__esp32_8c.html#aef82362c1a4973a6951117271c5c0275", null ],
+    [ "s_ina_ok", "EPS_2HAL_2esp32_2hal__esp32_8c.html#af02fef2f736008dde60eba1e0f1d115f", null ],
+    [ "TAG", "EPS_2HAL_2esp32_2hal__esp32_8c.html#a5a85b9c772bbeb480b209a3e6ea92b4c", null ]
+];

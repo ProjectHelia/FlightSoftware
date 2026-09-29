@@ -1,0 +1,5 @@
+<map id="libs/can/can_instr.h" name="libs/can/can_instr.h">
+<area shape="rect" id="Node000001" title="Instrumentation telemetry (source 0x5) encode/decode! This is pure with no HAL or RTOS dependencies u..." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$can__instr_8c.html" title=" " alt="" coords="6,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,44,81,79,76,79,76,44"/>
+</map>

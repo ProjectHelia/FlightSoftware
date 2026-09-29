@@ -1,0 +1,10 @@
+<map id="mux_select" name="mux_select">
+<area shape="rect" id="Node000001" title=" " alt="" coords="291,24,388,49"/>
+<area shape="rect" id="Node000002" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,24,76,49"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,23,242,14,183,8,124,14,76,26,75,21,124,8,183,3,243,8,287,17"/>
+<area shape="rect" id="Node000003" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a4121fb5fd71eaf7b26e99dec143ce407" title="add brief TODO" alt="" coords="133,24,234,49"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,39,234,39,234,34,277,34"/>
+<area shape="rect" id="Node000004" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a59cd24be01bd76df13b655a611db8625" title=" " alt="" coords="124,73,243,98"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,56,225,75,224,70,285,51"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="132,71,75,51,77,46,134,66"/>
+</map>

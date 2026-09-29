@@ -1,0 +1,16 @@
+<map id="src/Master/ttc.h" name="src/Master/ttc.h">
+<area shape="rect" id="Node000001" title="Master&#39;s TT&amp;C link handling: bare minimum to prove Master and a ground script can talk." alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,152,104,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,31,69,138,64,138,64,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="137,225,207,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="59,33,39,60,19,98,12,118,9,138,11,158,20,176,40,197,67,213,95,223,123,230,122,235,94,228,64,218,37,202,15,179,6,159,4,138,7,117,14,96,34,57,54,30"/>
+<area shape="rect" id="Node000004" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="143,79,201,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,28,145,69,142,73,82,33"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="157,106,96,147,94,142,154,102"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="190,102,211,123,229,151,231,170,225,188,201,218,197,215,221,186,226,170,224,153,207,126,186,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="291,152,373,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="199,102,294,144,292,149,197,106"/>
+<area shape="rect" id="Node000006" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="129,152,215,177"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="175,104,175,138,169,138,169,104"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="175,178,175,212,169,212,169,178"/>
+</map>

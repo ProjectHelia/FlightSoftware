@@ -1,0 +1,44 @@
+<map id="comms_task" name="comms_task">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,252,111,277"/>
+<area shape="rect" id="Node000002" href="$can__bus__twai_8c.html#a944ff1abfcb93d34c6a99841eec9b117" title="Log the controller&#39;s state and error counters (added for debugging." alt="" coords="175,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,251,67,210,84,153,113,93,133,64,157,40,163,35,167,39,160,44,137,68,118,95,89,155,72,212,64,252"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#a94172864628e91bdd4f5e035900425c3" title="Call regularly: recovers from bus&#45;off without a dedicated RTOS task and drains driver alerts (RX_QUEU..." alt="" coords="164,55,335,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,251,72,218,91,175,119,129,157,89,165,84,168,88,160,93,123,132,96,177,76,220,65,253"/>
+<area shape="rect" id="Node000004" href="$can__bus__twai_8c.html#af0f076d9aa2913134a489f53f46286c5" title="Wait up to timeout_ms for a frame, false if none arrived." alt="" coords="194,104,305,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="64,250,98,196,125,165,157,138,179,127,182,132,160,143,129,169,103,199,68,253"/>
+<area shape="rect" id="Node000005" href="$can__bus__twai_8c.html#a6da2f8572a77f584be545106cc4f3012" title="Queue a frame for sending." alt="" coords="193,153,306,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="71,250,108,219,157,188,179,179,181,184,160,192,112,223,75,254"/>
+<area shape="rect" id="Node000006" href="$fsm_8c.html#a66f046cbfe0b1b7502e782351c52d29a" title="Short name for logging." alt="" coords="184,203,315,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="107,249,185,229,186,234,109,255"/>
+<area shape="rect" id="Node000007" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a75663a29640bd67145942ac92198e7a4" title="Reboot the node (CMD_RESET_*)." alt="" coords="203,252,295,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="111,262,189,262,189,267,111,267"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2comms_8c.html#a74de115969669c59e7a3ecf64ea97783" title=" " alt="" coords="159,301,340,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="109,275,186,295,185,300,107,280"/>
+<area shape="rect" id="Node000010" href="$Instrumentation_2comms_8c.html#af386f139f66e01ef2fd7897684c82cf9" title=" " alt="" coords="405,539,540,564"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="65,277,74,313,93,363,121,415,139,439,160,460,215,495,275,519,336,535,392,544,391,549,335,540,273,524,212,500,157,464,135,443,117,418,88,365,69,315,59,278"/>
+<area shape="rect" id="Node000011" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="649,513,725,539"/>
+<area shape="poly" id="edge23_Node000001_Node000011" title=" " alt="" coords="62,278,66,328,80,400,93,438,110,476,132,511,160,540,209,575,255,597,300,609,344,612,390,607,440,599,557,574,605,560,648,542,650,547,607,565,558,579,441,604,391,613,344,617,299,614,253,602,207,580,157,544,128,514,105,479,88,440,75,401,61,328,57,278"/>
+<area shape="rect" id="Node000012" href="$Instrumentation_2comms_8c.html#acb791c3e80afd304b31ce746d475972e" title=" " alt="" coords="162,351,337,376"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="75,275,112,305,160,336,179,344,177,349,157,340,109,310,71,279"/>
+<area shape="rect" id="Node000015" href="$Instrumentation_2comms_8c.html#af4a79841c3e7edc8b1c385cb9f6ea01b" title=" " alt="" coords="169,425,329,451"/>
+<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="70,276,106,327,132,357,160,385,208,417,206,421,157,389,128,361,102,330,65,279"/>
+<area shape="rect" id="Node000009" href="$fsm_8c.html#a382047f9c2ee1ea232d39ec88f282abf" title="Compute the next state, invalid transitions leave the state unchanged." alt="" coords="431,287,514,312"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="340,305,417,300,418,306,341,311"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="540,541,635,529,635,535,541,546"/>
+<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="295,348,339,335,417,313,419,318,341,341,296,353"/>
+<area shape="rect" id="Node000013" href="$can_8c.html#a4d9ee35a54ac715952856478009b0c15" title="Work out whether a frame is a system command meant for this node." alt="" coords="605,337,768,363"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="337,358,592,350,592,356,337,363"/>
+<area shape="rect" id="Node000014" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="816,363,923,388"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="769,359,803,364,802,369,768,364"/>
+<area shape="poly" id="edge20_Node000015_Node000011" title=" " alt="" coords="296,448,389,471,522,497,636,516,635,521,521,503,387,477,295,453"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#ab8ba62bb8814a14960976d932bae2f2b" title="Build a heartbeat frame (INFO priority, type 0x00)" alt="" coords="388,388,557,413"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="326,423,382,413,383,418,326,428"/>
+<area shape="rect" id="Node000019" href="$util__timer_8c.html#ae274e5e8c946c1a92275e81617010e67" title="True once per period_ms, advancing next_ms to the next deadline." alt="" coords="429,437,516,463"/>
+<area shape="poly" id="edge21_Node000015_Node000019" title=" " alt="" coords="330,440,416,444,416,450,330,445"/>
+<area shape="rect" id="Node000017" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="627,387,746,412"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="558,397,614,397,614,402,558,403"/>
+<area shape="rect" id="Node000018" href="$can_8c.html#aabba07119bf5de77d3716822546f5fc6" title=" " alt="" coords="635,436,739,461"/>
+<area shape="poly" id="edge19_Node000016_Node000018" title=" " alt="" coords="531,411,622,431,620,437,529,416"/>
+<area shape="poly" id="edge18_Node000017_Node000014" title=" " alt="" coords="746,389,802,381,803,387,747,394"/>
+<area shape="poly" id="edge22_Node000019_Node000011" title=" " alt="" coords="510,460,638,506,636,511,508,465"/>
+</map>

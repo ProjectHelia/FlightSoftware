@@ -1,0 +1,32 @@
+<map id="master_describe_frame" name="master_describe_frame">
+<area shape="rect" id="Node000001" title="Describe a frame in words, e.g." alt="" coords="5,231,181,256"/>
+<area shape="rect" id="Node000002" href="$can__eps_8c.html#a61a586b055d2a6bfcc5b6ed2f5f5f026" title="Decode EPS_STATUS, false if the frame isn&#39;t one." alt="" coords="229,53,405,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,229,150,166,187,129,228,96,255,81,258,86,231,100,190,133,154,170,105,232"/>
+<area shape="rect" id="Node000006" href="$can_8c.html#a2f80ecf03fb328b086ad55f505a7da0a" title="Decode a heartbeat." alt="" coords="233,155,402,180"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="131,228,265,182,267,187,133,233"/>
+<area shape="rect" id="Node000008" href="$protocol_8h.html#a635d13418feab68e80255151e6106e34" title="Priority field of an ID." alt="" coords="453,105,572,131"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="105,229,155,183,190,159,228,140,282,124,338,115,439,111,440,116,338,120,283,129,230,144,193,163,158,187,108,233"/>
+<area shape="rect" id="Node000009" href="$protocol_8h.html#aa16f808d69fb8251d3db5b5d988614d3" title="Source field of an ID." alt="" coords="455,205,570,231"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="181,235,441,220,442,225,182,241"/>
+<area shape="rect" id="Node000010" href="$protocol_8h.html#a50ee63bb2a83e438159e9bb6c45f11f2" title="Message type field of an ID." alt="" coords="463,256,563,281"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="182,246,449,262,449,268,181,251"/>
+<area shape="rect" id="Node000011" href="$Master_2comms_8c.html#a5844fcda1bb8bf30ea5c62b559069e1f" title=" " alt="" coords="270,307,365,332"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="133,254,267,300,265,305,131,259"/>
+<area shape="rect" id="Node000013" href="$fsm_8c.html#a66f046cbfe0b1b7502e782351c52d29a" title="Short name for logging." alt="" coords="252,356,383,381"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="110,254,161,297,194,321,231,342,246,349,244,354,228,347,191,326,157,301,106,258"/>
+<area shape="rect" id="Node000014" href="$Master_2comms_8c.html#a46f9c956599897970ec72a537d592e11" title="Node name for logs, e.g." alt="" coords="242,405,393,431"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="105,254,152,320,189,359,231,392,242,398,239,402,228,396,185,363,148,324,100,258"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#a46bc8c93319c43db9819430c35247091" title=" " alt="" coords="463,55,563,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,64,449,64,449,70,405,69"/>
+<area shape="rect" id="Node000005" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="459,5,566,31"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="369,51,446,31,448,37,370,56"/>
+<area shape="rect" id="Node000004" href="$can_8c.html#a01fb638a5425fc4f4aa3e8afebf3fc9f" title=" " alt="" coords="620,55,724,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="563,65,606,65,606,70,563,70"/>
+<area shape="rect" id="Node000007" href="$can_8c.html#a781b02a1af2262004f336a9afa2be416" title=" " alt="" coords="461,155,565,180"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="402,165,447,165,447,170,402,170"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="368,152,448,132,449,137,369,157"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="368,178,451,199,449,204,367,183"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="342,178,455,240,471,248,469,253,452,244,339,182"/>
+<area shape="rect" id="Node000012" href="$util__math_8c.html#a3f9fe63a8a31d0d8e08cdcec7b8c60a0" title="Inverse of util_to_i16()" alt="" coords="459,307,567,332"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="365,317,445,317,445,322,365,322"/>
+</map>

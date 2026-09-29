@@ -1,0 +1,13 @@
+<map id="master_node_name" name="master_node_name">
+<area shape="rect" id="Node000001" title="Node name for logs, e.g." alt="" coords="600,31,751,56"/>
+<area shape="rect" id="Node000002" href="$Master_2setup_8c.html#ab109df5e9ac28571d4cbd95897ce0f08" title=" " alt="" coords="159,5,328,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="586,41,328,26,328,20,586,35"/>
+<area shape="rect" id="Node000004" href="$Master_2comms_8c.html#afdac0798248fa7a6d61bcdc02b4f22e8" title="Describe a frame in words, e.g." alt="" coords="376,56,552,81"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="587,57,552,61,552,55,586,51"/>
+<area shape="rect" id="Node000003" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="5,56,111,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="183,37,106,58,105,53,182,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="362,71,111,71,111,66,362,66"/>
+<area shape="rect" id="Node000005" href="$Master_2setup_8c.html#a54556bb7deb2fc3a83e25efed4fbbb11" title=" " alt="" coords="205,107,281,132"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="395,87,282,113,281,108,394,82"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="191,108,105,84,106,79,193,103"/>
+</map>

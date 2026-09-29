@@ -1,0 +1,9 @@
+<map id="hal_read_sht45" name="hal_read_sht45">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,127,80"/>
+<area shape="rect" id="Node000002" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a514b62b89fabe5861c52013a18a5385c" title=" " alt="" coords="193,5,271,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,52,180,31,181,36,110,57"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="191,55,273,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,65,177,65,177,70,127,70"/>
+<area shape="rect" id="Node000004" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#af6415d856e18bf91eeaade4429b51b13" title=" " alt="" coords="175,104,289,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,77,176,97,174,102,109,83"/>
+</map>

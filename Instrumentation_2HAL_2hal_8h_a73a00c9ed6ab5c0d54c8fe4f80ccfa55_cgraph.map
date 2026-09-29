@@ -1,0 +1,11 @@
+<map id="hal_read_scd41" name="hal_read_scd41">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,128,80"/>
+<area shape="rect" id="Node000002" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a514b62b89fabe5861c52013a18a5385c" title=" " alt="" coords="204,5,281,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,52,190,30,192,35,113,57"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#abd4f5ca22a5296e6ee64bdd01406adf3" title=" " alt="" coords="176,55,309,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,65,163,65,163,70,128,70"/>
+<area shape="rect" id="Node000005" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#af6415d856e18bf91eeaade4429b51b13" title=" " alt="" coords="185,104,300,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="113,77,184,98,182,103,112,83"/>
+<area shape="rect" id="Node000004" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="357,55,439,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="310,65,344,65,344,70,310,70"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="src/Master/comms.c" name="src/Master/comms.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="458,5,611,31"/>
+<area shape="rect" id="Node000002" href="$Master_2comms_8h.html" title="Master communication logic, currently a bench &quot;bus tester&quot;:" alt="" coords="183,79,265,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="485,33,279,80,278,75,484,28"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="623,79,689,104"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="556,28,626,69,623,74,553,33"/>
+<area shape="rect" id="Node000010" href="$can__eps_8h.html" title="EPS message payloads." alt="" coords="383,79,470,104"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="519,33,457,73,454,69,516,28"/>
+<area shape="rect" id="Node000011" href="$util__math_8h.html" title="Range checks, clamping, and float &lt;&#45;&gt; scaled&#45;integer conversion." alt="" coords="501,152,597,177"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="539,31,549,138,544,139,533,31"/>
+<area shape="rect" id="Node000012" href="$util__timer_8h.html" title="Periodic timing helper for task loops that are given the current millisecond count." alt="" coords="621,152,717,177"/>
+<area shape="poly" id="edge20_Node000001_Node000012" title=" " alt="" coords="547,29,613,102,650,140,646,144,609,106,543,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="451,225,533,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,102,460,216,458,221,244,107"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="139,225,213,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="223,105,187,213,182,211,218,104"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="337,299,407,324"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="209,106,175,133,140,170,127,190,120,211,120,230,129,249,141,259,159,269,210,284,324,303,323,308,209,289,157,273,138,264,125,252,114,231,114,210,122,188,136,167,171,130,205,102"/>
+<area shape="rect" id="Node000006" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="233,152,290,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="233,103,251,139,247,141,228,106"/>
+<area shape="rect" id="Node000008" href="$fsm_8h.html" title="Node state machine shared by every node, per SED: INIT &#45;&gt; SAFE &#45;&gt; ACTIVE, and SAFE/ACTIVE &lt;&#45;&gt; SLEEP." alt="" coords="5,152,64,177"/>
+<area shape="poly" id="edge11_Node000002_Node000008" title=" " alt="" coords="195,107,78,150,76,145,193,102"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="291,172,443,219,441,224,289,177"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="249,179,202,219,199,214,246,175"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="263,177,265,212,270,231,278,249,301,273,330,291,327,295,298,277,274,252,265,233,260,213,258,178"/>
+<area shape="rect" id="Node000007" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="289,225,375,251"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="275,176,313,214,309,218,271,180"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="341,250,361,285,356,288,336,252"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="434,103,484,212,479,214,430,106"/>
+<area shape="poly" id="edge15_Node000010_Node000005" title=" " alt="" coords="426,105,381,286,376,284,421,104"/>
+<area shape="poly" id="edge16_Node000010_Node000006" title=" " alt="" coords="401,106,302,149,300,144,399,102"/>
+<area shape="poly" id="edge18_Node000011_Node000003" title=" " alt="" coords="542,179,512,216,508,213,538,176"/>
+<area shape="poly" id="edge19_Node000011_Node000005" title=" " alt="" coords="555,177,559,213,556,233,547,252,521,277,489,294,454,305,422,310,421,305,453,299,487,289,518,273,543,249,551,232,554,213,550,178"/>
+<area shape="poly" id="edge21_Node000012_Node000003" title=" " alt="" coords="642,180,534,223,532,218,640,175"/>
+<area shape="poly" id="edge22_Node000012_Node000005" title=" " alt="" coords="661,180,623,215,571,253,533,271,494,285,421,304,420,299,492,280,531,266,568,248,620,211,657,176"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="now_ms" name="now_ms">
+<area shape="rect" id="Node000001" title=" " alt="" coords="776,365,852,390"/>
+<area shape="rect" id="Node000002" href="$EPS_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,61,245,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="806,351,796,285,778,202,755,125,741,95,726,76,698,56,667,39,634,26,600,17,529,9,457,11,388,20,324,34,228,63,226,58,323,28,387,15,457,5,529,4,601,12,636,21,669,34,701,51,730,73,746,93,760,123,784,201,801,284,812,350"/>
+<area shape="rect" id="Node000004" href="$EPS_2comms_8c.html#aec9c52d34e8eae7e54ebae14c1d83c4a" title=" " alt="" coords="327,61,455,86"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="810,351,805,301,793,239,782,207,768,177,749,149,726,125,696,104,662,88,627,77,590,69,518,64,455,67,455,62,518,59,591,64,628,72,664,83,699,99,730,120,754,145,773,174,787,205,798,238,811,300,815,350"/>
+<area shape="rect" id="Node000005" href="$EPS_2comms_8c.html#a0275bbc87746a8bdc35d02af42ee878f" title=" " alt="" coords="313,111,468,137"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="808,351,801,310,786,261,762,212,746,190,726,171,697,152,666,138,598,121,530,115,468,116,468,111,530,109,599,115,668,133,700,148,730,167,750,186,767,209,791,259,806,309,813,351"/>
+<area shape="rect" id="Node000006" href="$Instrumentation_2comms_8c.html#af386f139f66e01ef2fd7897684c82cf9" title=" " alt="" coords="323,162,458,187"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="805,352,795,319,780,281,757,244,726,214,695,196,662,183,590,167,520,164,458,167,458,162,520,158,591,162,663,178,698,191,730,210,761,241,785,278,800,317,810,350"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2comms_8c.html#af4a79841c3e7edc8b1c385cb9f6ea01b" title=" " alt="" coords="311,213,471,238"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="801,353,774,300,753,274,727,253,696,238,664,227,597,214,530,212,471,215,471,210,530,206,597,209,666,222,698,233,729,248,756,270,778,297,806,350"/>
+<area shape="rect" id="Node000009" href="$Master_2comms_8c.html#acc38a35507fb2c122d7097deffd560d4" title="Start up." alt="" coords="315,415,466,441"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="764,396,728,404,590,421,467,429,466,423,589,416,728,399,762,390"/>
+<area shape="rect" id="Node000011" href="$Master_2comms_8c.html#a4939dcc252d8f8a55f19c33ee11ef73c" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="536,365,728,390"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="762,380,728,380,728,375,762,375"/>
+<area shape="rect" id="Node000012" href="$Master_2comms_8c.html#aa0d0facf89a3ad2a4d490e0e019dfa5b" title="Periodic work: Master&#39;s heartbeat, and dropping nodes silent for longer than CAN_HEARTBEAT_TIMEOUT_MS..." alt="" coords="302,314,479,339"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="763,363,728,354,598,338,480,331,480,325,598,332,728,349,764,358"/>
+<area shape="rect" id="Node000013" href="$flight__phase_8c.html#a951c8ad4ffd297302871d2629f49e2f4" title="Starts in MASTER_PHASE_TESTING." alt="" coords="564,566,700,591"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="810,404,801,439,785,480,762,521,730,557,701,572,699,567,726,552,757,518,780,478,796,437,805,403"/>
+<area shape="rect" id="Node000014" href="$flight__phase_8c.html#a7d2cadba48b4d9449b6c9ec210ba9cc4" title="Call whenever motion is detected, to feed the no&#45;motion timeout." alt="" coords="560,616,704,656"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="813,404,805,448,791,502,766,557,750,583,730,606,706,622,703,618,726,602,746,580,762,555,786,500,800,447,807,403"/>
+<area shape="rect" id="Node000015" href="$flight__phase_8c.html#aebbef72689e5687132cee1afceb2752d" title="Apply a ground&#45;commanded (or otherwise externally requested) phase change." alt="" coords="541,681,723,706"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="816,404,813,459,801,531,790,568,775,605,755,640,730,670,712,683,708,678,726,666,751,636,770,603,785,567,796,530,807,459,810,404"/>
+<area shape="rect" id="Node000016" href="$flight__phase_8c.html#a060e47461526d4bbb9a14c3269a37f62" title="Call periodically (e.g." alt="" coords="563,730,701,755"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="812,404,802,477,785,571,761,661,746,696,730,720,703,737,700,732,726,717,742,694,756,659,780,570,797,476,807,403"/>
+<area shape="rect" id="Node000017" href="$Photonics_2comms_8c.html#a906239187138328c6184aa3cdab7e5d4" title=" " alt="" coords="548,517,716,542"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="803,404,774,452,754,477,730,499,691,519,689,514,726,495,750,474,770,449,799,401"/>
+<area shape="rect" id="Node000019" href="$Photonics_2comms_8c.html#a2ccdea90345d2fbfdab05de81749268e" title=" " alt="" coords="293,466,488,491"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="787,400,760,417,729,432,668,450,605,463,489,477,488,472,604,458,667,445,727,427,757,413,784,396"/>
+<area shape="rect" id="Node000020" href="$util__timer_8c.html#ae274e5e8c946c1a92275e81617010e67" title="True once per period_ms, advancing next_ms to the next deadline." alt="" coords="589,263,675,289"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="788,357,760,333,727,310,675,289,677,284,729,306,763,328,792,353"/>
+<area shape="rect" id="Node000003" href="$EPS_2setup_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title=" " alt="" coords="5,61,92,86"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,76,92,76,92,71,126,71"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="313,76,246,76,246,71,313,71"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="326,110,242,88,244,83,328,105"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,187,245,213"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="310,187,246,196,246,190,310,182"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="297,216,245,209,246,204,297,211"/>
+<area shape="rect" id="Node000010" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,365,245,390"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="326,414,242,392,244,387,328,409"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="522,380,246,380,246,375,522,375"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="328,345,244,367,242,362,326,340"/>
+<area shape="rect" id="Node000018" href="$Photonics_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,491,245,517"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="534,526,245,510,246,504,534,521"/>
+<area shape="poly" id="edge24_Node000019_Node000018" title=" " alt="" coords="280,495,246,500,245,495,279,490"/>
+<area shape="poly" id="edge26_Node000020_Node000005" title=" " alt="" coords="609,255,557,202,523,175,487,152,456,139,458,134,489,147,526,171,561,198,613,251"/>
+<area shape="poly" id="edge27_Node000020_Node000008" title=" " alt="" coords="574,267,452,241,453,235,576,261"/>
+<area shape="poly" id="edge28_Node000020_Node000012" title=" " alt="" coords="576,290,453,316,452,311,574,285"/>
+<area shape="poly" id="edge29_Node000020_Node000019" title=" " alt="" coords="600,299,568,323,538,353,523,380,517,405,509,430,490,454,466,468,463,463,486,450,505,427,512,404,518,378,534,350,564,319,596,294"/>
+</map>

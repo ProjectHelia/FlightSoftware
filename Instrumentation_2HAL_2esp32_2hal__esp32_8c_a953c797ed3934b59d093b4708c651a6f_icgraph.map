@@ -1,0 +1,9 @@
+<map id="i2c_probe" name="i2c_probe">
+<area shape="rect" id="Node000001" title=" " alt="" coords="291,31,376,56"/>
+<area shape="rect" id="Node000002" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="148,5,219,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,37,218,27,219,21,278,31"/>
+<area shape="rect" id="Node000003" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a59cd24be01bd76df13b655a611db8625" title=" " alt="" coords="124,55,243,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,55,243,60,242,55,277,50"/>
+<area shape="rect" id="Node000004" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,55,76,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="110,70,76,70,76,65,110,65"/>
+</map>

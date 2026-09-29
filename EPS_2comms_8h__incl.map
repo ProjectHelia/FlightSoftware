@@ -1,0 +1,29 @@
+<map id="src/EPS/comms.h" name="src/EPS/comms.h">
+<area shape="rect" id="Node000001" title="Set&#39;s up heartbeat and state transitions for the EPS node." alt="" coords="409,5,542,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="165,225,247,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,31,305,49,186,76,130,92,80,111,41,131,16,154,9,170,12,184,24,196,43,206,96,221,151,230,151,235,94,226,41,211,21,200,7,187,3,170,12,150,38,127,78,106,128,87,185,70,304,44,408,26"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="397,152,471,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="474,32,444,139,438,138,469,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="564,225,635,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="518,28,563,45,614,70,662,105,682,126,699,151,703,162,703,174,691,193,670,209,646,222,643,218,667,205,687,189,697,172,698,163,694,153,678,130,658,109,611,75,561,50,517,33"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="480,79,537,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="483,30,500,65,495,67,478,32"/>
+<area shape="rect" id="Node000007" href="$fsm_8h.html" title="Node state machine shared by every node, per SED: INIT &#45;&gt; SAFE &#45;&gt; ACTIVE, and SAFE/ACTIVE &lt;&#45;&gt; SLEEP." alt="" coords="759,79,818,104"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="528,28,741,76,746,77,745,82,740,81,527,33"/>
+<area shape="rect" id="Node000008" href="$EPS_2control_8h.html" title="turn raw EPS readings into scaled data for CAN" alt="" coords="269,79,348,104"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="450,33,349,76,347,71,447,28"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="511,105,506,141,498,162,485,179,469,190,446,200,388,215,262,234,261,229,387,210,444,195,466,185,481,175,494,159,501,140,506,104"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="498,106,458,144,454,141,495,102"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="518,103,587,212,583,215,514,106"/>
+<area shape="rect" id="Node000006" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="597,152,684,177"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="531,102,608,143,606,148,529,106"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="636,179,615,215,611,212,631,176"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="310,105,302,139,284,179,263,202,240,220,237,216,260,198,280,176,297,138,305,103"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="318,103,345,139,364,158,386,175,427,196,470,211,551,229,550,234,469,216,425,201,383,180,361,162,341,142,314,106"/>
+<area shape="rect" id="Node000009" href="$util__filter_8h.html" title="Exponential moving average (EMA) filter for noisy sensors." alt="" coords="26,152,117,177"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="271,107,124,151,122,145,270,101"/>
+<area shape="rect" id="Node000010" href="$util__thermistor_8h.html" title="Convert an NTC thermistor voltage&#45;divider reading to degC using the Beta equation." alt="" coords="141,152,271,177"/>
+<area shape="poly" id="edge16_Node000008_Node000010" title=" " alt="" coords="294,106,236,146,233,142,291,102"/>
+<area shape="poly" id="edge15_Node000009_Node000002" title=" " alt="" coords="94,175,173,216,171,221,92,180"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="209,178,209,212,203,212,203,178"/>
+</map>

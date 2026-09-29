@@ -1,0 +1,21 @@
+<map id="can_id_priority" name="can_id_priority">
+<area shape="rect" id="Node000001" title="Priority field of an ID." alt="" coords="840,100,959,125"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a2f80ecf03fb328b086ad55f505a7da0a" title="Decode a heartbeat." alt="" coords="623,49,792,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="837,99,756,77,757,72,838,94"/>
+<area shape="rect" id="Node000005" href="$Master_2comms_8c.html#afdac0798248fa7a6d61bcdc02b4f22e8" title="Describe a frame in words, e.g." alt="" coords="399,95,575,120"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="826,114,575,111,575,106,826,109"/>
+<area shape="rect" id="Node000007" href="$ttc_8c.html#a429651ffe2604378137c2a4bcd27dc59" title="Pack one CAN frame into the SED UDP downlink wire format (header + 11&#45;byte frame)." alt="" coords="636,151,779,176"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="838,131,757,153,756,148,837,126"/>
+<area shape="rect" id="Node000003" href="$Master_2comms_8c.html#a4939dcc252d8f8a55f19c33ee11ef73c" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="159,5,351,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="609,55,351,30,351,25,609,50"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="632,80,550,97,549,92,631,75"/>
+<area shape="rect" id="Node000004" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="5,81,111,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="201,38,160,52,88,84,85,79,158,48,199,32"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="385,99,351,97,221,94,111,95,111,90,221,88,351,91,385,94"/>
+<area shape="rect" id="Node000006" href="$Master_2setup_8c.html#a54556bb7deb2fc3a83e25efed4fbbb11" title=" " alt="" coords="217,107,293,132"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="385,115,293,120,293,115,385,110"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="203,115,110,103,111,98,203,110"/>
+<area shape="rect" id="Node000008" href="$Master_2setup_8c.html#ad653ccca6db0699472c2fe3914ea38ed" title=" " alt="" coords="423,157,550,183"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="622,169,550,171,550,165,622,163"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="410,175,290,170,223,162,158,147,114,129,77,109,80,104,116,125,159,142,224,156,291,165,410,170"/>
+</map>

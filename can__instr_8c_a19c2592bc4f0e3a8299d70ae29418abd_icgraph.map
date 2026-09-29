@@ -1,0 +1,9 @@
+<map id="put_i32" name="put_i32">
+<area shape="rect" id="Node000001" title=" " alt="" coords="249,55,320,80"/>
+<area shape="rect" id="Node000002" href="$can__instr_8c.html#a62c8510d7e4fa6051cd0ee7f246a2066" title=" " alt="" coords="25,5,181,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,55,201,45,157,33,159,28,202,39,237,50"/>
+<area shape="rect" id="Node000003" href="$can__instr_8c.html#a0cba003d8ae933a2788f5cfdb59656f3" title=" " alt="" coords="5,55,201,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,70,201,70,201,65,236,65"/>
+<area shape="rect" id="Node000004" href="$can__instr_8c.html#ab9cbdefe400272ba4497f12b3790a675" title=" " alt="" coords="22,104,185,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,84,202,94,155,106,154,101,201,89,235,79"/>
+</map>

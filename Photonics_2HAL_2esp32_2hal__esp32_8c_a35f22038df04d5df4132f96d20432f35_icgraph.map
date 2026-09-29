@@ -1,0 +1,15 @@
+<map id="i2c_write_reg" name="i2c_write_reg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="456,43,565,68"/>
+<area shape="rect" id="Node000002" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a59cd24be01bd76df13b655a611db8625" title=" " alt="" coords="124,5,243,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="453,42,408,33,321,24,243,21,243,15,322,19,408,27,454,37"/>
+<area shape="rect" id="Node000004" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a37c1867566a57082f0e1b0b96a89dca8" title=" " alt="" coords="293,43,406,68"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="442,58,406,58,406,53,442,53"/>
+<area shape="rect" id="Node000006" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a3101d5f18b577b5c38d6bbcdb4a4645a" title=" " alt="" coords="291,92,408,117"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="456,75,393,94,391,89,455,70"/>
+<area shape="rect" id="Node000003" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,21,76,21,76,15,110,15"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="278,42,240,33,241,28,280,37"/>
+<area shape="rect" id="Node000005" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a4121fb5fd71eaf7b26e99dec143ce407" title="add brief TODO" alt="" coords="133,68,234,93"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="279,69,235,76,234,70,278,63"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="276,97,234,91,235,85,277,92"/>
+</map>

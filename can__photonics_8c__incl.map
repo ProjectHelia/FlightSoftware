@@ -1,0 +1,19 @@
+<map id="libs/can/can_photonics.c" name="libs/can/can_photonics.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,275,31"/>
+<area shape="rect" id="Node000002" href="$can__photonics_8h.html" title="Photonics telemetry (source 0x4) encode/decode." alt="" coords="193,79,320,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,29,237,67,233,71,195,33"/>
+<area shape="rect" id="Node000007" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="5,225,92,251"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="180,32,65,215,61,212,175,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="266,225,349,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,104,301,212,296,213,258,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,299,264,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="276,102,311,128,347,165,362,186,370,208,371,230,363,252,346,272,324,286,278,304,276,299,322,282,342,268,358,249,366,229,365,209,357,188,343,168,307,132,273,106"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="200,152,257,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="255,105,241,140,236,138,250,103"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="243,175,286,214,283,218,240,179"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="231,178,231,285,226,285,226,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="117,225,191,251"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="219,179,178,218,174,214,215,175"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="201,180,92,223,90,218,199,175"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="79,248,188,291,186,296,77,253"/>
+</map>

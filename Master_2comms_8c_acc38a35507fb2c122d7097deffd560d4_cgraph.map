@@ -1,0 +1,7 @@
+<map id="master_comms_init" name="master_comms_init">
+<area shape="rect" id="Node000001" title="Start up." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$fsm_8c.html#a382047f9c2ee1ea232d39ec88f282abf" title="Compute the next state, invalid transitions leave the state unchanged." alt="" coords="204,5,287,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,29,190,24,191,29,157,34"/>
+<area shape="rect" id="Node000003" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="207,55,283,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,52,194,57,193,63,156,57"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="hal_read_imu" name="hal_read_imu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,116,56"/>
+<area shape="rect" id="Node000002" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#abd349276ec775908ad922ed2d1185ed5" title=" " alt="" coords="164,31,269,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,41,150,41,150,46,116,46"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a514b62b89fabe5861c52013a18a5385c" title=" " alt="" coords="349,5,427,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="269,33,335,23,336,28,270,38"/>
+<area shape="rect" id="Node000004" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a0f2f7863fecf3a4179e8c856669b8dd6" title=" " alt="" coords="317,55,459,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="270,48,304,53,303,58,269,53"/>
+</map>

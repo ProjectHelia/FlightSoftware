@@ -1,0 +1,7 @@
+<map id="src/EPS/comms.h" name="src/EPS/comms.h">
+<area shape="rect" id="Node000001" title="Set&#39;s up heartbeat and state transitions for the EPS node." alt="" coords="79,5,213,31"/>
+<area shape="rect" id="Node000002" href="$EPS_2comms_8c.html" title=" " alt="" coords="5,79,137,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,42,85,80,82,77,122,38"/>
+<area shape="rect" id="Node000003" href="$EPS_2setup_8c.html" title=" " alt="" coords="162,79,282,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,38,211,76,208,80,166,42"/>
+</map>

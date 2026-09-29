@@ -1,0 +1,19 @@
+<map id="src/Instrumentation/comms.h" name="src/Instrumentation/comms.h">
+<area shape="rect" id="Node000001" title="for now only the lifecycle (every node has (heartbeat, unlock/sleep/reset)" alt="" coords="237,5,387,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,167,88,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,48,217,69,167,96,116,128,73,160,70,156,113,124,164,91,215,65,264,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="275,167,349,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,46,315,153,309,153,309,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="171,240,242,265"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="330,44,350,74,368,113,376,154,373,174,364,194,342,216,314,232,285,243,256,249,255,244,283,238,312,228,338,212,359,190,367,173,370,154,363,114,345,77,325,47"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="178,93,235,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="288,48,235,87,232,83,285,43"/>
+<area shape="rect" id="Node000007" href="$fsm_8h.html" title="Node state machine shared by every node, per SED: INIT &#45;&gt; SAFE &#45;&gt; ACTIVE, and SAFE/ACTIVE &lt;&#45;&gt; SLEEP." alt="" coords="424,93,483,119"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="347,43,421,84,419,89,345,48"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="182,121,86,163,84,159,180,116"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="225,116,285,157,282,161,222,121"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="192,121,170,141,153,168,151,184,157,200,181,229,177,233,152,203,146,185,148,166,166,138,189,117"/>
+<area shape="rect" id="Node000006" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="163,167,250,192"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="209,119,209,153,204,153,204,119"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="209,192,209,226,204,226,204,192"/>
+</map>

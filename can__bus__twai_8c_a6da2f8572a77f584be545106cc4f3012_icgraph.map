@@ -1,0 +1,11 @@
+<map id="can_bus_send" name="can_bus_send">
+<area shape="rect" id="Node000001" title="Queue a frame for sending." alt="" coords="312,31,425,56"/>
+<area shape="rect" id="Node000002" href="$EPS_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="159,5,264,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,35,264,29,265,24,299,29"/>
+<area shape="rect" id="Node000004" href="$Master_2setup_8c.html#a54556bb7deb2fc3a83e25efed4fbbb11" title=" " alt="" coords="173,55,249,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,57,250,64,249,59,298,51"/>
+<area shape="rect" id="Node000003" href="$EPS_2setup_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title=" " alt="" coords="15,5,101,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,21,102,21,102,15,145,15"/>
+<area shape="rect" id="Node000005" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="5,55,111,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="159,70,111,70,111,65,159,65"/>
+</map>

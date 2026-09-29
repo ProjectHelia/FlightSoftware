@@ -1,0 +1,16 @@
+<map id="libs/can/can_photonics.h" name="libs/can/can_photonics.h">
+<area shape="rect" id="Node000001" title="Photonics telemetry (source 0x4) encode/decode." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="55,152,137,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,31,99,138,93,138,93,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="170,225,241,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,33,66,60,45,98,38,118,35,138,36,158,45,176,67,199,96,215,127,225,157,231,156,236,126,230,94,219,64,203,40,179,31,159,29,138,33,117,40,95,62,57,83,29"/>
+<area shape="rect" id="Node000004" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="177,79,234,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="115,28,177,69,174,73,112,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="189,106,127,147,124,142,186,102"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="223,102,245,123,263,151,265,170,259,188,234,218,230,215,254,186,259,170,257,153,241,126,219,106"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="324,152,399,177"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="231,102,324,144,322,149,229,106"/>
+<area shape="rect" id="Node000006" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="162,152,249,177"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="208,104,208,138,203,138,203,104"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="208,178,208,212,203,212,203,178"/>
+</map>

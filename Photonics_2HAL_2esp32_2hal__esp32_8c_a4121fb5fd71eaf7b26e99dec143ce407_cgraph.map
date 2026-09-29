@@ -1,0 +1,22 @@
+<map id="hal_read_uv" name="hal_read_uv">
+<area shape="rect" id="Node000001" title="add brief TODO" alt="" coords="5,83,107,108"/>
+<area shape="rect" id="Node000002" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#ab37f91b8734f4e097713d6980747f1bc" title=" " alt="" coords="337,8,442,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,80,103,47,127,31,154,18,197,8,241,4,323,7,323,13,241,9,198,13,156,23,130,35,106,52,71,84"/>
+<area shape="rect" id="Node000004" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a07cf366135bf0bae4ee29bfbd6368702" title=" " alt="" coords="155,34,287,59"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,80,164,60,165,66,100,85"/>
+<area shape="rect" id="Node000005" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a37c1867566a57082f0e1b0b96a89dca8" title=" " alt="" coords="164,83,277,108"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="107,93,150,93,150,98,107,98"/>
+<area shape="rect" id="Node000008" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a3101d5f18b577b5c38d6bbcdb4a4645a" title=" " alt="" coords="162,132,279,158"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="100,106,165,126,164,131,98,111"/>
+<area shape="rect" id="Node000009" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#af38c3c98f4e538d418531979e14dcb94" title=" " alt="" coords="341,182,438,207"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="72,107,107,138,131,154,156,166,199,180,244,188,327,194,327,199,243,193,198,185,154,171,128,158,104,142,68,111"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a35389c21a09b9640b19b86f5e98e4a0e" title=" " alt="" coords="492,8,609,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="442,18,478,18,478,24,442,24"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="287,34,322,28,323,34,288,39"/>
+<area shape="rect" id="Node000006" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a35f22038df04d5df4132f96d20432f35" title=" " alt="" coords="335,132,444,158"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="266,106,332,126,331,131,264,111"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="510,156,591,182"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="445,150,497,158,496,164,444,156"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="280,142,321,142,321,148,280,148"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="438,184,496,175,497,180,439,189"/>
+</map>

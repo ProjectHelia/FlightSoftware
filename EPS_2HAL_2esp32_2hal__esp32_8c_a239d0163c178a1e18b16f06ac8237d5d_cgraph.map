@@ -1,0 +1,5 @@
+<map id="hal_get_shunt_mv" name="hal_get_shunt_mv">
+<area shape="rect" id="Node000001" title="Voltage across the input&#45;bus shunt resistor, in mV (signed)." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="195,5,273,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,15,181,15,181,21,147,21"/>
+</map>

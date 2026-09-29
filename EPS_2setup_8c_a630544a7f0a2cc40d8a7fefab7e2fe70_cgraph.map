@@ -1,0 +1,95 @@
+<map id="app_main" name="app_main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,888,92,913"/>
+<area shape="rect" id="Node000002" href="$EPS_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="140,455,245,480"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,887,180,492,185,494,57,889"/>
+<area shape="rect" id="Node000025" href="$EPS_2setup_8c.html#ad3edaf75ff9de9f7d1fbbfbec1e551a6" title=" " alt="" coords="141,888,244,913"/>
+<area shape="poly" id="edge30_Node000001_Node000025" title=" " alt="" coords="92,898,128,898,128,903,92,903"/>
+<area shape="rect" id="Node000037" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="157,1035,228,1060"/>
+<area shape="poly" id="edge43_Node000001_Node000037" title=" " alt="" coords="64,912,171,1023,168,1026,61,916"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#a944ff1abfcb93d34c6a99841eec9b117" title="Log the controller&#39;s state and error counters (added for debugging." alt="" coords="306,504,455,529"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,477,319,498,317,503,241,483"/>
+<area shape="rect" id="Node000004" href="$can__bus__twai_8c.html#a94172864628e91bdd4f5e035900425c3" title="Call regularly: recovers from bus&#45;off without a dedicated RTOS task and drains driver alerts (RX_QUEU..." alt="" coords="295,553,466,579"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,478,247,508,295,538,314,546,312,551,292,543,244,513,207,483"/>
+<area shape="rect" id="Node000005" href="$can__bus__twai_8c.html#af0f076d9aa2913134a489f53f46286c5" title="Wait up to timeout_ms for a frame, false if none arrived." alt="" coords="325,603,436,628"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="203,479,238,532,264,562,295,588,314,598,311,602,292,592,260,566,234,535,199,482"/>
+<area shape="rect" id="Node000006" href="$can__bus__twai_8c.html#a6da2f8572a77f584be545106cc4f3012" title="Queue a frame for sending." alt="" coords="324,652,437,677"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="200,479,212,512,231,554,259,599,295,637,312,648,310,652,292,641,254,602,226,557,207,514,195,481"/>
+<area shape="rect" id="Node000007" href="$EPS_2comms_8c.html#ab1b8be4e7acfcfb5c86483957de87927" title=" " alt="" coords="293,356,468,381"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="206,452,243,421,292,390,308,383,310,388,295,395,246,426,209,456"/>
+<area shape="rect" id="Node000009" href="$EPS_2comms_8c.html#aec9c52d34e8eae7e54ebae14c1d83c4a" title=" " alt="" coords="540,205,668,231"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="193,454,200,413,217,356,247,297,267,270,292,248,319,232,348,219,409,205,471,201,526,203,526,209,471,206,410,210,349,224,321,236,295,252,271,274,251,299,222,358,206,414,198,455"/>
+<area shape="rect" id="Node000010" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="783,180,859,205"/>
+<area shape="poly" id="edge29_Node000002_Node000010" title=" " alt="" coords="195,454,205,420,224,376,252,330,271,309,292,292,327,276,374,265,488,255,603,250,653,246,691,239,737,225,779,208,781,213,739,230,693,245,653,251,604,255,488,260,375,271,329,281,295,296,274,313,257,333,229,378,210,422,200,455"/>
+<area shape="rect" id="Node000011" href="$EPS_2comms_8c.html#a49420f7361c97cb365213be9bf0fabde" title=" " alt="" coords="296,307,465,332"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="198,453,233,399,260,368,292,341,302,335,305,340,295,346,264,372,237,402,203,456"/>
+<area shape="rect" id="Node000014" href="$EPS_2comms_8c.html#a0275bbc87746a8bdc35d02af42ee878f" title=" " alt="" coords="303,105,458,131"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="194,454,204,410,224,344,252,270,291,198,319,164,349,137,353,141,323,168,296,201,257,272,229,346,210,411,199,455"/>
+<area shape="rect" id="Node000022" href="$EPS_2control_8c.html#aa77bc535264d79063499426c9ab0baff" title=" " alt="" coords="549,665,659,691"/>
+<area shape="poly" id="edge26_Node000002_Node000022" title=" " alt="" coords="198,480,204,522,220,580,233,611,249,640,270,666,295,686,312,694,337,698,399,700,469,695,535,686,536,692,470,700,399,705,336,704,311,699,292,691,266,669,245,643,228,613,215,582,199,523,193,481"/>
+<area shape="rect" id="Node000023" href="$fsm_8c.html#a66f046cbfe0b1b7502e782351c52d29a" title="Short name for logging." alt="" coords="315,405,446,431"/>
+<area shape="poly" id="edge27_Node000002_Node000023" title=" " alt="" coords="241,452,317,432,319,437,242,457"/>
+<area shape="rect" id="Node000024" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a75663a29640bd67145942ac92198e7a4" title="Reboot the node (CMD_RESET_*)." alt="" coords="335,455,427,480"/>
+<area shape="poly" id="edge28_Node000002_Node000024" title=" " alt="" coords="246,465,321,465,321,470,246,470"/>
+<area shape="rect" id="Node000008" href="$fsm_8c.html#a382047f9c2ee1ea232d39ec88f282abf" title="Compute the next state, invalid transitions leave the state unchanged." alt="" coords="563,357,645,383"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="469,367,549,367,549,372,469,372"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="668,208,770,196,770,201,668,213"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="438,330,550,355,549,360,437,335"/>
+<area shape="rect" id="Node000012" href="$can_8c.html#a4d9ee35a54ac715952856478009b0c15" title="Work out whether a frame is a system command meant for this node." alt="" coords="740,280,903,305"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="465,312,726,296,726,301,466,317"/>
+<area shape="rect" id="Node000013" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="951,155,1057,180"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="839,278,972,186,975,190,842,282"/>
+<area shape="poly" id="edge23_Node000014_Node000010" title=" " alt="" coords="458,116,570,122,632,129,693,141,740,155,783,172,781,177,738,160,691,146,631,135,569,127,458,121"/>
+<area shape="rect" id="Node000015" href="$can__eps_8c.html#aee90a5a6308aee614a2b8ade2ed06c49" title="Encode EPS_STATUS." alt="" coords="516,5,692,31"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="400,103,451,72,515,40,535,32,537,37,517,44,453,76,403,107"/>
+<area shape="rect" id="Node000019" href="$can_8c.html#ab8ba62bb8814a14960976d932bae2f2b" title="Build a heartbeat frame (INFO priority, type 0x00)" alt="" coords="519,55,689,80"/>
+<area shape="poly" id="edge20_Node000014_Node000019" title=" " alt="" coords="437,103,533,80,535,86,438,108"/>
+<area shape="rect" id="Node000021" href="$util__timer_8c.html#ae274e5e8c946c1a92275e81617010e67" title="True once per period_ms, advancing next_ms to the next deadline." alt="" coords="561,156,647,181"/>
+<area shape="poly" id="edge24_Node000014_Node000021" title=" " alt="" coords="438,128,548,153,547,159,437,133"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="762,55,881,80"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="661,28,752,49,751,54,660,33"/>
+<area shape="rect" id="Node000017" href="$can_8c.html#a12289c44e9d821c597acf1270dfffa83" title=" " alt="" coords="771,5,871,31"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="692,15,758,15,758,21,692,21"/>
+<area shape="poly" id="edge17_Node000016_Node000013" title=" " alt="" coords="876,78,904,89,946,115,980,143,977,147,942,119,901,94,874,83"/>
+<area shape="rect" id="Node000018" href="$can_8c.html#a1e3ca72dc45590f6f865b271e170b4b4" title=" " alt="" coords="952,5,1056,31"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="871,15,938,15,938,21,871,21"/>
+<area shape="poly" id="edge21_Node000019_Node000016" title=" " alt="" coords="689,65,748,65,748,70,689,70"/>
+<area shape="rect" id="Node000020" href="$can_8c.html#aabba07119bf5de77d3716822546f5fc6" title=" " alt="" coords="769,104,873,129"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="661,77,757,99,756,105,660,83"/>
+<area shape="poly" id="edge25_Node000021_Node000010" title=" " alt="" coords="648,171,770,184,769,190,647,176"/>
+<area shape="rect" id="Node000026" href="$EPS_2control_8c.html#a84adb4dc09cb6e82e9eda21aaeceaa7f" title=" " alt="" coords="318,863,443,888"/>
+<area shape="poly" id="edge31_Node000025_Node000026" title=" " alt="" coords="244,891,304,883,305,888,245,896"/>
+<area shape="rect" id="Node000028" href="$EPS_2control_8c.html#aeaf603f808971c94a5d2cdd5b68662fd" title=" " alt="" coords="315,789,447,815"/>
+<area shape="poly" id="edge33_Node000025_Node000028" title=" " alt="" coords="217,886,342,819,344,824,219,890"/>
+<area shape="rect" id="Node000034" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a239d0163c178a1e18b16f06ac8237d5d" title="Voltage across the input&#45;bus shunt resistor, in mV (signed)." alt="" coords="310,961,451,987"/>
+<area shape="poly" id="edge40_Node000025_Node000034" title=" " alt="" coords="219,911,294,946,319,955,317,960,292,951,216,916"/>
+<area shape="rect" id="Node000036" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a3cd83a35e3da14e5a3e24ad9685e1ad9" title="Voltage at the PCB thermistor&#39;s ADC pin, in mV." alt="" coords="294,912,467,937"/>
+<area shape="poly" id="edge42_Node000025_Node000036" title=" " alt="" coords="244,905,281,909,280,914,244,910"/>
+<area shape="rect" id="Node000027" href="$util__filter_8c.html#a63a1482979c6cbfe22d0d3ba0df731cf" title="Set up a filter." alt="" coords="551,912,657,937"/>
+<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="439,885,538,908,537,913,438,891"/>
+<area shape="poly" id="edge34_Node000028_Node000022" title=" " alt="" coords="396,787,457,739,515,700,536,691,538,696,517,704,460,743,399,791"/>
+<area shape="rect" id="Node000029" href="$util__filter_8c.html#ab346417c5f72d4211b2b5fff874e5130" title="Add a sample and return the new filtered value." alt="" coords="539,813,669,839"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="447,806,525,815,525,820,447,812"/>
+<area shape="rect" id="Node000030" href="$util__math_8c.html#a3c8d4adc8700e7d94ab8b902d9e11bd8" title="True if lo &lt;= v &lt;= hi." alt="" coords="551,863,657,888"/>
+<area shape="poly" id="edge36_Node000028_Node000030" title=" " alt="" coords="417,812,517,847,544,856,543,861,515,853,415,817"/>
+<area shape="rect" id="Node000031" href="$util__thermistor_8c.html#a77a20122c4ea0df2931140202b34c0bc" title="Temperature in degC from the voltage at the ADC pin." alt="" coords="541,715,667,740"/>
+<area shape="poly" id="edge37_Node000028_Node000031" title=" " alt="" coords="412,787,515,749,540,741,542,746,517,754,414,792"/>
+<area shape="rect" id="Node000032" href="$util__math_8c.html#ad2400031fcfecbd3a6fda4d67df3ffc6" title="Convert a physical value to a scaled int16 for CAN (SED: 37.2 degC x10 &#45;&gt; 372) Rounds to nearest and ..." alt="" coords="559,764,649,789"/>
+<area shape="poly" id="edge38_Node000028_Node000032" title=" " alt="" coords="447,792,545,781,545,786,447,797"/>
+<area shape="rect" id="Node000033" href="$util__math_8c.html#a77729f0c3f67095ebac7cfd3ccad3067" title="Limit v to [lo, hi]." alt="" coords="774,764,869,789"/>
+<area shape="poly" id="edge39_Node000032_Node000033" title=" " alt="" coords="650,774,760,774,760,779,650,779"/>
+<area shape="rect" id="Node000035" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="565,961,643,987"/>
+<area shape="poly" id="edge41_Node000034_Node000035" title=" " alt="" coords="452,971,551,971,551,977,452,977"/>
+<area shape="rect" id="Node000038" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ad4595ad05f609e711d06cf3ceb47ccb0" title=" " alt="" coords="344,1060,417,1085"/>
+<area shape="poly" id="edge44_Node000037_Node000038" title=" " alt="" coords="229,1049,331,1063,330,1069,228,1055"/>
+<area shape="rect" id="Node000039" href="$can__bus__twai_8c.html#ad3fc17d98e17c0c4a6a06788445d6901" title="Start the bus at CAN_BITRATE." alt="" coords="329,1109,432,1135"/>
+<area shape="poly" id="edge45_Node000037_Node000039" title=" " alt="" coords="217,1058,294,1096,317,1103,315,1108,292,1100,215,1063"/>
+<area shape="rect" id="Node000041" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ac3b80a5372baf013f3642facad85a986" title=" " alt="" coords="345,1011,416,1036"/>
+<area shape="poly" id="edge47_Node000037_Node000041" title=" " alt="" coords="228,1040,331,1027,332,1032,229,1046"/>
+<area shape="rect" id="Node000040" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="549,1109,659,1135"/>
+<area shape="poly" id="edge46_Node000039_Node000040" title=" " alt="" coords="432,1119,535,1119,535,1125,432,1125"/>
+<area shape="poly" id="edge49_Node000041_Node000035" title=" " alt="" coords="416,1013,550,983,552,988,417,1018"/>
+<area shape="rect" id="Node000042" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a8355e5b94b25f393e93f6926eaee61b2" title=" " alt="" coords="565,1011,643,1036"/>
+<area shape="poly" id="edge48_Node000041_Node000042" title=" " alt="" coords="416,1021,551,1021,551,1026,416,1026"/>
+<area shape="rect" id="Node000043" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ab9d9f368ef489c3fa542c408e718dbdc" title=" " alt="" coords="563,1060,645,1085"/>
+<area shape="poly" id="edge50_Node000041_Node000043" title=" " alt="" coords="417,1028,550,1058,548,1063,416,1034"/>
+</map>

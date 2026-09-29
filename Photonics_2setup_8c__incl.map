@@ -1,0 +1,36 @@
+<map id="src/Photonics/setup.c" name="src/Photonics/setup.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="379,5,537,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,156,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="398,33,156,79,155,73,397,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,79,298,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="424,33,289,77,287,72,422,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="323,79,407,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="445,33,392,72,389,68,441,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="431,79,485,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="461,31,461,65,455,65,455,31"/>
+<area shape="rect" id="Node000006" href="$can__bus_8h.html" title="Send and receive CAN frames." alt="" coords="509,79,596,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="475,29,528,68,525,72,472,33"/>
+<area shape="rect" id="Node000012" href="$Photonics_2comms_8h.html" title="Photonics communication logic: this is jsut heartbeat and state transitions." alt="" coords="621,79,703,104"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="492,28,617,72,615,77,490,33"/>
+<area shape="rect" id="Node000014" href="$Photonics_2control_8h.html" title="Photonics control core: handles most of the data collection and can transmission, heartbeat and shit ..." alt="" coords="728,79,807,104"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="508,28,715,75,714,80,507,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="423,225,506,251"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="548,106,481,215,476,212,543,103"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="548,299,619,324"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="529,107,483,132,436,167,418,186,407,207,405,228,414,249,438,273,469,290,503,300,535,305,534,310,501,305,467,295,435,278,409,252,399,229,402,205,414,183,433,163,481,127,526,102"/>
+<area shape="rect" id="Node000009" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="591,152,648,177"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="566,103,601,140,597,144,562,106"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="596,180,503,222,501,217,593,175"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="607,179,588,200,573,226,569,256,576,285,571,286,564,256,567,225,584,197,603,176"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="693,225,767,251"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="639,175,702,215,699,220,636,180"/>
+<area shape="rect" id="Node000011" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="581,225,668,251"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="623,177,625,212,620,212,618,178"/>
+<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="620,252,599,288,595,285,616,250"/>
+<area shape="poly" id="edge15_Node000012_Node000007" title=" " alt="" coords="647,107,581,154,493,219,490,215,578,150,644,102"/>
+<area shape="poly" id="edge17_Node000012_Node000008" title=" " alt="" coords="684,102,723,128,764,165,780,186,790,208,791,230,781,252,750,281,712,299,671,309,633,313,632,308,670,304,710,294,747,276,777,249,786,229,785,209,776,188,760,168,720,132,681,106"/>
+<area shape="poly" id="edge18_Node000012_Node000009" title=" " alt="" coords="657,106,635,142,631,139,653,103"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="670,103,721,212,716,214,665,106"/>
+<area shape="rect" id="Node000013" href="$fsm_8h.html" title="Node state machine shared by every node, per SED: INIT &#45;&gt; SAFE &#45;&gt; ACTIVE, and SAFE/ACTIVE &lt;&#45;&gt; SLEEP." alt="" coords="842,152,901,177"/>
+<area shape="poly" id="edge19_Node000012_Node000013" title=" " alt="" coords="696,101,830,146,828,151,695,107"/>
+</map>

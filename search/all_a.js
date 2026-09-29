@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['last_5fmotion_5fms_0',['last_motion_ms',['../structmaster__flight__t.html#a3da249cb54acd4e70b7f0a1f8e9b4fd9',1,'master_flight_t']]],
+  ['last_5fseen_5fms_1',['last_seen_ms',['../structmaster__comms__t.html#abbe5c778c6d355c194bc894e7c7983ab',1,'master_comms_t']]],
+  ['libs_20tt_2',['&lt;tt&gt;libs/&lt;/tt&gt;',['../index.html#autotoc_md2',1,'']]],
+  ['log_5fpresence_5fchanges_3',['log_presence_changes',['../Master_2setup_8c.html#ab109df5e9ac28571d4cbd95897ce0f08',1,'setup.c']]],
+  ['ltr390_5finit_5fone_4',['ltr390_init_one',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a59cd24be01bd76df13b655a611db8625',1,'hal_esp32.c']]],
+  ['ltr390_5fmode_5fals_5',['LTR390_MODE_ALS',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a41364d5b1764a659cb2872bbb815d717aeeef02c43f395207ce95d8546c07fddb',1,'hal_esp32.c']]],
+  ['ltr390_5fmode_5ft_6',['ltr390_mode_t',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a41364d5b1764a659cb2872bbb815d717',1,'hal_esp32.c']]],
+  ['ltr390_5fmode_5fuvs_7',['LTR390_MODE_UVS',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a41364d5b1764a659cb2872bbb815d717a707f504cdcb5d8237cd1a535b30be81f',1,'hal_esp32.c']]],
+  ['ltr390_5fread_5fdata_8',['ltr390_read_data',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a07cf366135bf0bae4ee29bfbd6368702',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fals_5fdata0_9',['LTR390_REG_ALS_DATA0',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#ae57ad20ebf85d6fd8c29403a90fc9bc7',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fgain_10',['LTR390_REG_GAIN',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#ac937dc7eef3f13dc26553238e2e20084',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fmain_5fctrl_11',['LTR390_REG_MAIN_CTRL',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a05b0a3b6cf332078c6a99c5c6e25a154',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fmain_5fstatus_12',['LTR390_REG_MAIN_STATUS',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a01d319e565e3db923c1c9a068fa8bd12',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fmeas_5frate_13',['LTR390_REG_MEAS_RATE',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a109d9a490895e1efebc13edbaa236a4e',1,'hal_esp32.c']]],
+  ['ltr390_5freg_5fuvs_5fdata0_14',['LTR390_REG_UVS_DATA0',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#aaba3185fcf087b4165391624dab46d85',1,'hal_esp32.c']]],
+  ['ltr390_5fset_5fals_15',['ltr390_set_als',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a37c1867566a57082f0e1b0b96a89dca8',1,'hal_esp32.c']]],
+  ['ltr390_5fset_5fuvs_16',['ltr390_set_uvs',['../Photonics_2HAL_2esp32_2hal__esp32_8c.html#a3101d5f18b577b5c38d6bbcdb4a4645a',1,'hal_esp32.c']]],
+  ['lux_5fx10_17',['lux_x10',['../structcan__photonics__uv__t.html#af5ab73f08eda04b49507503f371faac2',1,'can_photonics_uv_t::lux_x10'],['../structhal__uv__t.html#a302ad7fd34521ece93e436d76f1a8bd6',1,'hal_uv_t::lux_x10']]]
+];

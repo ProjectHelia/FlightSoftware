@@ -1,0 +1,16 @@
+<map id="libs/utilities/util_thermistor.h" name="libs/utilities/util_thermistor.h">
+<area shape="rect" id="Node000001" title="Convert an NTC thermistor voltage&#45;divider reading to degC using the Beta equation." alt="" coords="85,5,207,45"/>
+<area shape="rect" id="Node000002" href="$util__thermistor_8c.html" title=" " alt="" coords="10,93,133,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,58,90,95,86,91,118,54"/>
+<area shape="rect" id="Node000003" href="$EPS_2control_8h.html" title="turn raw EPS readings into scaled data for CAN" alt="" coords="157,101,287,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,54,213,98,210,102,170,57"/>
+<area shape="rect" id="Node000004" href="$EPS_2comms_8h.html" title="Set&#39;s up heartbeat and state transitions for the EPS node." alt="" coords="51,181,185,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,136,135,183,132,179,194,132"/>
+<area shape="rect" id="Node000006" href="$EPS_2setup_8c.html" title=" " alt="" coords="162,255,282,280"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="225,140,225,254,219,254,219,140"/>
+<area shape="rect" id="Node000007" href="$EPS_2control_8c.html" title=" " alt="" coords="260,181,389,207"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="250,132,311,179,308,183,247,137"/>
+<area shape="rect" id="Node000005" href="$EPS_2comms_8c.html" title=" " alt="" coords="5,255,137,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="105,220,81,256,77,253,101,217"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="148,212,206,252,203,257,145,217"/>
+</map>

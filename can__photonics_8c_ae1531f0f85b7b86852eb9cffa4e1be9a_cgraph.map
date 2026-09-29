@@ -1,0 +1,9 @@
+<map id="can_decode_adc" name="can_decode_adc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,135,56"/>
+<area shape="rect" id="Node000002" href="$can__photonics_8c.html#a1af4e1f42cb3d112448fd46e6cc5ba96" title=" " alt="" coords="183,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,30,169,24,170,29,136,35"/>
+<area shape="rect" id="Node000004" href="$can__photonics_8c.html#aef0942486f99a6ed41c29cb1dd19c74c" title=" " alt="" coords="187,55,257,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="136,51,173,57,172,62,135,56"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a50ee63bb2a83e438159e9bb6c45f11f2" title="Message type field of an ID." alt="" coords="309,5,409,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,15,296,15,296,21,262,21"/>
+</map>

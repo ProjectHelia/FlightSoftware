@@ -1,0 +1,12 @@
+<map id="libs/can/can.h" name="libs/can/can.h">
+<area shape="rect" id="Node000001" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="131,5,242,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,33,83,75,80,70,163,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="112,79,187,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,32,164,68,159,65,178,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="229,152,299,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,30,254,139,249,141,191,32"/>
+<area shape="rect" id="Node000005" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="262,79,349,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,28,275,69,273,74,204,33"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="301,106,280,141,275,139,296,103"/>
+</map>

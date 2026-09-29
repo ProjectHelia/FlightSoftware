@@ -1,0 +1,30 @@
+<map id="libs/can/esp32/can_bus_twai.c" name="libs/can/esp32/can_bus_twai.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="341,5,484,45"/>
+<area shape="rect" id="Node000002" href="$can__bus_8h.html" title="Send and receive CAN frames." alt="" coords="26,93,113,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,46,127,94,126,89,340,40"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="137,93,208,119"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="356,48,221,92,220,87,354,43"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="232,93,336,119"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="383,48,316,88,313,84,380,43"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="360,93,464,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="415,46,415,79,410,79,410,46"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="489,93,608,119"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="446,43,518,84,515,89,444,48"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="632,93,716,119"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="476,43,623,87,622,92,474,48"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="740,93,890,119"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="484,38,743,88,742,93,483,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,240,111,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,119,72,226,67,226,67,119"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="144,313,214,339"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="61,121,40,148,19,186,12,206,8,226,10,246,19,264,41,287,70,303,101,313,131,319,130,324,99,318,68,307,38,291,14,267,5,247,3,226,6,205,14,183,36,145,57,117"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="150,167,208,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="89,116,151,157,148,161,86,121"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="163,194,101,235,98,230,160,190"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="197,190,218,211,236,239,239,258,232,276,208,306,204,303,228,274,233,258,231,241,214,214,193,194"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="298,240,372,265"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="205,190,298,232,296,237,203,194"/>
+<area shape="rect" id="Node000007" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="136,240,222,265"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="182,192,182,226,176,226,176,192"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="182,266,182,300,176,300,176,266"/>
+</map>

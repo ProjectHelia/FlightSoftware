@@ -1,0 +1,48 @@
+<map id="hal_init" name="hal_init">
+<area shape="rect" id="Node000001" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,288,76,313"/>
+<area shape="rect" id="Node000002" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ad4595ad05f609e711d06cf3ceb47ccb0" title=" " alt="" coords="147,5,220,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="40,287,44,242,56,176,80,105,99,71,122,40,133,31,136,35,126,44,103,74,85,107,61,178,49,242,45,288"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#ad3fc17d98e17c0c4a6a06788445d6901" title="Start the bus at CAN_BITRATE." alt="" coords="132,55,235,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="42,287,49,251,64,202,88,147,122,98,136,85,140,89,126,101,93,150,70,203,55,253,47,288"/>
+<area shape="rect" id="Node000005" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a953c797ed3934b59d093b4708c651a6f" title=" " alt="" coords="319,207,405,232"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="75,287,123,273,305,229,306,234,125,278,77,292"/>
+<area shape="rect" id="Node000006" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="696,271,777,296"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="47,286,76,244,97,221,123,202,166,182,203,175,290,171,393,157,475,144,514,143,555,147,599,159,649,180,673,195,694,215,724,257,720,260,690,219,670,199,647,184,597,164,554,152,514,148,475,149,394,162,291,177,204,180,168,188,125,207,101,225,80,248,51,289"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a35389c21a09b9640b19b86f5e98e4a0e" title=" " alt="" coords="125,459,242,484"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="49,313,77,371,99,406,126,437,142,450,138,454,122,441,95,409,72,373,45,315"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a0ade56717c8ef94127ab48813c2c6be9" title=" " alt="" coords="481,195,648,220"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="56,285,86,263,123,241,204,208,290,191,381,186,468,191,468,196,381,191,291,197,206,213,125,246,89,267,59,290"/>
+<area shape="rect" id="Node000009" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ac3b80a5372baf013f3642facad85a986" title=" " alt="" coords="148,508,219,533"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="47,313,54,348,69,396,92,448,108,472,126,493,137,502,134,506,122,497,103,475,87,450,64,398,49,349,41,314"/>
+<area shape="rect" id="Node000013" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a59cd24be01bd76df13b655a611db8625" title=" " alt="" coords="124,288,243,313"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="76,298,110,298,110,303,76,303"/>
+<area shape="rect" id="Node000016" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#af38c3c98f4e538d418531979e14dcb94" title=" " alt="" coords="313,357,411,383"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="77,309,125,322,300,357,299,363,123,327,75,314"/>
+<area shape="rect" id="Node000017" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#abd4f5ca22a5296e6ee64bdd01406adf3" title=" " alt="" coords="498,396,631,421"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="59,311,89,333,125,353,170,370,218,383,315,401,406,408,484,410,484,415,406,414,314,406,217,389,169,375,123,358,86,337,56,316"/>
+<area shape="rect" id="Node000018" href="$eth__w5500_8c.html#a2d716e9418025b8a72a75a286fa32c12" title=" " alt="" coords="136,607,231,632"/>
+<area shape="poly" id="edge24_Node000001_Node000018" title=" " alt="" coords="47,313,73,411,97,478,126,543,144,571,163,595,159,598,139,574,122,546,92,480,68,413,42,314"/>
+<area shape="rect" id="Node000004" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="307,55,417,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,65,293,65,293,70,235,70"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="595,218,695,263,693,267,593,222"/>
+<area shape="rect" id="Node000010" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a8355e5b94b25f393e93f6926eaee61b2" title=" " alt="" coords="323,508,401,533"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="219,518,308,518,308,523,219,523"/>
+<area shape="rect" id="Node000011" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="323,557,401,583"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="220,528,310,553,308,558,218,533"/>
+<area shape="rect" id="Node000012" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ab9d9f368ef489c3fa542c408e718dbdc" title=" " alt="" coords="321,459,403,484"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="218,508,306,484,308,489,220,514"/>
+<area shape="poly" id="edge14_Node000013_Node000005" title=" " alt="" coords="211,285,290,249,319,235,321,240,292,254,213,290"/>
+<area shape="rect" id="Node000014" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a35f22038df04d5df4132f96d20432f35" title=" " alt="" coords="510,271,619,296"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="243,295,291,293,496,284,496,289,291,298,243,300"/>
+<area shape="rect" id="Node000015" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a37c1867566a57082f0e1b0b96a89dca8" title=" " alt="" coords="305,308,419,333"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="243,305,292,310,291,315,242,310"/>
+<area shape="poly" id="edge19_Node000013_Node000016" title=" " alt="" coords="215,311,292,342,313,350,311,355,290,347,213,316"/>
+<area shape="poly" id="edge16_Node000014_Node000006" title=" " alt="" coords="620,281,682,281,682,286,620,286"/>
+<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="419,308,496,293,497,298,420,313"/>
+<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="410,358,647,305,682,296,683,301,649,310,411,363"/>
+<area shape="poly" id="edge23_Node000017_Node000006" title=" " alt="" coords="608,394,647,374,685,341,716,306,720,309,689,345,649,379,610,398"/>
+<area shape="rect" id="Node000019" href="$eth__w5500_8c.html#af0916ca9c93237c0ae94f39dac19e890" title=" " alt="" coords="291,656,433,681"/>
+<area shape="poly" id="edge25_Node000018_Node000019" title=" " alt="" coords="231,629,302,650,301,655,229,635"/>
+<area shape="rect" id="Node000020" href="$eth__w5500_8c.html#ab99d16c365b60c03650840081b46d9fb" title=" " alt="" coords="303,607,421,632"/>
+<area shape="poly" id="edge26_Node000018_Node000020" title=" " alt="" coords="231,617,288,617,288,622,231,622"/>
+</map>

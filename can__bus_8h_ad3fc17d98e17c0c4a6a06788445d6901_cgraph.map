@@ -1,0 +1,5 @@
+<map id="can_bus_init" name="can_bus_init">
+<area shape="rect" id="Node000001" title="Start the bus at CAN_BITRATE." alt="" coords="5,5,108,31"/>
+<area shape="rect" id="Node000002" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="156,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,15,142,15,142,21,108,21"/>
+</map>

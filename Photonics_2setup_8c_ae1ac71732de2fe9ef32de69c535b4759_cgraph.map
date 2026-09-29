@@ -1,0 +1,44 @@
+<map id="comms_task" name="comms_task">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,252,111,277"/>
+<area shape="rect" id="Node000002" href="$can__bus__twai_8c.html#a944ff1abfcb93d34c6a99841eec9b117" title="Log the controller&#39;s state and error counters (added for debugging." alt="" coords="191,5,341,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="58,251,66,210,84,153,113,92,133,64,157,40,177,28,179,32,160,44,137,67,117,95,89,155,72,211,64,252"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#a94172864628e91bdd4f5e035900425c3" title="Call regularly: recovers from bus&#45;off without a dedicated RTOS task and drains driver alerts (RX_QUEU..." alt="" coords="181,55,351,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,251,71,218,90,174,119,128,137,107,157,89,167,83,169,88,160,93,140,111,123,131,95,176,76,220,65,253"/>
+<area shape="rect" id="Node000004" href="$can__bus__twai_8c.html#af0f076d9aa2913134a489f53f46286c5" title="Wait up to timeout_ms for a frame, false if none arrived." alt="" coords="211,104,321,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="64,250,98,196,125,165,157,138,196,122,198,127,160,143,129,168,102,199,68,253"/>
+<area shape="rect" id="Node000005" href="$can__bus__twai_8c.html#a6da2f8572a77f584be545106cc4f3012" title="Queue a frame for sending." alt="" coords="209,153,323,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="71,249,108,218,158,188,195,175,197,180,160,192,111,222,75,253"/>
+<area shape="rect" id="Node000006" href="$fsm_8c.html#a66f046cbfe0b1b7502e782351c52d29a" title="Short name for logging." alt="" coords="201,203,331,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="108,249,158,237,194,228,195,234,159,242,109,254"/>
+<area shape="rect" id="Node000007" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a75663a29640bd67145942ac92198e7a4" title="Reboot the node (CMD_RESET_*)." alt="" coords="220,252,312,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="111,262,206,262,206,267,111,267"/>
+<area shape="rect" id="Node000008" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="682,339,758,364"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="73,276,109,308,133,325,160,337,228,356,300,368,372,375,443,376,572,370,668,358,669,363,572,375,443,382,372,380,299,374,227,361,158,342,131,329,106,313,69,280"/>
+<area shape="rect" id="Node000009" href="$Photonics_2comms_8c.html#a9292481e431b50d10bf3db44d2dc6ac7" title=" " alt="" coords="159,517,373,543"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="63,277,70,321,87,382,116,447,136,477,160,503,169,509,165,513,157,507,132,480,111,450,82,384,65,322,58,278"/>
+<area shape="rect" id="Node000011" href="$Photonics_2comms_8c.html#a906239187138328c6184aa3cdab7e5d4" title=" " alt="" coords="422,403,590,428"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="68,276,102,329,128,358,160,381,221,405,285,418,349,423,408,423,408,428,349,429,285,423,219,410,157,386,125,362,98,332,63,279"/>
+<area shape="rect" id="Node000012" href="$Photonics_2comms_8c.html#a59a378a8c09c5dad31ecf01256795715" title=" " alt="" coords="185,453,347,493"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="66,277,78,308,98,350,125,394,160,432,179,444,176,449,157,436,121,397,93,352,73,310,61,279"/>
+<area shape="rect" id="Node000015" href="$Photonics_2comms_8c.html#a2ccdea90345d2fbfdab05de81749268e" title=" " alt="" coords="169,301,363,327"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="109,275,159,287,195,296,194,301,158,293,108,280"/>
+<area shape="rect" id="Node000010" href="$fsm_8c.html#a382047f9c2ee1ea232d39ec88f282abf" title="Compute the next state, invalid transitions leave the state unchanged." alt="" coords="465,511,547,536"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="373,524,451,522,451,528,374,530"/>
+<area shape="poly" id="edge11_Node000011_Node000008" title=" " alt="" coords="549,400,668,364,669,369,550,405"/>
+<area shape="poly" id="edge15_Node000012_Node000010" title=" " alt="" coords="348,487,452,509,450,514,347,492"/>
+<area shape="rect" id="Node000013" href="$can_8c.html#a4d9ee35a54ac715952856478009b0c15" title="Work out whether a frame is a system command meant for this node." alt="" coords="639,417,801,443"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="347,462,625,436,625,441,348,468"/>
+<area shape="rect" id="Node000014" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="849,341,956,367"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="750,415,858,370,860,374,752,420"/>
+<area shape="poly" id="edge21_Node000015_Node000008" title=" " alt="" coords="316,299,372,288,442,279,517,278,591,287,617,298,640,312,680,330,677,335,637,316,614,303,590,293,516,283,442,284,373,293,317,304"/>
+<area shape="rect" id="Node000016" href="$can_8c.html#ab8ba62bb8814a14960976d932bae2f2b" title="Build a heartbeat frame (INFO priority, type 0x00)" alt="" coords="421,200,591,225"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="345,299,372,288,386,277,396,266,405,255,420,242,448,228,450,233,423,247,409,258,400,270,390,281,375,292,347,304"/>
+<area shape="rect" id="Node000019" href="$util__timer_8c.html#ae274e5e8c946c1a92275e81617010e67" title="True once per period_ms, advancing next_ms to the next deadline." alt="" coords="463,301,549,327"/>
+<area shape="poly" id="edge22_Node000015_Node000019" title=" " alt="" coords="364,311,449,311,449,317,364,317"/>
+<area shape="rect" id="Node000017" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="661,276,779,301"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="544,223,672,269,670,274,542,228"/>
+<area shape="rect" id="Node000018" href="$can_8c.html#aabba07119bf5de77d3716822546f5fc6" title=" " alt="" coords="668,200,772,225"/>
+<area shape="poly" id="edge20_Node000016_Node000018" title=" " alt="" coords="591,210,655,210,655,215,591,215"/>
+<area shape="poly" id="edge19_Node000017_Node000014" title=" " alt="" coords="757,299,854,334,852,339,756,304"/>
+<area shape="poly" id="edge23_Node000019_Node000008" title=" " alt="" coords="550,319,669,340,668,345,549,324"/>
+</map>

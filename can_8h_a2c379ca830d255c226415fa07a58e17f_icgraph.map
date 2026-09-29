@@ -1,0 +1,7 @@
+<map id="can_encode_sys_cmd" name="can_encode_sys_cmd">
+<area shape="rect" id="Node000001" title="Build a system command frame (Master uses this)" alt="" coords="399,5,561,31"/>
+<area shape="rect" id="Node000002" href="$Master_2comms_8c.html#a4939dcc252d8f8a55f19c33ee11ef73c" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="159,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="385,21,351,21,351,15,385,15"/>
+<area shape="rect" id="Node000003" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="5,5,111,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,21,111,21,111,15,145,15"/>
+</map>

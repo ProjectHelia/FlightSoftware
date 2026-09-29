@@ -1,0 +1,20 @@
+<map id="src/Master/ttc.c" name="src/Master/ttc.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="47,5,170,31"/>
+<area shape="rect" id="Node000002" href="$ttc_8h.html" title="Master&#39;s TT&amp;C link handling: bare minimum to prove Master and a ground script can talk." alt="" coords="40,79,91,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,32,82,68,77,66,99,30"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="116,79,186,104"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="118,30,140,66,135,68,113,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,225,103,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,104,68,212,63,212,63,104"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="136,299,206,324"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="58,106,38,134,18,171,11,191,8,212,10,231,19,249,39,271,66,286,94,297,122,303,121,308,93,302,63,291,36,275,14,252,5,232,3,211,6,190,13,169,33,131,54,103"/>
+<area shape="rect" id="Node000005" href="$can_8h.html" title="Driver&#45;independent CAN helpers: frame type, byte packing, and encode/decode for messages every node s..." alt="" coords="142,152,200,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="84,102,144,142,141,147,81,106"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="156,180,96,220,93,215,153,175"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="189,176,210,196,228,224,231,243,224,262,200,292,196,288,220,259,225,243,223,226,206,200,185,180"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="290,225,372,251"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="198,175,294,217,291,222,196,180"/>
+<area shape="rect" id="Node000007" href="$protocol_8h.html" title="HELIA CAN protocol constants: the SED&#39;s 11&#45;bit ID scheme and message dictionary This is supposed to b..." alt="" coords="128,225,214,251"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="174,178,174,212,168,212,168,178"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="174,251,174,285,168,285,168,251"/>
+</map>

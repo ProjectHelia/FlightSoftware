@@ -1,0 +1,9 @@
+<map id="ina_init" name="ina_init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,76,80"/>
+<area shape="rect" id="Node000002" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a8355e5b94b25f393e93f6926eaee61b2" title=" " alt="" coords="126,5,205,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,52,119,33,121,38,74,57"/>
+<area shape="rect" id="Node000003" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="126,55,205,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="77,65,113,65,113,70,77,70"/>
+<area shape="rect" id="Node000004" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ab9d9f368ef489c3fa542c408e718dbdc" title=" " alt="" coords="124,104,207,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="74,78,121,96,119,101,72,83"/>
+</map>

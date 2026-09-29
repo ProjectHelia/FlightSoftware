@@ -1,0 +1,7 @@
+<map id="ltr390_set_als" name="ltr390_set_als">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,119,31"/>
+<area shape="rect" id="Node000002" href="$Photonics_2HAL_2esp32_2hal__esp32_8c.html#a35f22038df04d5df4132f96d20432f35" title=" " alt="" coords="167,5,276,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,15,153,15,153,21,119,21"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="324,5,405,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,15,310,15,310,21,276,21"/>
+</map>

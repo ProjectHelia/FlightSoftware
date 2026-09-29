@@ -1,0 +1,11 @@
+<map id="can_decode_heartbeat" name="can_decode_heartbeat">
+<area shape="rect" id="Node000001" title="Decode a heartbeat." alt="" coords="5,80,175,105"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a781b02a1af2262004f336a9afa2be416" title=" " alt="" coords="230,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,77,235,33,237,38,125,82"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a635d13418feab68e80255151e6106e34" title="Priority field of an ID." alt="" coords="223,55,341,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,79,209,74,209,80,175,84"/>
+<area shape="rect" id="Node000004" href="$protocol_8h.html#aa16f808d69fb8251d3db5b5d988614d3" title="Source field of an ID." alt="" coords="225,104,339,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,101,211,105,210,110,175,106"/>
+<area shape="rect" id="Node000005" href="$protocol_8h.html#a50ee63bb2a83e438159e9bb6c45f11f2" title="Message type field of an ID." alt="" coords="232,153,332,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="125,103,236,146,234,151,123,108"/>
+</map>

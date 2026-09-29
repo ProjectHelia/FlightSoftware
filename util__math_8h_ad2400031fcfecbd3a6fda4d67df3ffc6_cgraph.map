@@ -1,0 +1,5 @@
+<map id="util_to_i16" name="util_to_i16">
+<area shape="rect" id="Node000001" title="Convert a physical value to a scaled int16 for CAN (SED: 37.2 degC x10 &#45;&gt; 372) Rounds to nearest and ..." alt="" coords="5,5,96,31"/>
+<area shape="rect" id="Node000002" href="$util__math_8c.html#a77729f0c3f67095ebac7cfd3ccad3067" title="Limit v to [lo, hi]." alt="" coords="144,5,239,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,15,131,15,131,21,96,21"/>
+</map>

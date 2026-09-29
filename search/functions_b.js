@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['photonics_5fcomms_5fboot_5fdone_0',['photonics_comms_boot_done',['../Photonics_2comms_8c.html#a9292481e431b50d10bf3db44d2dc6ac7',1,'photonics_comms_boot_done(photonics_comms_t *c):&#160;comms.c'],['../Photonics_2comms_8h.html#a9292481e431b50d10bf3db44d2dc6ac7',1,'photonics_comms_boot_done(photonics_comms_t *c):&#160;comms.c']]],
+  ['photonics_5fcomms_5finit_1',['photonics_comms_init',['../Photonics_2comms_8c.html#a906239187138328c6184aa3cdab7e5d4',1,'photonics_comms_init(photonics_comms_t *c, uint32_t now_ms):&#160;comms.c'],['../Photonics_2comms_8h.html#a906239187138328c6184aa3cdab7e5d4',1,'photonics_comms_init(photonics_comms_t *c, uint32_t now_ms):&#160;comms.c']]],
+  ['photonics_5fcomms_5fon_5fframe_2',['photonics_comms_on_frame',['../Photonics_2comms_8c.html#a59a378a8c09c5dad31ecf01256795715',1,'photonics_comms_on_frame(photonics_comms_t *c, const can_frame_t *rx):&#160;comms.c'],['../Photonics_2comms_8h.html#a59a378a8c09c5dad31ecf01256795715',1,'photonics_comms_on_frame(photonics_comms_t *c, const can_frame_t *rx):&#160;comms.c']]],
+  ['photonics_5fcomms_5fon_5ftick_3',['photonics_comms_on_tick',['../Photonics_2comms_8c.html#a2ccdea90345d2fbfdab05de81749268e',1,'photonics_comms_on_tick(photonics_comms_t *c, uint32_t now_ms, can_frame_t tx[PHOTONICS_COMMS_MAX_TX]):&#160;comms.c'],['../Photonics_2comms_8h.html#a2ccdea90345d2fbfdab05de81749268e',1,'photonics_comms_on_tick(photonics_comms_t *c, uint32_t now_ms, can_frame_t tx[PHOTONICS_COMMS_MAX_TX]):&#160;comms.c']]],
+  ['photonics_5fcontrol_5ftask_4',['photonics_control_task',['../Photonics_2control_8h.html#ae9270f86575ecb56767676456f920188',1,'control.h']]],
+  ['put_5fi16_5',['put_i16',['../can__instr_8c.html#add60f28248728033cd20a5ea98a1e321',1,'put_i16(uint8_t *p, int16_t v):&#160;can_instr.c'],['../can__photonics_8c.html#add60f28248728033cd20a5ea98a1e321',1,'put_i16(uint8_t *p, int16_t v):&#160;can_photonics.c']]],
+  ['put_5fi32_6',['put_i32',['../can__instr_8c.html#a19c2592bc4f0e3a8299d70ae29418abd',1,'put_i32(uint8_t *p, int32_t v):&#160;can_instr.c'],['../can__photonics_8c.html#a19c2592bc4f0e3a8299d70ae29418abd',1,'put_i32(uint8_t *p, int32_t v):&#160;can_photonics.c']]],
+  ['put_5fu16_7',['put_u16',['../can__instr_8c.html#a4c24c04a1ac03701bc882d51e0e02468',1,'can_instr.c']]]
+];

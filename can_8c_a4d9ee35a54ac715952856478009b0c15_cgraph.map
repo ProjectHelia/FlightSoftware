@@ -1,0 +1,5 @@
+<map id="can_decode_sys_cmd" name="can_decode_sys_cmd">
+<area shape="rect" id="Node000001" title="Work out whether a frame is a system command meant for this node." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="216,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,15,202,15,202,21,169,21"/>
+</map>

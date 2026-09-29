@@ -1,0 +1,11 @@
+<map id="libs/utilities/util_thermistor.c" name="libs/utilities/util_thermistor.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="131,5,254,45"/>
+<area shape="rect" id="Node000002" href="$util__thermistor_8h.html" title="Convert an NTC thermistor voltage&#45;divider reading to degC using the Beta equation." alt="" coords="5,93,135,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,48,101,88,98,84,162,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="159,93,227,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,46,195,79,190,79,190,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="251,93,326,119"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,43,266,82,262,87,214,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="29,167,111,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,119,73,153,67,153,67,119"/>
+</map>

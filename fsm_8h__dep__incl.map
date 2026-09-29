@@ -1,0 +1,29 @@
+<map id="libs/fsm/fsm.h" name="libs/fsm/fsm.h">
+<area shape="rect" id="Node000001" title="Node state machine shared by every node, per SED: INIT &#45;&gt; SAFE &#45;&gt; ACTIVE, and SAFE/ACTIVE &lt;&#45;&gt; SLEEP." alt="" coords="454,5,569,31"/>
+<area shape="rect" id="Node000002" href="$fsm_8c.html" title=" " alt="" coords="58,86,173,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="441,33,321,54,185,81,156,88,155,83,184,76,320,49,440,28"/>
+<area shape="rect" id="Node000003" href="$EPS_2comms_8h.html" title="Set&#39;s up heartbeat and state transitions for the EPS node." alt="" coords="197,86,330,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="463,37,300,89,299,83,462,32"/>
+<area shape="rect" id="Node000006" href="$Instrumentation_2comms_8h.html" title="for now only the lifecycle (every node has (heartbeat, unlock/sleep/reset)" alt="" coords="437,79,586,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="514,44,514,79,509,79,509,44"/>
+<area shape="rect" id="Node000009" href="$Master_2comms_8h.html" title="Master communication logic, currently a bench &quot;bus tester&quot;:" alt="" coords="653,86,807,111"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="557,33,699,83,697,88,555,38"/>
+<area shape="rect" id="Node000012" href="$Photonics_2comms_8h.html" title="Photonics communication logic: this is jsut heartbeat and state transitions." alt="" coords="996,86,1168,111"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="583,26,999,83,998,89,583,32"/>
+<area shape="rect" id="Node000004" href="$EPS_2comms_8c.html" title=" " alt="" coords="5,174,137,199"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,120,99,176,96,171,224,115"/>
+<area shape="rect" id="Node000005" href="$EPS_2setup_8c.html" title=" " alt="" coords="162,174,282,199"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="254,125,230,175,225,172,249,123"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2comms_8c.html" title=" " alt="" coords="306,167,455,207"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="473,128,411,169,408,164,470,124"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2setup_8c.html" title=" " alt="" coords="479,167,629,207"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="529,130,547,165,542,168,524,132"/>
+<area shape="rect" id="Node000010" href="$Master_2comms_8c.html" title=" " alt="" coords="653,174,807,199"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="733,125,733,173,727,173,727,125"/>
+<area shape="rect" id="Node000011" href="$Master_2setup_8c.html" title=" " alt="" coords="831,174,973,199"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="766,115,880,171,877,176,764,120"/>
+<area shape="rect" id="Node000013" href="$Photonics_2comms_8c.html" title=" " alt="" coords="997,174,1167,199"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1085,125,1085,173,1079,173,1079,125"/>
+<area shape="rect" id="Node000014" href="$Photonics_2setup_8c.html" title=" " alt="" coords="1192,174,1351,199"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="1121,115,1247,171,1245,176,1119,120"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="got_ip_handler" name="got_ip_handler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="267,5,385,31"/>
+<area shape="rect" id="Node000002" href="$eth__w5500_8c.html#a2d716e9418025b8a72a75a286fa32c12" title=" " alt="" coords="124,5,219,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,21,219,21,219,15,253,15"/>
+<area shape="rect" id="Node000003" href="$Master_2HAL_2esp32_2hal__esp32_8c.html#a6d658186b5bf3426b59fc21171b21451" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,5,76,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,21,76,21,76,15,110,15"/>
+</map>

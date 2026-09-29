@@ -1,0 +1,17 @@
+<map id="hal_init" name="hal_init">
+<area shape="rect" id="Node000001" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,55,76,80"/>
+<area shape="rect" id="Node000002" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ad4595ad05f609e711d06cf3ceb47ccb0" title=" " alt="" coords="139,5,212,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,52,126,33,128,38,77,57"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#ad3fc17d98e17c0c4a6a06788445d6901" title="Start the bus at CAN_BITRATE." alt="" coords="124,55,227,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="76,65,110,65,110,70,76,70"/>
+<area shape="rect" id="Node000005" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ac3b80a5372baf013f3642facad85a986" title=" " alt="" coords="140,116,211,141"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="70,78,135,108,133,113,68,82"/>
+<area shape="rect" id="Node000004" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="275,41,385,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="227,60,261,57,261,63,227,66"/>
+<area shape="rect" id="Node000006" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a8355e5b94b25f393e93f6926eaee61b2" title=" " alt="" coords="291,91,369,116"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="210,120,277,109,278,115,211,126"/>
+<area shape="rect" id="Node000007" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#a51caabf4f7c8a17a195559306de529de" title=" " alt="" coords="291,140,369,165"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="211,131,278,142,277,147,210,137"/>
+<area shape="rect" id="Node000008" href="$EPS_2HAL_2esp32_2hal__esp32_8c.html#ab9d9f368ef489c3fa542c408e718dbdc" title=" " alt="" coords="289,189,371,215"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="204,139,276,174,290,181,288,186,274,179,201,144"/>
+</map>

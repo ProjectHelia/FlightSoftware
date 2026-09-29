@@ -1,0 +1,7 @@
+<map id="imu_dump_packet" name="imu_dump_packet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="317,5,459,31"/>
+<area shape="rect" id="Node000002" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#abd349276ec775908ad922ed2d1185ed5" title=" " alt="" coords="164,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,21,269,21,269,15,303,15"/>
+<area shape="rect" id="Node000003" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a7bdacffdd989e8d1e18b9956b79be912" title=" " alt="" coords="5,5,116,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,21,116,21,116,15,150,15"/>
+</map>

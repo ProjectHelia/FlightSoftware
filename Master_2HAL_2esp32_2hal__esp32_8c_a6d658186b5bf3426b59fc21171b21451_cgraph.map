@@ -1,0 +1,13 @@
+<map id="hal_init" name="hal_init">
+<area shape="rect" id="Node000001" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,31,76,56"/>
+<area shape="rect" id="Node000002" href="$can__bus__twai_8c.html#ad3fc17d98e17c0c4a6a06788445d6901" title="Start the bus at CAN_BITRATE." alt="" coords="124,5,227,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,34,110,28,111,33,77,39"/>
+<area shape="rect" id="Node000004" href="$eth__w5500_8c.html#a2d716e9418025b8a72a75a286fa32c12" title=" " alt="" coords="128,55,223,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="77,47,115,54,114,59,76,52"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="291,5,401,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,15,277,15,277,21,227,21"/>
+<area shape="rect" id="Node000005" href="$eth__w5500_8c.html#af0916ca9c93237c0ae94f39dac19e890" title=" " alt="" coords="275,55,417,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,65,261,65,261,70,223,70"/>
+<area shape="rect" id="Node000006" href="$eth__w5500_8c.html#ab99d16c365b60c03650840081b46d9fb" title=" " alt="" coords="287,104,405,129"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="221,77,288,97,287,102,219,83"/>
+</map>

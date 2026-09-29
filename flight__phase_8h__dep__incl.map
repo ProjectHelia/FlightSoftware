@@ -1,0 +1,11 @@
+<map id="src/Master/flight_phase.h" name="src/Master/flight_phase.h">
+<area shape="rect" id="Node000001" title="Master&#39;s flight&#45;phase state machine." alt="" coords="169,5,355,31"/>
+<area shape="rect" id="Node000002" href="$Master_2control_8h.html" title=" " alt="" coords="91,79,241,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,41,183,81,180,76,234,37"/>
+<area shape="rect" id="Node000005" href="$flight__phase_8c.html" title=" " alt="" coords="266,79,450,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="290,37,344,76,341,81,287,41"/>
+<area shape="rect" id="Node000003" href="$Master_2control_8c.html" title=" " alt="" coords="5,152,156,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,115,96,154,93,150,140,110"/>
+<area shape="rect" id="Node000004" href="$Master_2setup_8c.html" title=" " alt="" coords="181,152,322,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="192,110,239,150,236,154,188,115"/>
+</map>

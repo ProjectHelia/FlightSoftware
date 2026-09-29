@@ -1,0 +1,9 @@
+<map id="can_encode_status" name="can_encode_status">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,152,56"/>
+<area shape="rect" id="Node000002" href="$can__instr_8c.html#af012aa9e21d7a103257eee1db91028f3" title=" " alt="" coords="200,5,304,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,30,186,25,187,30,153,35"/>
+<area shape="rect" id="Node000004" href="$can__instr_8c.html#add60f28248728033cd20a5ea98a1e321" title=" " alt="" coords="217,55,287,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,51,203,58,202,63,152,56"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="352,5,459,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,15,338,15,338,21,304,21"/>
+</map>

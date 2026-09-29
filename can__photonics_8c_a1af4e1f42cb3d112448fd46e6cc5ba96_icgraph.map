@@ -1,0 +1,9 @@
+<map id="frame_is" name="frame_is">
+<area shape="rect" id="Node000001" title=" " alt="" coords="184,55,263,80"/>
+<area shape="rect" id="Node000002" href="$can__photonics_8c.html#ae1531f0f85b7b86852eb9cffa4e1be9a" title=" " alt="" coords="6,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,53,110,33,112,28,171,48"/>
+<area shape="rect" id="Node000003" href="$can__photonics_8c.html#a06b83108522e97021cc8c4bcdf923ef8" title=" " alt="" coords="5,55,136,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,70,136,70,136,65,170,65"/>
+<area shape="rect" id="Node000004" href="$can__photonics_8c.html#ad00823d68652ca693ed609e39dcd6121" title=" " alt="" coords="5,104,136,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,87,112,106,110,101,170,82"/>
+</map>

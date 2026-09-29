@@ -1,0 +1,9 @@
+<map id="can_encode_uv0" name="can_encode_uv0">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,136,56"/>
+<area shape="rect" id="Node000002" href="$can__photonics_8c.html#af012aa9e21d7a103257eee1db91028f3" title=" " alt="" coords="184,5,288,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,31,170,25,171,31,137,36"/>
+<area shape="rect" id="Node000004" href="$can__photonics_8c.html#a19c2592bc4f0e3a8299d70ae29418abd" title=" " alt="" coords="201,55,271,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,50,187,58,187,63,136,55"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="336,5,443,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,15,322,15,322,21,288,21"/>
+</map>

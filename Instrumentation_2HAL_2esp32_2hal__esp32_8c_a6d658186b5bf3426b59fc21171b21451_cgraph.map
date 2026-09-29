@@ -1,0 +1,19 @@
+<map id="hal_init" name="hal_init">
+<area shape="rect" id="Node000001" title="Bring up I2C, the INA226, the thermistor ADC and the CAN bus." alt="" coords="5,131,76,156"/>
+<area shape="rect" id="Node000002" href="$can__bus__twai_8c.html#ad3fc17d98e17c0c4a6a06788445d6901" title="Start the bus at CAN_BITRATE." alt="" coords="156,5,259,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,129,76,85,97,61,123,40,142,30,144,35,125,44,101,65,80,88,51,132"/>
+<area shape="rect" id="Node000004" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a953c797ed3934b59d093b4708c651a6f" title=" " alt="" coords="165,55,250,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="63,128,123,97,157,83,159,88,125,102,65,133"/>
+<area shape="rect" id="Node000005" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a88767c41f3cf6ec0dad10e5fa3eb7eed" title=" " alt="" coords="353,205,435,231"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="76,134,120,128,174,125,233,128,292,141,336,164,372,193,369,197,333,168,290,146,233,134,174,131,120,134,76,139"/>
+<area shape="rect" id="Node000006" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a35389c21a09b9640b19b86f5e98e4a0e" title=" " alt="" coords="149,156,266,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="77,146,136,155,135,160,76,151"/>
+<area shape="rect" id="Node000007" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#a0ade56717c8ef94127ab48813c2c6be9" title=" " alt="" coords="124,205,291,231"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="62,154,125,190,146,199,144,203,123,195,59,158"/>
+<area shape="rect" id="Node000008" href="$Instrumentation_2HAL_2esp32_2hal__esp32_8c.html#abd4f5ca22a5296e6ee64bdd01406adf3" title=" " alt="" coords="141,255,274,280"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="51,155,80,197,101,221,126,241,135,247,133,251,122,246,97,225,76,201,47,158"/>
+<area shape="rect" id="Node000003" href="$can__bus__twai_8c.html#aaf9f0c405c756e3fb42f2031976b57b8" title=" " alt="" coords="339,5,449,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,15,325,15,325,21,259,21"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="291,215,340,215,340,221,291,221"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="255,252,339,230,341,235,257,257"/>
+</map>

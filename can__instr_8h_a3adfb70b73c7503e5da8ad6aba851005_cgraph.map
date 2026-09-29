@@ -1,0 +1,9 @@
+<map id="can_decode_accel" name="can_decode_accel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,145,56"/>
+<area shape="rect" id="Node000002" href="$can__instr_8c.html#a1af4e1f42cb3d112448fd46e6cc5ba96" title=" " alt="" coords="193,5,272,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,29,179,24,180,29,146,35"/>
+<area shape="rect" id="Node000004" href="$can__instr_8c.html#aef0942486f99a6ed41c29cb1dd19c74c" title=" " alt="" coords="197,55,268,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,51,184,57,183,63,145,57"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a50ee63bb2a83e438159e9bb6c45f11f2" title="Message type field of an ID." alt="" coords="320,5,420,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,15,306,15,306,21,272,21"/>
+</map>

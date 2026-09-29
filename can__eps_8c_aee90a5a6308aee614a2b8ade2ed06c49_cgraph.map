@@ -1,0 +1,11 @@
+<map id="can_encode_eps_status" name="can_encode_eps_status">
+<area shape="rect" id="Node000001" title="Encode EPS_STATUS." alt="" coords="5,31,181,56"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="229,5,348,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,29,215,25,216,30,182,35"/>
+<area shape="rect" id="Node000004" href="$can_8c.html#a12289c44e9d821c597acf1270dfffa83" title=" " alt="" coords="239,55,339,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,51,225,57,225,62,181,57"/>
+<area shape="rect" id="Node000003" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="396,5,503,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,15,382,15,382,21,348,21"/>
+<area shape="rect" id="Node000005" href="$can_8c.html#a1e3ca72dc45590f6f865b271e170b4b4" title=" " alt="" coords="397,55,501,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="339,65,384,65,384,70,339,70"/>
+</map>

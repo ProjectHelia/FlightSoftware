@@ -1,0 +1,13 @@
+<map id="can_decode_heartbeat" name="can_decode_heartbeat">
+<area shape="rect" id="Node000001" title="Decode a heartbeat." alt="" coords="623,31,792,56"/>
+<area shape="rect" id="Node000002" href="$Master_2comms_8c.html#a4939dcc252d8f8a55f19c33ee11ef73c" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="159,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="609,41,351,26,351,21,609,35"/>
+<area shape="rect" id="Node000004" href="$Master_2comms_8c.html#afdac0798248fa7a6d61bcdc02b4f22e8" title="Describe a frame in words, e.g." alt="" coords="399,56,575,81"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="609,57,575,61,574,56,609,52"/>
+<area shape="rect" id="Node000003" href="$Master_2setup_8c.html#ae1ac71732de2fe9ef32de69c535b4759" title=" " alt="" coords="5,56,111,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,37,109,59,107,53,190,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="385,71,111,71,111,66,385,66"/>
+<area shape="rect" id="Node000005" href="$Master_2setup_8c.html#a54556bb7deb2fc3a83e25efed4fbbb11" title=" " alt="" coords="217,107,293,132"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="415,87,293,114,292,109,414,82"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="203,109,107,84,109,79,204,104"/>
+</map>

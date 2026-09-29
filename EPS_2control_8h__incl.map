@@ -1,0 +1,13 @@
+<map id="src/EPS/control.h" name="src/EPS/control.h">
+<area shape="rect" id="Node000001" title="turn raw EPS readings into scaled data for CAN" alt="" coords="46,5,176,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="123,152,206,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,33,49,46,24,63,9,82,9,92,13,103,32,123,57,138,83,148,110,155,109,160,82,153,54,143,29,127,9,105,3,93,4,80,20,59,47,41,76,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="24,79,94,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,33,78,69,73,66,100,29"/>
+<area shape="rect" id="Node000004" href="$util__filter_8h.html" title="Exponential moving average (EMA) filter for noisy sensors." alt="" coords="119,79,210,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,29,150,66,145,69,118,33"/>
+<area shape="rect" id="Node000005" href="$util__thermistor_8h.html" title="Convert an NTC thermistor voltage&#45;divider reading to degC using the Beta equation." alt="" coords="234,79,364,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="142,28,256,71,254,76,140,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="167,104,167,138,162,138,162,104"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="278,106,200,148,197,143,276,102"/>
+</map>

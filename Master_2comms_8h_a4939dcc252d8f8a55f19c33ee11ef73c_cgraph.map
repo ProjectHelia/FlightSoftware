@@ -1,0 +1,21 @@
+<map id="master_comms_on_frame" name="master_comms_on_frame">
+<area shape="rect" id="Node000001" title="Handle one received frame: note heartbeats, unlock nodes in SAFE." alt="" coords="5,177,197,203"/>
+<area shape="rect" id="Node000002" href="$can_8c.html#a2f80ecf03fb328b086ad55f505a7da0a" title="Decode a heartbeat." alt="" coords="245,104,415,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,175,276,131,277,136,143,180"/>
+<area shape="rect" id="Node000007" href="$can_8c.html#a2c379ca830d255c226415fa07a58e17f" title="Build a system command frame (Master uses this)" alt="" coords="249,177,411,203"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="198,187,235,187,235,193,198,193"/>
+<area shape="rect" id="Node000010" href="$EPS_2setup_8c.html#a50503dee6a29e98e633b16b1b8b550bc" title=" " alt="" coords="292,227,368,252"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="161,200,279,226,278,231,160,205"/>
+<area shape="rect" id="Node000003" href="$can_8c.html#a781b02a1af2262004f336a9afa2be416" title=" " alt="" coords="470,5,574,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,102,461,40,474,34,477,38,464,44,353,106"/>
+<area shape="rect" id="Node000004" href="$protocol_8h.html#a635d13418feab68e80255151e6106e34" title="Priority field of an ID." alt="" coords="463,55,581,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="379,101,458,81,459,86,381,107"/>
+<area shape="rect" id="Node000005" href="$protocol_8h.html#aa16f808d69fb8251d3db5b5d988614d3" title="Source field of an ID." alt="" coords="465,104,579,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="415,114,451,114,451,119,415,119"/>
+<area shape="rect" id="Node000006" href="$protocol_8h.html#a50ee63bb2a83e438159e9bb6c45f11f2" title="Message type field of an ID." alt="" coords="472,153,572,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="381,127,459,147,458,152,379,132"/>
+<area shape="rect" id="Node000008" href="$can_8c.html#a9c6ab2f17b93aee337d1751b8eaec671" title="Start a frame: sets the ID and length, zeroes the payload." alt="" coords="463,203,581,228"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="412,198,449,203,449,208,411,203"/>
+<area shape="rect" id="Node000009" href="$protocol_8h.html#a33fd5c81b5fdd44c668a45c315fd5291" title="Pack an 11&#45;bit CAN ID, Out&#45;of&#45;range inputs are masked so the result is always a valid ID." alt="" coords="629,203,736,228"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="582,213,615,213,615,218,582,218"/>
+</map>
