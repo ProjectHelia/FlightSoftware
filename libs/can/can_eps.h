@@ -20,15 +20,15 @@ extern "C" {
 
 /** @brief EPS_STATUS contents. */
 typedef struct {
-    int16_t current_ma;    /**< Input bus current, mA. */
-    int16_t shunt_mv_x100; /**< Voltage across the shunt, units of 0.01 mV. */
-    int16_t temp_c_x10;    /**< EPS PCB temperature, units of 0.1 degC. */
+    int16_t current_ma;    /**< Input bus current */
+    int16_t shunt_mv_x100; /**< units of 0.01 mV */
+    int16_t temp_c_x10;    /**< units of 0.1 degC. */
 } can_eps_status_t;
 
-/** @brief Encode EPS_STATUS. */
+/** @brief Encode EPS_STATUS */
 void can_encode_eps_status(can_frame_t *f, const can_eps_status_t *s);
 
-/** @brief Decode EPS_STATUS. False if the frame isn't one. */
+/** @brief Decode EPS_STATUS, false if the frame isn't one */
 bool can_decode_eps_status(const can_frame_t *f, can_eps_status_t *out);
 
 #ifdef __cplusplus

@@ -1,7 +1,7 @@
 #include "can_photonics.h"
 #include "protocol.h"
 
-/* Little-endian packing helpers - same approach as can_instr.c/can_master.c. */
+/* Little-endian packing helpers, same approach as can_instr.c/can_master.c */
 
 static void put_i16(uint8_t *p, int16_t v) { p[0] = (uint8_t)(v & 0xFF); p[1] = (uint8_t)((v >> 8) & 0xFF); }
 static void put_i32(uint8_t *p, int32_t v)
