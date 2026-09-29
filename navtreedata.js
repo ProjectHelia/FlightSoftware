@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "HELIA", "index.html", [
+  [ "Project HELIA", "index.html", [
     [ "Project HELIA: Flight Software", "index.html", "index" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
