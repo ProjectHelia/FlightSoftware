@@ -14,21 +14,21 @@
 extern "C" {
 #endif
 
-#define CAN_MSG_PRESSURE     0x01u 
-#define CAN_MSG_ALTITUDE     0x02u 
-#define CAN_MSG_HOUSEKEEPING 0x03u 
+#define CAN_MSG_PRESSURE 0x01u
+#define CAN_MSG_ALTITUDE 0x02u
+#define CAN_MSG_HOUSEKEEPING 0x03u
 
 // New (not in SED) messages for sensing
-#define CAN_MSG_HUMIDITY     0x04u 
-#define CAN_MSG_GAS          0x05u 
-#define CAN_MSG_ACCEL        0x06u 
-#define CAN_MSG_STATUS       0x07u 
+#define CAN_MSG_HUMIDITY 0x04u
+#define CAN_MSG_GAS 0x05u
+#define CAN_MSG_ACCEL 0x06u
+#define CAN_MSG_STATUS 0x07u
 
 #define CAN_INSTR_STATUS_BARO (1u << 0) /**< MS5611 */
-#define CAN_INSTR_STATUS_SHT  (1u << 1) /**< SHT45 */
-#define CAN_INSTR_STATUS_GAS  (1u << 2) /**< SCD41 */
-#define CAN_INSTR_STATUS_IMU  (1u << 3) /**< BNO08x */
-#define CAN_INSTR_STATUS_ADS  (1u << 4) /**< ADS1115 */
+#define CAN_INSTR_STATUS_SHT (1u << 1)  /**< SHT45 */
+#define CAN_INSTR_STATUS_GAS (1u << 2)  /**< SCD41 */
+#define CAN_INSTR_STATUS_IMU (1u << 3)  /**< BNO08x */
+#define CAN_INSTR_STATUS_ADS (1u << 4)  /**< ADS1115 */
 
 typedef struct {
     int32_t pressure_mbar_x10;
@@ -50,8 +50,8 @@ typedef struct {
 
 typedef struct {
     uint16_t co2_ppm;
-    int16_t  temp_c_x10;
-    int16_t  rh_pct_x10;
+    int16_t temp_c_x10;
+    int16_t rh_pct_x10;
 } can_instr_gas_t;
 
 typedef struct {
@@ -61,8 +61,8 @@ typedef struct {
 } can_instr_accel_t;
 
 typedef struct {
-    uint8_t sensor_status;    /**< bitmask, CAN_INSTR_STATUS_* */
-    int16_t board_temp_c_x10; 
+    uint8_t sensor_status; /**< bitmask, CAN_INSTR_STATUS_* */
+    int16_t board_temp_c_x10;
 } can_instr_status_t;
 
 void can_encode_pressure(can_frame_t *f, const can_instr_pressure_t *s);

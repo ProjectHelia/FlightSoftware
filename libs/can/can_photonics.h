@@ -24,12 +24,12 @@
 extern "C" {
 #endif
 
-#define CAN_MSG_UV0 0x07u 
-#define CAN_MSG_UV1 0x08u 
-#define CAN_MSG_ADC 0x09u 
+#define CAN_MSG_UV0 0x07u
+#define CAN_MSG_UV1 0x08u
+#define CAN_MSG_ADC 0x09u
 
 typedef struct {
-    int32_t lux_x10;   
+    int32_t lux_x10;
     int32_t uvi_x1000; /**< units of 0.001. */
 } can_photonics_uv_t;
 

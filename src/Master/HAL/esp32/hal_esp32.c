@@ -10,9 +10,9 @@
 
 static const char *TAG = "master_hal";
 
-bool hal_init(void)
-{
-    if (!can_bus_init(PIN_CAN_TX, PIN_CAN_RX)) return false;
+bool hal_init(void) {
+    if (!can_bus_init(PIN_CAN_TX, PIN_CAN_RX))
+        return false;
 
     /* esp_netif/esp_event are process-wide singletons; ESP_ERR_INVALID_STATE
      * just means something else already brought them up, which is fine. */
@@ -24,7 +24,7 @@ bool hal_init(void)
     err = esp_event_loop_create_default();
     if (err != ESP_OK && err != ESP_ERR_INVALID_STATE) {
         ESP_LOGE(TAG, "esp_event_loop_create_default failed: %s - continuing without TT&C",
-                 esp_err_to_name(err));
+            esp_err_to_name(err));
         return true;
     }
 
@@ -34,7 +34,6 @@ bool hal_init(void)
     return true;
 }
 
-void hal_restart(void)
-{
+void hal_restart(void) {
     esp_restart();
 }

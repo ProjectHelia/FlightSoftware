@@ -18,7 +18,7 @@ extern "C" {
 #define UTIL_I16_INVALID INT16_MIN
 
 /**
- * @brief True if lo <= v <= hi. 
+ * @brief True if lo <= v <= hi.
  * False for NaN, so a broken sensor fails the check
  * I know what you're thinking, this is a pretty dumb function. The thought behind it is readability but also to avoid common mistakes with comparisons that could risk fucking over the project.
  */

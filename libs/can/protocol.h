@@ -2,7 +2,7 @@
  * @file protocol.h
  * @brief HELIA CAN protocol constants: the SED's 11-bit ID scheme and message
  *        dictionary
- * This is supposed to be the single source of truth for the entire CAN protocol. 
+ * This is supposed to be the single source of truth for the entire CAN protocol.
  * If anything changes in here then all codes should be recompiled to match! Any SEDS changes should be reflected here also
  */
 #ifndef HELIA_CAN_PROTOCOL_H
@@ -28,42 +28,42 @@ extern "C" {
 
 /** @brief Message priority (2 bits), lower value = higher priority */
 typedef enum {
-    CAN_PRIO_CRITICAL  = 0x0,
+    CAN_PRIO_CRITICAL = 0x0,
     CAN_PRIO_IMPORTANT = 0x1,
-    CAN_PRIO_WARNING   = 0x2,
-    CAN_PRIO_INFO      = 0x3,
+    CAN_PRIO_WARNING = 0x2,
+    CAN_PRIO_INFO = 0x3,
 } can_priority_t;
 
 /** @brief Message source (3 bits) */
 typedef enum {
-    CAN_SRC_GROUND          = 0x0, /**< Manual command from ground support. */
-    CAN_SRC_MASTER          = 0x1, /**< OBDH/TT&C */
-    CAN_SRC_BROADCAST       = 0x2, /**< Commands every node acts on */
-    CAN_SRC_MECHANISMS      = 0x3,
-    CAN_SRC_PHOTONICS       = 0x4,
+    CAN_SRC_GROUND = 0x0,    /**< Manual command from ground support. */
+    CAN_SRC_MASTER = 0x1,    /**< OBDH/TT&C */
+    CAN_SRC_BROADCAST = 0x2, /**< Commands every node acts on */
+    CAN_SRC_MECHANISMS = 0x3,
+    CAN_SRC_PHOTONICS = 0x4,
     CAN_SRC_INSTRUMENTATION = 0x5,
-    CAN_SRC_EPS             = 0x6,
-    CAN_SRC_THERMAL         = 0x7, // TODO(hrs) These might need to be reordered in the future
+    CAN_SRC_EPS = 0x6,
+    CAN_SRC_THERMAL = 0x7, // TODO(hrs) These might need to be reordered in the future
 } can_source_t;
 
 /** @name Every node */
 /**@{*/
-#define CAN_MSG_HEARTBEAT 0x00u 
+#define CAN_MSG_HEARTBEAT 0x00u
 /**@}*/
 
 /** @name Broadcast commands (source 0x2) */
 /**@{*/
-#define CAN_CMD_UNLOCK_ALL   0x00u /**< IMPORTANT */
-#define CAN_CMD_SLEEP_ALL    0x01u /**< IMPORTANT */
-#define CAN_CMD_RESET_ALL    0x02u /**< CRITICAL */
+#define CAN_CMD_UNLOCK_ALL 0x00u   /**< IMPORTANT */
+#define CAN_CMD_SLEEP_ALL 0x01u    /**< IMPORTANT */
+#define CAN_CMD_RESET_ALL 0x02u    /**< CRITICAL */
 #define CAN_CMD_FLIGHT_PHASE 0x03u /**< IMPORTANT */
 /**@}*/
 
 /** @name Master per-node commands (source 0x1) */
 /**@{*/
 #define CAN_CMD_UNLOCK_NODE 0x00u /**< IMPORTANT. Same type as Master HEARTBEAT: priority tells them apart, it works in practice is a bit weird conceptually I might change this later */
-#define CAN_CMD_SLEEP_NODE  0x01u /**< IMPORTANT */
-#define CAN_CMD_RESET_NODE  0x02u /**< CRITICAL */
+#define CAN_CMD_SLEEP_NODE 0x01u  /**< IMPORTANT */
+#define CAN_CMD_RESET_NODE 0x02u  /**< CRITICAL */
 /**@}*/
 
 /** @name Master telemetry (source 0x1), see can_master.h for payload */
@@ -83,8 +83,7 @@ typedef enum {
  * @brief Pack an 11-bit CAN ID,
  * Out-of-range inputs are masked so the result is always a valid ID
  */
-static inline uint32_t can_make_id(can_priority_t prio, can_source_t src, uint8_t type)
-{
+static inline uint32_t can_make_id(can_priority_t prio, can_source_t src, uint8_t type) {
     return (((uint32_t)prio & 0x3u) << 9) | (((uint32_t)src & 0x7u) << 6) | ((uint32_t)type & 0x3Fu);
 }
 

@@ -1,7 +1,7 @@
 /**
  * @file comms.h
  * @brief Photonics communication logic: this is jsut heartbeat and state transitions. Check out control.c for actual photonics data
- * 
+ *
  * TODO(remy): add more detailed description of the comms logic, including state machine and heartbeat
  */
 #ifndef HELIA_PHOTONICS_COMMS_H
@@ -21,8 +21,8 @@ extern "C" {
 
 typedef struct {
     fsm_state_t state;
-    uint32_t    next_heartbeat_ms;
-    bool        reset_requested;
+    uint32_t next_heartbeat_ms;
+    bool reset_requested;
 } photonics_comms_t;
 
 void photonics_comms_init(photonics_comms_t *c, uint32_t now_ms);

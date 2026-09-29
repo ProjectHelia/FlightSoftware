@@ -27,11 +27,10 @@ static const char *TAG = "master_ctrl";
 
 #define TX_TIMEOUT_MS 10u
 
-static master_flight_t   s_flight;
+static master_flight_t s_flight;
 static SemaphoreHandle_t s_flight_mutex;
 
-static uint32_t now_ms(void)
-{
+static uint32_t now_ms(void) {
     return (uint32_t)pdTICKS_TO_MS(xTaskGetTickCount());
 }
 
@@ -39,10 +38,9 @@ static uint32_t now_ms(void)
  * SED's Broadcast CAN Message Dictionary (source BROADCAST, type 0x03).
  * Payload: 1 byte, the new master_phase_t value. Called with s_flight_mutex
  * already held so the logged phase name matches what was just applied. */
-static void broadcast_phase(master_phase_t phase, master_flight_result_t result)
-{
+static void broadcast_phase(master_phase_t phase, master_flight_result_t result) {
     can_frame_t f = {
-        .id  = can_make_id(CAN_PRIO_IMPORTANT, CAN_SRC_BROADCAST, CAN_CMD_FLIGHT_PHASE),
+        .id = can_make_id(CAN_PRIO_IMPORTANT, CAN_SRC_BROADCAST, CAN_CMD_FLIGHT_PHASE),
         .dlc = 1,
     };
     f.data[0] = (uint8_t)phase;
@@ -58,14 +56,12 @@ static void broadcast_phase(master_phase_t phase, master_flight_result_t result)
     }
 }
 
-void master_control_init(void)
-{
+void master_control_init(void) {
     s_flight_mutex = xSemaphoreCreateMutex();
     master_flight_init(&s_flight, now_ms());
 }
 
-master_flight_result_t master_control_set_phase(master_phase_t next)
-{
+master_flight_result_t master_control_set_phase(master_phase_t next) {
     xSemaphoreTake(s_flight_mutex, portMAX_DELAY);
     master_flight_result_t result = master_flight_set_phase(&s_flight, next, now_ms());
     if (result != MASTER_FLIGHT_REJECTED) {
@@ -75,16 +71,14 @@ master_flight_result_t master_control_set_phase(master_phase_t next)
     return result;
 }
 
-master_phase_t master_control_get_phase(void)
-{
+master_phase_t master_control_get_phase(void) {
     xSemaphoreTake(s_flight_mutex, portMAX_DELAY);
     master_phase_t p = master_flight_phase(&s_flight);
     xSemaphoreGive(s_flight_mutex);
     return p;
 }
 
-void master_control_task(void *arg)
-{
+void master_control_task(void *arg) {
     (void)arg;
     ESP_LOGI(TAG, "control core up, flight phase %s", master_phase_name(master_flight_phase(&s_flight)));
 

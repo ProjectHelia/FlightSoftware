@@ -17,15 +17,15 @@ extern "C" {
 
 /** @brief LTR390 Sensor struct */
 typedef struct {
-    bool ok; // true if sensor was found at init
-    bool fresh; // true if data actually changed, depends on how we want to measure photonics but added for now to avoid data duplication
-    int32_t lux_x10;  // ambient light, scaled by 10 to avoid floating point
+    bool ok;           // true if sensor was found at init
+    bool fresh;        // true if data actually changed, depends on how we want to measure photonics but added for now to avoid data duplication
+    int32_t lux_x10;   // ambient light, scaled by 10 to avoid floating point
     int32_t uvi_x1000; // UV index, scaled by 1000 to avoid floating point
 } hal_uv_t;
 
 /** @brief Onboard ADS1115, 4 single-ended channels */
 typedef struct {
-    bool    ok; // true if ADC was found at init
+    bool ok; // true if ADC was found at init
     int16_t mv[4];
 } hal_adc_t;
 
