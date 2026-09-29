@@ -6,7 +6,7 @@ static const char *PHASE_NAMES[MASTER_PHASE_COUNT] = {
     [MASTER_PHASE_ASCENDING] = "ASCENDING",
     [MASTER_PHASE_FLOAT] = "FLOAT",
     [MASTER_PHASE_DESCENDING] = "DESCENDING",
-    [MASTER_PHASE_LANDED] = "LANDED",
+    [MASTER_PHASE_LANDED] = "LANDED", // This probably won't ever be sent over TT&C because radio connection will be lost
 };
 
 void master_flight_init(master_flight_t *f, uint32_t now_ms) {

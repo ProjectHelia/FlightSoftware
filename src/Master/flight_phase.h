@@ -53,9 +53,9 @@ typedef enum {
 } master_flight_result_t;
 
 /** @brief Auto-transition DESCENDING -> LANDED after this long with no
- *         motion noted via master_flight_note_motion(). Placeholder value
- *         (5 minutes) - nothing feeds real motion data yet (see ttc.h/.c
- *         and control.c), so tune this once it does. */
+ *         motion noted via master_flight_note_motion()
+ * Currently this is set to 5 minutes... It might be a little bit longer lmao (5 mins for testing) 
+ * */
 #define MASTER_LANDING_NO_MOTION_MS (5u * 60u * 1000u)
 
 typedef struct {
@@ -64,35 +64,21 @@ typedef struct {
     uint32_t last_motion_ms;   /**< now_ms() at last noted motion (or phase entry) */
 } master_flight_t;
 
-/** @brief Starts in MASTER_PHASE_TESTING. */
+/** @brief Starts in MASTER_PHASE_TESTING */
 void master_flight_init(master_flight_t *f, uint32_t now_ms);
 
 master_phase_t master_flight_phase(const master_flight_t *f);
 
-/** @brief Human-readable phase name for logging. Never NULL. */
+/** @brief Human-readable phase name for logging */
 const char *master_phase_name(master_phase_t p);
 
-/**
- * @brief Apply a ground-commanded (or otherwise externally requested)
- *        phase change. See the "override" note above for how out-of-order
- *        requests are handled.
- */
-master_flight_result_t master_flight_set_phase(master_flight_t *f, master_phase_t next, uint32_t now_ms);
 
-/**
- * @brief Call periodically (e.g. once per control-loop tick). Checks the
- *        DESCENDING -> LANDED no-motion timeout and applies it internally
- *        if due. No-op in any other phase.
- */
+master_flight_result_t master_flight_set_phase(master_flight_t *f, master_phase_t next, uint32_t now_ms);
 void master_flight_tick(master_flight_t *f, uint32_t now_ms);
 
 /**
- * @brief Call whenever motion is detected, to feed the no-motion timeout.
- *        TODO: nothing calls this yet - wire it to real Instrumentation
- *        CAN data (accel/altitude-rate) once that message exists. Until
- *        then DESCENDING always times out to LANDED
- *        MASTER_LANDING_NO_MOTION_MS after entry, regardless of actual
- *        motion.
+ * @brief Feeds the motion time out for landing detection.
+ * TODO: Nothing calls this, need to use CAN frames from instrumentation to update this (blocked)
  */
 void master_flight_note_motion(master_flight_t *f, uint32_t now_ms);
 

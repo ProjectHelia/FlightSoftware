@@ -1,4 +1,7 @@
-/** @file pins.h @brief Master board wiring. Only the ESP32 HAL includes this. */
+/** @file pins.h 
+ * @brief Master board wiring
+ * 
+ */
 #ifndef HELIA_MASTER_PINS_H
 #define HELIA_MASTER_PINS_H
 

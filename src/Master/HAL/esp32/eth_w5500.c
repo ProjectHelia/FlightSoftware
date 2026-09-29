@@ -1,7 +1,8 @@
-/* W5500 Ethernet bring-up. This is a thin driver shim, same kind of thing
+/** @brief W5500 Ethernet thingymabob!
+ * This is a thin driver shim, same kind of thing
  * as can_bus_twai.c: it brings up a peripheral and reports link/IP state,
  * owns no task and no queue of its own. Lives in Master's HAL because only
- * Master has Ethernet - it isn't a reusable lib. */
+ * Master has Ethernet so it isn't reusable */
 #include "eth_w5500.h"
 
 #include <string.h>

@@ -1,10 +1,9 @@
-/* Master HAL for running on a laptop. */
+/* Master HAL for running on ma laptop */
 #include "hal.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 bool hal_init(void) {
-    /* The simulated CAN bus is added with the simulator step. */
     return true;
 }
 

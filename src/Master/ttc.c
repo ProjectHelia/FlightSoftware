@@ -2,8 +2,6 @@
 
 #include <string.h>
 
-/* Wire format constants (SED "Downlink (UDP)" proposal). Needed on host too,
- * since ttc_pack_downlink() is pure byte-packing and is built there. */
 #define TTC_DL_HDR_LEN 4
 #define TTC_DL_FRAME_LEN 11
 
@@ -24,10 +22,10 @@ size_t ttc_pack_downlink(uint8_t *pkt, size_t pkt_len, uint8_t seq, const can_fr
     return TTC_DL_HDR_LEN + TTC_DL_FRAME_LEN;
 }
 
-/* Everything below owns a task and sockets, so it's ESP-IDF-only - guarded
- * the same way as control.c, so the host node_Master target (linked against
- * HAL/sim/) builds this file down to just ttc_pack_downlink() above,
- * host-testable like any other pure helper. */
+/* Everything below owns a task and sockets, so it's ESP-IDF-only 
+ * This is very close to what the old ttc_uplink_task() did, but now it's a separate file 
+ * I'm very close to putting this in the HAL layer (TODO?)
+*/
 #ifdef ESP_PLATFORM
 
 #include <errno.h>
@@ -45,7 +43,6 @@ static const char *TAG = "master_ttc";
 
 #define RX_BUF_LEN 64
 
-/* Wire format constants (SED "Uplink (TCP)" proposal - see ttc_ground.py). */
 #define TTC_UL_SYNC 0xA5
 #define TTC_UL_HDR_LEN 4
 #define TTC_UL_MAX_PAYLOAD 8
@@ -82,16 +79,9 @@ static void send_ack(int sock, uint8_t cmd, uint8_t flags, uint8_t status,
     send_all(sock, ack, TTC_ACK_HDR_LEN + len);
 }
 
-/* No general CAN forwarding yet - see ttc.h. Two commands are handled for
- * real so far:
- *   - TTC_TEST_PING (payload echoed back) so a round-trip time can be
- *     measured with nothing else in the loop.
- *   - CAN_CMD_FLIGHT_PHASE: the first command actually gated through the
- *     flight manager (control.c) before anything happens, rather than
- *     just being logged and ACKed. This is the pattern every other
- *     command will eventually follow.
- * Everything else is still just logged and ACKed OK, which is enough to
- * prove ground's command reached the board. */
+/* No general CAN forwarding yet - see ttc.h
+ * This is just a proof of concept for the EAR demo, full TT&C still need to be tested
+ */
 static void handle_command(int sock, uint8_t cmd, uint8_t flags, const uint8_t *p, uint8_t len) {
     if ((flags & TTC_UL_FLAG_TEST) && cmd == TTC_TEST_PING) {
         send_ack(sock, cmd, flags, TTC_ACK_OK, p, len);
