@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Build + test everything, flash every board, then monitor Master.
-# Each board's port is set in platformio.ini, so each firmware goes to the right board.
+# Each board's port is set in platformio.ini, so each firmware goes to the right board
 set -euo pipefail
 cd "$(dirname "$0")"
 export PATH="$HOME/.local/bin:$HOME/.platformio/penv/bin:$PATH"
