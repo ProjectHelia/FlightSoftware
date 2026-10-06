@@ -7,6 +7,7 @@
  * TT&C is deliberately minimal right now, just enough to mirror CAN traffic down to ground for bench testing
  */
 #include <stdint.h>
+
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
@@ -22,7 +23,7 @@
 #include "ttc.h"
 #include "util_timer.h"
 
-static const char *TAG = "master";
+static const char *TAG = "master";      
 
 #define RX_TIMEOUT_MS 20u
 #define TX_TIMEOUT_MS 10u

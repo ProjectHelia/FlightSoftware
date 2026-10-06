@@ -1,13 +1,12 @@
 /** @brief Master control core: owns the flight-phase state machine (flight_phase.h
  * does the actual FSM logic; this file just synchronises access to one
- * instance across cores and hooks it up to CAN + logging).
+ * instance across cores and hooks it up to CAN + logging)
  *
  * Two callers touch the flight state from two different cores:
  *   - master_control_task (this file, core 1): periodic no-motion tick
  *   - master_control_set_phase (called from ttc.c's uplink handler, core
  *     0): ground-commanded phase changes
- * Hence the mutex - see master_control_init()'s doc comment in control.h
- * for why it's created eagerly from app_main() rather than lazily here.
+ * 
  */
 #include "control.h"
 
