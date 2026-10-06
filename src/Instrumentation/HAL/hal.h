@@ -4,9 +4,9 @@
  *        sensors on the board:
  *       - SHT45 (temp/humidity)
  *       - ADS1115 (4-channel ADC)
- *       - SCD41 (CO2)
+ *       - SCD41 (CO2) // CHRYSLER'S FAULT
  *       - MS5611 (pressure)
- *       - FSP201 (accelerometer)
+ *       - FSP201 (IMU)
  *
  *
  */

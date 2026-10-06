@@ -22,6 +22,7 @@ static void comms_task(void *arg) {
     uint32_t last_status_log_ms = 0;
     instr_comms_init(&comms, now_ms());
     instr_comms_boot_done(&comms); /* INIT -> SAFE */
+    
     ESP_LOGI(TAG, "state %s", fsm_state_name(comms.state));
 
     for (;;) {
