@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 export PATH="$HOME/.local/bin:$HOME/.platformio/penv/bin:$PATH"
 
-NODES="master"   # add nodes as they're enabled in platformio.ini; keep master last
+NODES="instrumentation eps photonics master"   # add nodes as they're enabled in platformio.ini; keep master last
 
 cmake -B build -DHELIA_HOST=ON
 cmake --build build -j
